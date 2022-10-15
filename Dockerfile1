@@ -1,0 +1,8 @@
+FROM valuation-docker.pkg.coding.net/valuationquan/valuationquan/valueinfourfiles:latest 
+COPY data /data
+COPY publai1.py /publai1.py
+COPY lai/valuationquan/szseinnovation100index/szseinnovation100indexmodel1.xlsx /lai/valuationquan/szseinnovation100index/
+COPY lai/valuationquan/CNIESG300index/CNIESG300indexmodel1.xlsx /lai/valuationquan/CNIESG300index/
+COPY sixCloud.py /sixCloud.py
+RUN python3 sixCloud.py
+
