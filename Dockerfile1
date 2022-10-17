@@ -1,4 +1,4 @@
-FROM valuation-docker.pkg.coding.net/valuationquan/valuationquan/valueinfourfiles:latest 
+FROM valuation-docker.pkg.coding.net/valuationquan0/valuationquan/valueinfourfiles:latest 
 COPY data /data
 COPY publai1.py /publai1.py
 COPY lai/valuationquan/szseinnovation100index/szseinnovation100indexmodel1.xlsx /lai/valuationquan/szseinnovation100index/
