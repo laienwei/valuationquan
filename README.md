@@ -22,3 +22,6 @@ YearInflationrateYear	Inflationrate
 2001	0.70%	2015	1.40%
 2002	-0.80%	2016	3%
 2003	1.20%		
+Generally speaking, the inflation rate is the rate of currency depreciation, which means that the purchasing power of currency is declining. For example, at the beginning of 2011, if 100 yuan, you can buy a birthday cake. The inflation rate in 2011 was 5.40%. That means that the actual purchasing power of 100 yuan at the end of 2011 is only 94.88 yuan as 100 yuan had at the beginning of the year. At the end of 2011, 
+we could not buy that birthday cake with 100 yuan in our hands. At this time, the price of birthday cake is 105.4 yuan.
+From the above table, we can calculate that the annual average inflation rate from 1990 to 2016 is 4.33%.It is a very frightening number .
