@@ -7,24 +7,6 @@ In the process of market investment, the rate of return is proportional to the r
 Bank fixed deposit is a kind of financial behavior that everyone of us will do. With "quasi national reputation" as guarantee, it can be said to be one of the safest ways of financing. The ultra-high security doomed its ultra-low yield .
 The fixed deposit interest rate of the bank will fluctuate with the development of the national economy. Take the one-year fixed deposit interest rate as an example. In 1993, it was as high as 10.98%, while in 2015, it was as low as 1.5%. In 2021, it will remain at 1.5% .
 It is said: if you don't manage your money, then money ignores you.Financial management is an unavoidable choice, because the annual inflation rate is devouring the cash in our hands.The following table shows China's annual inflation rate from 1990 to 2016 .
-YearInflationrateYear	Inflationrate
-1990	3.10%	2004	3.90%
-1991	3.40%	2005	1.80%
-1992	6.40%	2006	1.50%
-1993	14.70%	2007	4.80%
-1994	24.10%	2008	5.90%
-1995	17.10%	2009	-0.70%
-1996	8.30%	2010	3.30%
-1997	2.80%	2011	5.40%
-1998	-0.80%	2012	2.60%
-1999	-1.40%	2013	3.20%
-2000	0.40%	2014	1.50%
-2001	0.70%	2015	1.40%
-2002	-0.80%	2016	3%
-2003	1.20%		
-Generally speaking, the inflation rate is the rate of currency depreciation, which means that the purchasing power of currency is declining. For example, at the beginning of 2011, if 100 yuan, you can buy a birthday cake. The inflation rate in 2011 was 5.40%. That means that the actual purchasing power of 100 yuan at the end of 2011 is only 94.88 yuan as 100 yuan had at the beginning of the year. At the end of 2011, 
-we could not buy that birthday cake with 100 yuan in our hands. At this time, the price of birthday cake is 105.4 yuan.
-From the above table, we can calculate that the annual average inflation rate from 1990 to 2016 is 4.33%.It is a very frightening number .
 <table class="MsoNormalTable" border="1" cellspacing="0" cellpadding="0" width="311" style="width:233.6pt;margin-left:4.65pt;border-collapse:collapse;border:none">
  <tbody><tr style="height:13.5pt">
   <td width="72" nowrap="" style="width:54.0pt;border:solid windowtext 1.0pt;
@@ -334,4 +316,7 @@ From the above table, we can calculate that the annual average inflation rate fr
   border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
   padding:0cm 5.4pt 0cm 5.4pt;height:13.5pt"></td>
  </tr>
-</tbody></table>
+</tbody></table>		
+Generally speaking, the inflation rate is the rate of currency depreciation, which means that the purchasing power of currency is declining. For example, at the beginning of 2011, if 100 yuan, you can buy a birthday cake. The inflation rate in 2011 was 5.40%. That means that the actual purchasing power of 100 yuan at the end of 2011 is only 94.88 yuan as 100 yuan had at the beginning of the year. At the end of 2011, 
+we could not buy that birthday cake with 100 yuan in our hands. At this time, the price of birthday cake is 105.4 yuan.
+From the above table, we can calculate that the annual average inflation rate from 1990 to 2016 is 4.33%.It is a very frightening number .
