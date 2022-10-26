@@ -7,7 +7,7 @@ In the process of market investment, the rate of return is proportional to the r
 Bank fixed deposit is a kind of financial behavior that everyone of us will do. With "quasi national reputation" as guarantee, it can be said to be one of the safest ways of financing. The ultra-high security doomed its ultra-low yield .
 The fixed deposit interest rate of the bank will fluctuate with the development of the national economy. Take the one-year fixed deposit interest rate as an example. In 1993, it was as high as 10.98%, while in 2015, it was as low as 1.5%. In 2021, it will remain at 1.5% .
 It is said: if you don't manage your money, then money ignores you.Financial management is an unavoidable choice, because the annual inflation rate is devouring the cash in our hands.The following table shows China's annual inflation rate from 1990 to 2016 .
-<table class=MsoNormalTable border=1 cellspacing=0 cellpadding=0 width=288
+'''<table class=MsoNormalTable border=1 cellspacing=0 cellpadding=0 width=288
  style='width:216.0pt;margin-left:4.65pt;border-collapse:collapse;border:none'>
  <tr style='height:13.5pt'>
   <td width=72 nowrap style='width:54.0pt;border:solid windowtext 1.0pt;
@@ -375,6 +375,6 @@ It is said: if you don't manage your money, then money ignores you.Financial man
   border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
   padding:0cm 5.4pt 0cm 5.4pt;height:13.5pt'></td>
  </tr>
-</table>
+</table>'''
 
 
