@@ -321,5 +321,5 @@ Generally speaking, the inflation rate is the rate of currency depreciation, whi
 <br>we could not buy that birthday cake with 100 yuan in our hands. At this time, the price of birthday cake is 105.4 yuan.
 <br>From the above table, we can calculate that the annual average inflation rate from 1990 to 2016 is 4.33%.It is a very frightening number .
 <br>It means that if we do not make any financial efforts, the cash held in our hands will depreciate at a rate of 4.33% every year. For example, we can more intuitively see the damage caused by inflation. If we had 10000 yuan at home at the beginning of 1990, by the end of 2016, the purchasing power of 10000 yuan will only be 2875 yuan. The accumulated depreciation reached 71.25%. 
-<br>In the face of such a high rate of currency depreciation, financial management is imperative.
+In the face of such a high rate of currency depreciation, financial management is imperative.
 <br>As we said earlier, saving is a mean of financing, because saving has interest. Can the interest of saving resist inflation? The following table shows the change of one-year fixed deposit interest rate published by the Central Bank since 1990.
