@@ -1,9 +1,0 @@
-FROM valuation-docker.pkg.coding.net/valuationquan0/valuationquan/valueinmodel1s:latest
-COPY unify1ETF.py /unify1ETF.py
-COPY lai/valuationquan/HwabaoWPszseinnovation100ETF.xlsx /lai/valuationquan/
-COPY lai/valuationquan/szseinnovation100ETF/szseinnovation100ETFmodel1.xlsx /lai/valuationquan/szseinnovation100ETF/
-COPY lai/valuationquan/szseinnovation100ETF/szseinnovation100ETFmodel4(SAR).xlsx /lai/valuationquan/szseinnovation100ETF/
-COPY lai/valuationquan/szseinnovation100ETF/szseinnovation100ETFmodel4(CCI).xlsx /lai/valuationquan/szseinnovation100ETF/
-COPY lai/valuationquan/szseinnovation100ETF/szseinnovation100ETFmodel4(RSI&KDJ).xlsx /lai/valuationquan/szseinnovation100ETF/
-RUN pip3 install xlrd==1.2.0
-RUN python3 unify1ETF.py
