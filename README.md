@@ -723,3 +723,8 @@ In the face of such a high rate of currency depreciation, financial management i
   </td>
  </tr>
 </tbody></table>
+<br>From the above table, we can find that the average interest rate of one-year fixed deposits in banks from 1990 to 2016 is 4.17%, which is very close to the average inflation rate of 4.33% in the same period that we calculated earlier, but still less than the inflation rate. 
+<br>Using the above example, we can see that if we had 10000 yuan in the bank for one-year fixed deposits at the beginning of 1990, by the end of 2016, we would have accumulated 32202 yuan, We have calculated that the currency depreciation rate in the same period is 71.25%, so 32202 yuan is actually equivalent to 9258 yuan. 
+<br>For this, after 27 years, the 10000 yuan has lost 7.42% of its purchasing power. It can be seen that bank savings cannot beat inflation.
+<br>In fact, from our experience in real life, the inflation rate around us will be much higher than the figures in the table. 
+<br>The inflation rate figures in the table are obtained on average after taking into account the production and living factors of the whole society, while ordinary people are more concerned about the necessities of life, such as food, clothing, housing and transportation.
