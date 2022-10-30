@@ -12,7 +12,7 @@ with open(pub.filename,"r") as fp:
     lines=fp.readlines()
 num=len(lines)
 wb0 = openpyxl.load_workbook(r'./crawler/newworkbook.xlsx')
-sheet0 = wb0['自21年4月9日开始，但有部分从4月6日开始']
+sheet0 = wb0['start_from_2021.4.9&2021.4.6']
 xx=sheet0.max_row-num #要读的数据从xx+1行开始
 filedir3=['szseinnovation100indexmodel1.xlsx']
 dirba1="./lai/valuationquan/szseinnovation100index"
