@@ -1,4 +1,4 @@
-#valuationquan
+#Valuationquan
 ##Chapter 1
 Financial matters and investment
 Ordinary people have a strong desire to save money, and usually have spare money to deposit in bank accounts. In this way, it is safe and you can enjoy a little benefits on interest. This is actually the behavior of regularly investing in bank savings projects. But we know that the interest rate of bank time deposits is very low. Low interest rate is because bank deposit is theoretically a "risk-free" investment.
