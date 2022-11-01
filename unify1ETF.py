@@ -7,7 +7,7 @@
 import openpyxl
 import xlrd
 from openpyxl.styles import Font,Alignment
-datelai='2022-09-30'
+datelai='2022-10-31'
 a=[]
 b=[]
 c=[]
