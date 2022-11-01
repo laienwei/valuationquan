@@ -68,6 +68,7 @@ wb.save(filename3)
 filename4=dirba1+"/"+filedir3[1]
 data=xlrd.open_workbook(filename4)#openpyxl模块读不出数据，只能读出单元格公式
 sheet1_data=data.sheet_by_name('model4(1)')
+filename3=dirba1+"/"+"szseinnovation100indexmodel1prac.xlsx"
 data1=xlrd.open_workbook(filename3)#openpyxl模块读不出数据，只能读出单元格公式
 sheet2_data=data1.sheet_by_name('myPEPB')
 nrow=sheet2_data.nrows
