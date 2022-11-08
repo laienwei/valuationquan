@@ -750,4 +750,4 @@ The grim reality tells us that our wealth will shrink significantly if we do not
 ###§3Stock Indexes are different
 For ordinary retail investors, the investment index is the most suitable, because compared with individual stocks, the index is average, sustainable and passive. And the risk is low.
 <br>(1)	Average means that an index is a collection of a package of stocks, which reflects the average rise and fall of the market. As long as the market is rising as a whole, the index will also rise. Buying and selling the index will be better than Buying and selling the stock shares.
-<br>(2)	Sustainability means that once the index is released, it will continue to run according to the rules.
+<br>(2)	Sustainability means that once the index is released, it will continue to run according to the rules.As long as the exchange does not close, the index will continue to exist.
