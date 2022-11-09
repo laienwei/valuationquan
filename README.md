@@ -754,4 +754,4 @@ For ordinary retail investors, the investment index is the most suitable, becaus
 <br>The US Dow Jones Index has a long history. When it was released in 1896, there were 12 stocks, representing the most dazzling enterprise stars in the US economy at that time. After 100 years of evolution, the Dow Jones Index still operates healthily, while the original 12 companies leaving only General Electric still remain in the index.
 <br>(3)	Passivity means that the index operates according to the compilation rules, without the subjective will of people, and will not be changed because of the preferences of publishers, thus ensuring the objective, fair and equitable operation of the index.
 <br>(4)	The risk is low, which is relative to individual stocks. Because of the average, sustainability and passivity of the index, the operation of the index is relatively stable. An excellent index can be continuously incorporated into excellent stocks (listed companies) according to the compilation rules, so as to ensure that the index is generally in a spiral upward trend.
-###§4Principle of regular investment
+###§4principle of regular investment
