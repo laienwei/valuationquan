@@ -747,11 +747,16 @@ The grim reality tells us that our wealth will shrink significantly if we do not
 <br>Sadly, people in the stock market, on the whole, still lose money. "Seven losses, two equalities and one gain" is a phrase that most shareholders often say, as if the stock market is not a good way to manage money. 
 <br> Is that really the case? As an example, the Shanghai Securities Composite Index was launched in December 1990, with a starting point of 100 points and a closing point of 3639.78 points on December 2021. 
 <br>The cumulative growth rate in 31 years is 36 times, and the compound annual growth rate is 12.25%. If we hold such assets, it will steadily outperform the inflation rate by a large margin.
-###§3Stock Indexes are different
+###§3 Stock Indexes are different
 For ordinary retail investors, the investment index is the most suitable, because compared with individual stocks, the index is average, sustainable and passive. And the risk is low.
 <br>(1)	Average means that an index is a collection of a package of stocks, which reflects the average rise and fall of the market. As long as the market is rising as a whole, the index will also rise. Buying and selling the index will be better than Buying and selling the stock shares.
 <br>(2)	Sustainability means that once the index is released, it will continue to run according to the rules.Generally, the index will adjust the constituent stocks according to the compilation rules every year to eliminate the fittest,as long as the exchange does not close, the index will continue to exist.
 <br>The US Dow Jones Index has a long history. When it was released in 1896, there were 12 stocks, representing the most dazzling enterprise stars in the US economy at that time. After 100 years of evolution, the Dow Jones Index still operates healthily, while the original 12 companies leaving only General Electric still remain in the index.
 <br>(3)	Passivity means that the index operates according to the compilation rules, without the subjective will of people, and will not be changed because of the preferences of publishers, thus ensuring the objective, fair and equitable operation of the index.
 <br>(4)	The risk is low, which is relative to individual stocks. Because of the average, sustainability and passivity of the index, the operation of the index is relatively stable. An excellent index can be continuously incorporated into excellent stocks (listed companies) according to the compilation rules, so as to ensure that the index is generally in a spiral upward trend.
-###§4principle of regular investment
+###§4 principle of regular investment
+<br>Having said so much about the benefits of the index, how should we buy and sell the index? Fixed investment is the most suitable investment method for retail investors. For investors who often speculate in stocks, they have more or less heard of the concept of fixed investment. As the name implies, fixed investment is to invest in the agreed amount at the agreed time.
+<br>More people in China may know that fixed investment in fund. Fund companies issue fund products to attract customers to invest in their own fund products, so as to introduce this business into fund investment. 
+<br>It is a fund investment method in which the investor submits an application to the designated fund sales agency to agree in advance the deduction date, amount, method and name of the fund to be invested in each period, and the sales agency will automatically complete the deduction and subscription in the bank account designated by the investor on the agreed deduction date.
+<br>1.	Fixed investment has the following advantages
+<br>First, make regular investments. Every little makes a mickle.
