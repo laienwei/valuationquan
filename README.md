@@ -1,1 +1,1 @@
-[chapter 1](readme/README1.md)
+[chapter 1](README1.md)
