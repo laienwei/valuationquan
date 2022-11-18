@@ -322,3 +322,403 @@
 <br>从上表中，我们能计算出1990~2016年，年均通胀率为4.33%。这是非常恐怖的数字。
 <br>它意味着，如果我们不做任何理财努力，我们手中持有的货币现金会以每年4.33%的速度在贬值，用个例子，就能更加直观的看出通胀的伤害，假如在1990年初，我们有1万元，放在家里不动，等到2016年末，这1万元的购买力只剩下2875元。累计贬值高达71.25%。面对如此高的货币贬值率，理财就显得迫不得已，不得不为之了。
 <br>前面我们说过，储蓄是一种理财手段，因为储蓄是有利息的，那么储蓄的利息能否抵御通胀呢？下表是1990年以来央行公布的一年期定期存款利率变动表。
+<table class="MsoNormalTable" border="1" cellspacing="0" cellpadding="0" width="504" style="width:378.0pt;margin-left:4.65pt;border-collapse:collapse;border:none">
+ <tbody><tr style="height:13.5pt">
+  <td width="93" nowrap="" style="width:70.0pt;border:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:13.5pt">
+  <p class="MsoNormal" align="left" style="text-align:left"><span lang="EN-US" style="font-family:Consolas;color:black">年</span></p>
+  </td>
+  <td width="76" nowrap="" style="width:57.0pt;border:solid windowtext 1.0pt;
+  border-left:none;padding:0cm 5.4pt 0cm 5.4pt;height:13.5pt">
+  <p class="MsoNormal" align="left" style="text-align:left"><span lang="EN-US" style="font-family:Consolas;color:black">利率 %</span></p>
+  </td>
+  <td width="93" nowrap="" style="width:70.0pt;border:solid windowtext 1.0pt;
+  border-left:none;padding:0cm 5.4pt 0cm 5.4pt;height:13.5pt">
+  <p class="MsoNormal" align="left" style="text-align:left"><span lang="EN-US" style="font-family:Consolas;color:black">年</span></p>
+  </td>
+  <td width="76" nowrap="" style="width:57.0pt;border:solid windowtext 1.0pt;
+  border-left:none;padding:0cm 5.4pt 0cm 5.4pt;height:13.5pt">
+  <p class="MsoNormal" align="left" style="text-align:left"><span lang="EN-US" style="font-family:Consolas;color:black">利率 %</span></p>
+  </td>
+  <td width="93" nowrap="" style="width:70.0pt;border:solid windowtext 1.0pt;
+  border-left:none;padding:0cm 5.4pt 0cm 5.4pt;height:13.5pt">
+  <p class="MsoNormal" align="left" style="text-align:left"><span lang="EN-US" style="font-family:Consolas;color:black">年</span></p>
+  </td>
+  <td width="72" nowrap="" style="width:54.0pt;border:solid windowtext 1.0pt;
+  border-left:none;padding:0cm 5.4pt 0cm 5.4pt;height:13.5pt">
+  <p class="MsoNormal" align="left" style="text-align:left"><span lang="EN-US" style="font-family:Consolas;color:black">利率 %</span></p>
+  </td>
+ </tr>
+ <tr style="height:13.5pt">
+  <td width="93" nowrap="" style="width:70.0pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt;height:13.5pt">
+  <p class="MsoNormal" align="right" style="text-align:right"><span lang="EN-US" style="font-size:11.0pt;font-family:宋体;color:black">1990/4/15</span></p>
+  </td>
+  <td width="76" nowrap="" style="width:57.0pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:13.5pt">
+  <p class="MsoNormal" align="right" style="text-align:right"><span lang="EN-US" style="font-size:11.0pt;font-family:宋体;color:black">10.08</span></p>
+  </td>
+  <td width="93" nowrap="" style="width:70.0pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:13.5pt">
+  <p class="MsoNormal" align="right" style="text-align:right"><span lang="EN-US" style="font-size:11.0pt;font-family:宋体;color:black">2004/10/29</span></p>
+  </td>
+  <td width="76" nowrap="" style="width:57.0pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:13.5pt">
+  <p class="MsoNormal" align="right" style="text-align:right"><span lang="EN-US" style="font-size:11.0pt;font-family:宋体;color:black">2.25</span></p>
+  </td>
+  <td width="93" nowrap="" style="width:70.0pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:13.5pt">
+  <p class="MsoNormal" align="right" style="text-align:right"><span lang="EN-US" style="font-size:11.0pt;font-family:宋体;color:black">2010/12/26</span></p>
+  </td>
+  <td width="72" nowrap="" style="width:54.0pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:13.5pt">
+  <p class="MsoNormal" align="right" style="text-align:right"><span lang="EN-US" style="font-size:11.0pt;font-family:宋体;color:black">2.75</span></p>
+  </td>
+ </tr>
+ <tr style="height:13.5pt">
+  <td width="93" nowrap="" style="width:70.0pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt;height:13.5pt">
+  <p class="MsoNormal" align="right" style="text-align:right"><span lang="EN-US" style="font-size:11.0pt;font-family:宋体;color:black">1990/8/21</span></p>
+  </td>
+  <td width="76" nowrap="" style="width:57.0pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:13.5pt">
+  <p class="MsoNormal" align="right" style="text-align:right"><span lang="EN-US" style="font-size:11.0pt;font-family:宋体;color:black">8.64</span></p>
+  </td>
+  <td width="93" nowrap="" style="width:70.0pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:13.5pt">
+  <p class="MsoNormal" align="right" style="text-align:right"><span lang="EN-US" style="font-size:11.0pt;font-family:宋体;color:black">2006/8/19</span></p>
+  </td>
+  <td width="76" nowrap="" style="width:57.0pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:13.5pt">
+  <p class="MsoNormal" align="right" style="text-align:right"><span lang="EN-US" style="font-size:11.0pt;font-family:宋体;color:black">2.52</span></p>
+  </td>
+  <td width="93" nowrap="" style="width:70.0pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:13.5pt">
+  <p class="MsoNormal" align="right" style="text-align:right"><span lang="EN-US" style="font-size:11.0pt;font-family:宋体;color:black">2011/2/9</span></p>
+  </td>
+  <td width="72" nowrap="" style="width:54.0pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:13.5pt">
+  <p class="MsoNormal" align="right" style="text-align:right"><span lang="EN-US" style="font-size:11.0pt;font-family:宋体;color:black">3</span></p>
+  </td>
+ </tr>
+ <tr style="height:13.5pt">
+  <td width="93" nowrap="" style="width:70.0pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt;height:13.5pt">
+  <p class="MsoNormal" align="right" style="text-align:right"><span lang="EN-US" style="font-size:11.0pt;font-family:宋体;color:black">1991/4/21</span></p>
+  </td>
+  <td width="76" nowrap="" style="width:57.0pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:13.5pt">
+  <p class="MsoNormal" align="right" style="text-align:right"><span lang="EN-US" style="font-size:11.0pt;font-family:宋体;color:black">7.56</span></p>
+  </td>
+  <td width="93" nowrap="" style="width:70.0pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:13.5pt">
+  <p class="MsoNormal" align="right" style="text-align:right"><span lang="EN-US" style="font-size:11.0pt;font-family:宋体;color:black">2007/3/18</span></p>
+  </td>
+  <td width="76" nowrap="" style="width:57.0pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:13.5pt">
+  <p class="MsoNormal" align="right" style="text-align:right"><span lang="EN-US" style="font-size:11.0pt;font-family:宋体;color:black">2.79</span></p>
+  </td>
+  <td width="93" nowrap="" style="width:70.0pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:13.5pt">
+  <p class="MsoNormal" align="right" style="text-align:right"><span lang="EN-US" style="font-size:11.0pt;font-family:宋体;color:black">2011/4/6</span></p>
+  </td>
+  <td width="72" nowrap="" style="width:54.0pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:13.5pt">
+  <p class="MsoNormal" align="right" style="text-align:right"><span lang="EN-US" style="font-size:11.0pt;font-family:宋体;color:black">3.25</span></p>
+  </td>
+ </tr>
+ <tr style="height:13.5pt">
+  <td width="93" nowrap="" style="width:70.0pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt;height:13.5pt">
+  <p class="MsoNormal" align="right" style="text-align:right"><span lang="EN-US" style="font-size:11.0pt;font-family:宋体;color:black">1993/5/15</span></p>
+  </td>
+  <td width="76" nowrap="" style="width:57.0pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:13.5pt">
+  <p class="MsoNormal" align="right" style="text-align:right"><span lang="EN-US" style="font-size:11.0pt;font-family:宋体;color:black">9.18</span></p>
+  </td>
+  <td width="93" nowrap="" style="width:70.0pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:13.5pt">
+  <p class="MsoNormal" align="right" style="text-align:right"><span lang="EN-US" style="font-size:11.0pt;font-family:宋体;color:black">2007/5/19</span></p>
+  </td>
+  <td width="76" nowrap="" style="width:57.0pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:13.5pt">
+  <p class="MsoNormal" align="right" style="text-align:right"><span lang="EN-US" style="font-size:11.0pt;font-family:宋体;color:black">3.06</span></p>
+  </td>
+  <td width="93" nowrap="" style="width:70.0pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:13.5pt">
+  <p class="MsoNormal" align="right" style="text-align:right"><span lang="EN-US" style="font-size:11.0pt;font-family:宋体;color:black">2011/7/7</span></p>
+  </td>
+  <td width="72" nowrap="" style="width:54.0pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:13.5pt">
+  <p class="MsoNormal" align="right" style="text-align:right"><span lang="EN-US" style="font-size:11.0pt;font-family:宋体;color:black">3.5</span></p>
+  </td>
+ </tr>
+ <tr style="height:13.5pt">
+  <td width="93" nowrap="" style="width:70.0pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt;height:13.5pt">
+  <p class="MsoNormal" align="right" style="text-align:right"><span lang="EN-US" style="font-size:11.0pt;font-family:宋体;color:black">1993/7/11</span></p>
+  </td>
+  <td width="76" nowrap="" style="width:57.0pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:13.5pt">
+  <p class="MsoNormal" align="right" style="text-align:right"><span lang="EN-US" style="font-size:11.0pt;font-family:宋体;color:black">10.98</span></p>
+  </td>
+  <td width="93" nowrap="" style="width:70.0pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:13.5pt">
+  <p class="MsoNormal" align="right" style="text-align:right"><span lang="EN-US" style="font-size:11.0pt;font-family:宋体;color:black">2007/7/21</span></p>
+  </td>
+  <td width="76" nowrap="" style="width:57.0pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:13.5pt">
+  <p class="MsoNormal" align="right" style="text-align:right"><span lang="EN-US" style="font-size:11.0pt;font-family:宋体;color:black">3.33</span></p>
+  </td>
+  <td width="93" nowrap="" style="width:70.0pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:13.5pt">
+  <p class="MsoNormal" align="right" style="text-align:right"><span lang="EN-US" style="font-size:11.0pt;font-family:宋体;color:black">2012/6/8</span></p>
+  </td>
+  <td width="72" nowrap="" style="width:54.0pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:13.5pt">
+  <p class="MsoNormal" align="right" style="text-align:right"><span lang="EN-US" style="font-size:11.0pt;font-family:宋体;color:black">3.25</span></p>
+  </td>
+ </tr>
+ <tr style="height:13.5pt">
+  <td width="93" nowrap="" style="width:70.0pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt;height:13.5pt">
+  <p class="MsoNormal" align="right" style="text-align:right"><span lang="EN-US" style="font-size:11.0pt;font-family:宋体;color:black">1996/5/1</span></p>
+  </td>
+  <td width="76" nowrap="" style="width:57.0pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:13.5pt">
+  <p class="MsoNormal" align="right" style="text-align:right"><span lang="EN-US" style="font-size:11.0pt;font-family:宋体;color:black">9.18</span></p>
+  </td>
+  <td width="93" nowrap="" style="width:70.0pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:13.5pt">
+  <p class="MsoNormal" align="right" style="text-align:right"><span lang="EN-US" style="font-size:11.0pt;font-family:宋体;color:black">2007/8/22</span></p>
+  </td>
+  <td width="76" nowrap="" style="width:57.0pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:13.5pt">
+  <p class="MsoNormal" align="right" style="text-align:right"><span lang="EN-US" style="font-size:11.0pt;font-family:宋体;color:black">3.6</span></p>
+  </td>
+  <td width="93" nowrap="" style="width:70.0pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:13.5pt">
+  <p class="MsoNormal" align="right" style="text-align:right"><span lang="EN-US" style="font-size:11.0pt;font-family:宋体;color:black">2012/7/6</span></p>
+  </td>
+  <td width="72" nowrap="" style="width:54.0pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:13.5pt">
+  <p class="MsoNormal" align="right" style="text-align:right"><span lang="EN-US" style="font-size:11.0pt;font-family:宋体;color:black">3</span></p>
+  </td>
+ </tr>
+ <tr style="height:13.5pt">
+  <td width="93" nowrap="" style="width:70.0pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt;height:13.5pt">
+  <p class="MsoNormal" align="right" style="text-align:right"><span lang="EN-US" style="font-size:11.0pt;font-family:宋体;color:black">1996/8/23</span></p>
+  </td>
+  <td width="76" nowrap="" style="width:57.0pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:13.5pt">
+  <p class="MsoNormal" align="right" style="text-align:right"><span lang="EN-US" style="font-size:11.0pt;font-family:宋体;color:black">7.47</span></p>
+  </td>
+  <td width="93" nowrap="" style="width:70.0pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:13.5pt">
+  <p class="MsoNormal" align="right" style="text-align:right"><span lang="EN-US" style="font-size:11.0pt;font-family:宋体;color:black">2007/9/15</span></p>
+  </td>
+  <td width="76" nowrap="" style="width:57.0pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:13.5pt">
+  <p class="MsoNormal" align="right" style="text-align:right"><span lang="EN-US" style="font-size:11.0pt;font-family:宋体;color:black">3.87</span></p>
+  </td>
+  <td width="93" nowrap="" style="width:70.0pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:13.5pt">
+  <p class="MsoNormal" align="right" style="text-align:right"><span lang="EN-US" style="font-size:11.0pt;font-family:宋体;color:black">2014/11/22</span></p>
+  </td>
+  <td width="72" nowrap="" style="width:54.0pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:13.5pt">
+  <p class="MsoNormal" align="right" style="text-align:right"><span lang="EN-US" style="font-size:11.0pt;font-family:宋体;color:black">2.75</span></p>
+  </td>
+ </tr>
+ <tr style="height:13.5pt">
+  <td width="93" nowrap="" style="width:70.0pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt;height:13.5pt">
+  <p class="MsoNormal" align="right" style="text-align:right"><span lang="EN-US" style="font-size:11.0pt;font-family:宋体;color:black">1997/10/23</span></p>
+  </td>
+  <td width="76" nowrap="" style="width:57.0pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:13.5pt">
+  <p class="MsoNormal" align="right" style="text-align:right"><span lang="EN-US" style="font-size:11.0pt;font-family:宋体;color:black">5.67</span></p>
+  </td>
+  <td width="93" nowrap="" style="width:70.0pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:13.5pt">
+  <p class="MsoNormal" align="right" style="text-align:right"><span lang="EN-US" style="font-size:11.0pt;font-family:宋体;color:black">2007/12/21</span></p>
+  </td>
+  <td width="76" nowrap="" style="width:57.0pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:13.5pt">
+  <p class="MsoNormal" align="right" style="text-align:right"><span lang="EN-US" style="font-size:11.0pt;font-family:宋体;color:black">4.14</span></p>
+  </td>
+  <td width="93" nowrap="" style="width:70.0pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:13.5pt">
+  <p class="MsoNormal" align="right" style="text-align:right"><span lang="EN-US" style="font-size:11.0pt;font-family:宋体;color:black">2015/3/1</span></p>
+  </td>
+  <td width="72" nowrap="" style="width:54.0pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:13.5pt">
+  <p class="MsoNormal" align="right" style="text-align:right"><span lang="EN-US" style="font-size:11.0pt;font-family:宋体;color:black">2.5</span></p>
+  </td>
+ </tr>
+ <tr style="height:13.5pt">
+  <td width="93" nowrap="" style="width:70.0pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt;height:13.5pt">
+  <p class="MsoNormal" align="right" style="text-align:right"><span lang="EN-US" style="font-size:11.0pt;font-family:宋体;color:black">1998/3/25</span></p>
+  </td>
+  <td width="76" nowrap="" style="width:57.0pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:13.5pt">
+  <p class="MsoNormal" align="right" style="text-align:right"><span lang="EN-US" style="font-size:11.0pt;font-family:宋体;color:black">5.22</span></p>
+  </td>
+  <td width="93" nowrap="" style="width:70.0pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:13.5pt">
+  <p class="MsoNormal" align="right" style="text-align:right"><span lang="EN-US" style="font-size:11.0pt;font-family:宋体;color:black">2008/10/9</span></p>
+  </td>
+  <td width="76" nowrap="" style="width:57.0pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:13.5pt">
+  <p class="MsoNormal" align="right" style="text-align:right"><span lang="EN-US" style="font-size:11.0pt;font-family:宋体;color:black">3.87</span></p>
+  </td>
+  <td width="93" nowrap="" style="width:70.0pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:13.5pt">
+  <p class="MsoNormal" align="right" style="text-align:right"><span lang="EN-US" style="font-size:11.0pt;font-family:宋体;color:black">2015/5/11</span></p>
+  </td>
+  <td width="72" nowrap="" style="width:54.0pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:13.5pt">
+  <p class="MsoNormal" align="right" style="text-align:right"><span lang="EN-US" style="font-size:11.0pt;font-family:宋体;color:black">2.25</span></p>
+  </td>
+ </tr>
+ <tr style="height:13.5pt">
+  <td width="93" nowrap="" style="width:70.0pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt;height:13.5pt">
+  <p class="MsoNormal" align="right" style="text-align:right"><span lang="EN-US" style="font-size:11.0pt;font-family:宋体;color:black">1998/7/1</span></p>
+  </td>
+  <td width="76" nowrap="" style="width:57.0pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:13.5pt">
+  <p class="MsoNormal" align="right" style="text-align:right"><span lang="EN-US" style="font-size:11.0pt;font-family:宋体;color:black">4.77</span></p>
+  </td>
+  <td width="93" nowrap="" style="width:70.0pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:13.5pt">
+  <p class="MsoNormal" align="right" style="text-align:right"><span lang="EN-US" style="font-size:11.0pt;font-family:宋体;color:black">2008/10/30</span></p>
+  </td>
+  <td width="76" nowrap="" style="width:57.0pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:13.5pt">
+  <p class="MsoNormal" align="right" style="text-align:right"><span lang="EN-US" style="font-size:11.0pt;font-family:宋体;color:black">3.6</span></p>
+  </td>
+  <td width="93" nowrap="" style="width:70.0pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:13.5pt">
+  <p class="MsoNormal" align="right" style="text-align:right"><span lang="EN-US" style="font-size:11.0pt;font-family:宋体;color:black">2015/6/28</span></p>
+  </td>
+  <td width="72" nowrap="" style="width:54.0pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:13.5pt">
+  <p class="MsoNormal" align="right" style="text-align:right"><span lang="EN-US" style="font-size:11.0pt;font-family:宋体;color:black">2</span></p>
+  </td>
+ </tr>
+ <tr style="height:13.5pt">
+  <td width="93" nowrap="" style="width:70.0pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt;height:13.5pt">
+  <p class="MsoNormal" align="right" style="text-align:right"><span lang="EN-US" style="font-size:11.0pt;font-family:宋体;color:black">1998/12/7</span></p>
+  </td>
+  <td width="76" nowrap="" style="width:57.0pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:13.5pt">
+  <p class="MsoNormal" align="right" style="text-align:right"><span lang="EN-US" style="font-size:11.0pt;font-family:宋体;color:black">3.78</span></p>
+  </td>
+  <td width="93" nowrap="" style="width:70.0pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:13.5pt">
+  <p class="MsoNormal" align="right" style="text-align:right"><span lang="EN-US" style="font-size:11.0pt;font-family:宋体;color:black">2008/11/27</span></p>
+  </td>
+  <td width="76" nowrap="" style="width:57.0pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:13.5pt">
+  <p class="MsoNormal" align="right" style="text-align:right"><span lang="EN-US" style="font-size:11.0pt;font-family:宋体;color:black">2.52</span></p>
+  </td>
+  <td width="93" nowrap="" style="width:70.0pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:13.5pt">
+  <p class="MsoNormal" align="right" style="text-align:right"><span lang="EN-US" style="font-size:11.0pt;font-family:宋体;color:black">2015/8/26</span></p>
+  </td>
+  <td width="72" nowrap="" style="width:54.0pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:13.5pt">
+  <p class="MsoNormal" align="right" style="text-align:right"><span lang="EN-US" style="font-size:11.0pt;font-family:宋体;color:black">1.75</span></p>
+  </td>
+ </tr>
+ <tr style="height:13.5pt">
+  <td width="93" nowrap="" style="width:70.0pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt;height:13.5pt">
+  <p class="MsoNormal" align="right" style="text-align:right"><span lang="EN-US" style="font-size:11.0pt;font-family:宋体;color:black">1999/6/10</span></p>
+  </td>
+  <td width="76" nowrap="" style="width:57.0pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:13.5pt">
+  <p class="MsoNormal" align="right" style="text-align:right"><span lang="EN-US" style="font-size:11.0pt;font-family:宋体;color:black">2.25</span></p>
+  </td>
+  <td width="93" nowrap="" style="width:70.0pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:13.5pt">
+  <p class="MsoNormal" align="right" style="text-align:right"><span lang="EN-US" style="font-size:11.0pt;font-family:宋体;color:black">2008/12/23</span></p>
+  </td>
+  <td width="76" nowrap="" style="width:57.0pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:13.5pt">
+  <p class="MsoNormal" align="right" style="text-align:right"><span lang="EN-US" style="font-size:11.0pt;font-family:宋体;color:black">2.25</span></p>
+  </td>
+  <td width="93" nowrap="" style="width:70.0pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:13.5pt">
+  <p class="MsoNormal" align="right" style="text-align:right"><span lang="EN-US" style="font-size:11.0pt;font-family:宋体;color:black">2015/10/24</span></p>
+  </td>
+  <td width="72" nowrap="" style="width:54.0pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:13.5pt">
+  <p class="MsoNormal" align="right" style="text-align:right"><span lang="EN-US" style="font-size:11.0pt;font-family:宋体;color:black">1.5</span></p>
+  </td>
+ </tr>
+</tbody></table>
