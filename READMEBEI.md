@@ -18,4 +18,4 @@ From this lesson, we will really enter the exploration journey of quantitative i
 <br>The total number of fixed investments of Harvest CSI 300 was 55, with a total investment of 27500 yuan. As of March 17, 2016, Ms. Wang held 37086.69 shares of the fund. On that day, the net value of the fund unit was 0.8644 yuan. Its total book assets were 32057.73 yuan, book floating profit was 4557.73 yuan, and the fixed investment yield was 16.57%.
 <br>To sum up, since the GF Core Selection, Ms. Wang has invested 119400 yuan in fixed investment for nearly five years. As of March 17, 2016, the total book asset was 164945.49 yuan, the book floating profit was 45545 yuan, and the fixed investment yield was 39.95%.
 <br>Also, because she did not sell at the peak in 2015, this fixed investment for nearly five years was like a textbook, and its yield was only 40%.
-###build a basic fixed investment model
+###§2build a basic fixed investment model
