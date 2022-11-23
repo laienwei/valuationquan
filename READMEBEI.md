@@ -19,3 +19,10 @@ From this lesson, we will really enter the exploration journey of quantitative i
 <br>To sum up, since the GF Core Selection, Ms. Wang has invested 119400 yuan in fixed investment for nearly five years. As of March 17, 2016, the total book asset was 164945.49 yuan, the book floating profit was 45545 yuan, and the fixed investment yield was 39.95%.
 <br>Also, because she did not sell at the peak in 2015, this fixed investment for nearly five years was like a textbook, and its yield was only 40%.
 ###§2build a basic fixed investment model
+<br>Now, the common fixed investment is for the fund. For the benefit of the company, the fund company will actively cooperate with banks and other channels to provide customers with convenient fixed investment services. 
+<br>Customers only need to prepare a bank card and ensure that the balance in the card on the day of deduction is higher than the amount deducted. The amount of deduction can be freely determined by the customer when signing the contract, ranging from 200/300 yuan to tens of thousands of yuan.
+<br>In order to spread the risk, Ms. Wang in the case chose four funds with different styles to make a fixed investment of 500 yuan each month for five years. This kind of fixed investment is more similar to "forced savings". 
+<br>From the perspective of income, Ms. Wang's fixed investment income far outperformed the bank deposit income in the same period, and barely achieved her investment and financing purpose.
+<br>Then this type of fixed investment can be defined as: buying a certain fund with a fixed amount at a fixed time every month. The buying logic judgment process is shown in the following figure. The customers need not worry about this judgment. The banks and fund companies complete it for the customers.
+<br>
+<br>Obviously, this is a very simple fixed investment model. Here I name this model Model 1. Although Model 1 is simple, it can already have the prototype of a complete quantitative trading system. We define Model 1 as follows:
