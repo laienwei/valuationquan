@@ -42,7 +42,7 @@ From this lesson, we will really enter the exploration journey of quantitative i
   <td width="485" valign="top" style="width:364.0pt;border-top:none;border-left:
   none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
   padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal"><span lang="EN-US">Shanghai stock exchange composite index</span></p>
+  <p class="MsoNormal"><span lang="EN-US">Shanghai Stock Exchange composite index</span></p>
   </td>
  </tr>
  <tr>
