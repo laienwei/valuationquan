@@ -98,7 +98,24 @@ From this lesson, we will really enter the exploration journey of quantitative i
   <td width="485" valign="top" style="width:364.0pt;border-top:none;border-left:
   none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
   padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal"><span lang="EN-US">&nbsp;</span></p>
+  <p class="MsoNormal"><span lang="EN-US">2002.01.01-2016.12.30</span></p>
   </td>
  </tr>
 </tbody></table>
+###§3instructions for model 1
+<br>The problems involved in model 1 are described as follows:
+<br>1.	Why choose Shanghai Stock Exchange Index for testing?
+<br>As we all know, there are two major exchanges on the A-share main board, Shanghai Stock Exchange and Shenzhen Stock Exchange,the representative indexes of the two exchanges are the Shanghai Composite Index and the Shenzhen Composite Index. The chart below shows the overall historical trend of the Shanghai Composite Index.
+<br>
+<br>The chart below shows the overall historical trend of Shenzhen Composite Index.
+<br>
+<br>From the above graph, we can easily see that after 2008, the Shenzhen Composite Index represents the trend of some small and medium-sized listed companies,It is far stronger than the Shanghai Stock Exchange Index.
+<br> If we use the Shenzhen Composite Index, which has risen sharply in the past, as the test sample of the model, it may make our model unable to withstand the test of the sharp decline and big bear market.
+<br>We must put forward more stringent test conditions for the model we are testing. If we can make money on the Shanghai Stock Exchange Index,so the Shenzhen Composite Index must be easy. 
+<br>Just like people who can swim in the sea, it must be OK to put them in the swimming pool, otherwise they may be drowned by the waves. Please think deeply about this. 
+<br>Of course, we will still test the Shenzhen Composite Index and other mainstream indexes to prove the effectiveness of the model.
+<br>2.	Why is the test time from January 1, 2002 to December 30, 2016?
+<br>If the previous selection of the SSE index is like selecting a battlefield, then the selection of the test period is like choosing a good "opponent" who can best reflect the value of the model. Fixed investment is a long-term financial management plan.
+<br>It will not be good or bad if the time is short. It is not good to choose a simple upward or downward market. There have been four bull markets in the history of A-share, respectively in 2000, 2007, 2015 and 2019.
+<br>Can you see some rules from them? It's very difficult, so our testing period should be at least 10 years. Carefully observe the Shanghai Stock Exchange Index.
+<br>It is appropriate to take the 15 years from 2002 to 2016 as the test period. The stock market before 2000 was not mature in all aspects at that time, so the reference value was relatively small. we finally chose the period from 2002 to 2016.
