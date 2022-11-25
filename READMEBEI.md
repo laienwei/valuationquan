@@ -112,8 +112,7 @@ From this lesson, we will really enter the exploration journey of quantitative i
 <br>From the above graph, we can easily see that after 2008, the Shenzhen Composite Index represents the trend of some small and medium-sized listed companies,It is far stronger than the Shanghai Stock Exchange Index.
 <br> If we use the Shenzhen Composite Index, which has risen sharply in the past, as the test sample of the model, it may make our model unable to withstand the test of the sharp decline and big bear market.
 <br>We must put forward more stringent test conditions for the model we are testing. If we can make money on the Shanghai Stock Exchange Index,so the Shenzhen Composite Index must be easy. 
-<br>Just like people who can swim in the sea, it must be OK to put them in the swimming pool, otherwise they may be drowned by the waves. Please think deeply about this. 
-<br>Of course, we will still test the Shenzhen Composite Index and other mainstream indexes to prove the effectiveness of the model.
+<br>Just like people who can swim in the sea, it must be OK to put them in the swimming pool, otherwise they may be drowned by the waves. Please think deeply about this. Of course, we will still test the Shenzhen Composite Index and other mainstream indexes to prove the effectiveness of the model.
 <br>2.	Why is the test time from January 1, 2002 to December 30, 2016?
 <br>If the previous selection of the SSE index is like selecting a battlefield, then the selection of the test period is like choosing a good "opponent" who can best reflect the value of the model. Fixed investment is a long-term financial management plan.
 <br>It will not be good or bad if the time is short. It is not good to choose a simple upward or downward market. There have been four bull markets in the history of A-share, respectively in 2000, 2007, 2015 and 2019.
