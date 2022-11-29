@@ -8451,3 +8451,5 @@ From this lesson, we will really enter the exploration journey of quantitative i
   </td>
  </tr>
 </tbody></table>
+<br>The test data is explained as follows:
+<br>1. The above table shows the trading and capital status of the account on each investment day in 15 years. You can see the operation of the model clearly and accurately. Although it is long, it is important.
