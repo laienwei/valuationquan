@@ -118,3 +118,11 @@ From this lesson, we will really enter the exploration journey of quantitative i
 <br>It will not be good or bad if the time is short. It is not good to choose a simple upward or downward market. There have been four bull markets in the history of A-share, respectively in 2000, 2007, 2015 and 2019.
 <br>Can you see some rules from them? It's very difficult, so our testing period should be at least 10 years. Carefully observe the Shanghai Stock Exchange Index.
 <br>It is appropriate to take the 15 years from 2002 to 2016 as the test period. The stock market before 2000 was not mature in all aspects at that time, so the reference value was relatively small. we finally chose the period from 2002 to 2016.
+<br>3.	Why only buy 2000 yuan per month
+<br>The determination of fixed investment amount is subjective. Generally speaking, the fixed investment amount is related to the personal economic situation, and who have many deposits,with high income, the amount of fixed investment will certainly increase. In actual fixed investment, you can decide according to your own situation.
+<br>We do model testing, and we basically use proportions and parameters to evaluate the merits of the model, such as absolute rate of return, annualized rate of return, etc. These figures have nothing to do with the absolute amount of fixed investment, so no matter whether we set the fixed investment amount to be 2000 yuan or 5000 yuan, there will be no difference. 
+<br>The reason for choosing the figure of 2000 yuan is that the fixed investment amount of most people is close to this, and the calculated result is intuitively better understood. 
+<br>In order to make a better comparative analysis, the annual fixed investment amount of all future models in this book is roughly set between 20000 yuan and 30000 yuan.
+###§4testing for model 1
+<br>So far, we have finally solved the details in Model 1, and now we begin to test. The process of testing is to simulate the real transaction process. After each transaction, we will record several data we care about, such as purchase and sale amount, holding amount, profit amount, etc., which will form a long data table. 
+<br>The following figure shows the test data of Model 1.                                                                                                  Unit: yuan(RMB)
