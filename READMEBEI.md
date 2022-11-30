@@ -8453,3 +8453,11 @@ From this lesson, we will really enter the exploration journey of quantitative i
 </tbody></table>
 <br>The test data is explained as follows:
 <br>1. The above table shows the trading and capital status of the account on each investment day in 15 years. You can see the operation of the model clearly and accurately. Although it is long, it is important.
+<br>2. The Shanghai Index in the table is the Shanghai Stock Exchange Index. For the convenience of calculation, we divide the Shanghai Stock Exchange Index by 1000. For example, the Shanghai Stock Exchange Index on December 30, 2016 is 3103.64 points, and dividing by 1000 is 3.10364 for model calculation.
+<br>3. There are decimals in the number of buying and selling shares in the table, but the actual number of buying and selling shares is an integral multiple of 100. This processing is for the convenience of model calculation. For example, in the purchase operation on December 30, 2016, the purchase amount was 2000 yuan, and the index point was 3.10364, so the number of purchased shares was 644.40. 
+<br>In fact, we can only buy 600 shares, and the difference between the two purchase amounts was 137.82 yuan. If the difference is rounded, the purchase amount may exceed 2000 yuan or be less than 2000 yuan in some months. On the whole, such treatment will not have a significant impact on the effectiveness of the model.
+###§5analysis for model 1
+<br>In the face of vast numbers, many people are expected to have headaches. How should we analyze this? Let's draw the cocoon and analyze it step by step, and you will naturally understand the performance of Model 1.
+<br>First, let's take a look at the trend chart of investment capital, total assets and profit capital of Model I.
+<br>
+<br>The brown line in the figure represents the accumulated principal of our fixed investment. Since we regularly buy 2000 yuan every month, it is a straight line with a fixed slope. The purple curve represents the total market value of the assets we hold. Since there is no selling operation, the total market value is equal to the total assets. The gold curve is the profit amount curve of Model 1.
