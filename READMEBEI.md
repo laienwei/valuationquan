@@ -9127,3 +9127,439 @@ But when we are excited, we should calmly see that the model has lost money in t
 <br>At this point, we must have a thorough understanding of Model 1. Model 1 is characterized by no timing, that is, buying every month regardless of the index. But we know that if the index is bought at a high level and held for a long time, the proportion of losses is still large. 
 So many people say that the starting point of the investment is very important. Of course, it's good to start investment from the low position in the long run. But if you start investment from the high position, wouldn't it be a tragedy?
 Take Model 1 for example. What if the starting point of fixed investment is not January 2002, but October 2007? Starting from the highest point of 6100, this should be the worst start. The following figure is the K line chart of the Shanghai Stock Exchange Index from October 2007 to December 2016.
+<br>
+<br>The testing process will not be shown here. Let's just look at the results.
+<br>
+<br>Isn't it amazing to see the relationship between the brown line and the purple line? Don't doubt your own eyes. The model has not lost money at the end of the period, and even has some profits. See the table below.
+<table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" width="615" style="width:461.45pt;margin-left:4.65pt;border-collapse:collapse">
+ <tbody><tr style="height:14.1pt">
+  <td width="82" nowrap="" valign="bottom" style="width:61.75pt;border:solid windowtext 1.0pt;
+  background:#7FD13B;padding:0cm 5.4pt 0cm 5.4pt;height:14.1pt">
+  <p class="MsoNormal"><b><span lang="EN-US" style="font-size:10.0pt">date</span></b></p>
+  </td>
+  <td width="79" nowrap="" valign="bottom" style="width:59.5pt;border:solid windowtext 1.0pt;
+  border-left:none;background:#7FD13B;padding:0cm 5.4pt 0cm 5.4pt;height:14.1pt">
+  <p class="MsoNormal" align="center" style="text-align:center"><b><span lang="EN-US" style="font-size:10.0pt">investment per year</span></b></p>
+  </td>
+  <td width="85" nowrap="" valign="bottom" style="width:63.8pt;border:solid windowtext 1.0pt;
+  border-left:none;background:#7FD13B;padding:0cm 5.4pt 0cm 5.4pt;height:14.1pt">
+  <p class="MsoNormal" align="center" style="text-align:center"><b><span lang="EN-US" style="font-size:10.0pt">accumulated investment</span></b></p>
+  </td>
+  <td width="85" nowrap="" valign="bottom" style="width:63.8pt;border:solid windowtext 1.0pt;
+  border-left:none;background:#7FD13B;padding:0cm 5.4pt 0cm 5.4pt;height:14.1pt">
+  <p class="MsoNormal" align="center" style="text-align:center"><b><span lang="EN-US" style="font-size:10.0pt">total assets</span></b></p>
+  </td>
+  <td width="104" nowrap="" valign="bottom" style="width:77.95pt;border:solid windowtext 1.0pt;
+  border-left:none;background:#7FD13B;padding:0cm 5.4pt 0cm 5.4pt;height:14.1pt">
+  <p class="MsoNormal" align="center" style="text-align:center"><b><span lang="EN-US" style="font-size:10.0pt">profit amount</span></b></p>
+  </td>
+  <td width="85" nowrap="" valign="bottom" style="width:63.8pt;border:solid windowtext 1.0pt;
+  border-left:none;background:#7FD13B;padding:0cm 5.4pt 0cm 5.4pt;height:14.1pt">
+  <p class="MsoNormal" align="center" style="text-align:center"><b><span lang="EN-US" style="font-size:10.0pt">absolute RR</span></b></p>
+  </td>
+  <td width="94" nowrap="" valign="bottom" style="width:70.85pt;border:solid windowtext 1.0pt;
+  border-left:none;background:#7FD13B;padding:0cm 5.4pt 0cm 5.4pt;height:14.1pt">
+  <p class="MsoNormal" align="center" style="text-align:center"><b><span lang="EN-US" style="font-size:10.0pt">annualized RR</span></b></p>
+  </td>
+ </tr>
+ <tr style="height:14.1pt">
+  <td width="82" nowrap="" valign="bottom" style="width:61.75pt;border:solid windowtext 1.0pt;
+  border-top:none;background:white;padding:0cm 5.4pt 0cm 5.4pt;height:14.1pt">
+  <p class="MsoNormal" align="center" style="text-align:center"><span lang="EN-US" style="font-size:10.0pt;font-family:&quot;Tahoma&quot;,&quot;sans-serif&quot;;color:black">2007-12-28</span></p>
+  </td>
+  <td width="79" nowrap="" valign="bottom" style="width:59.5pt;border-top:none;
+  border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  background:#E6F5D8;padding:0cm 5.4pt 0cm 5.4pt;height:14.1pt">
+  <p class="MsoNormal" align="right" style="text-align:right"><span lang="EN-US" style="font-size:10.0pt;font-family:&quot;Tahoma&quot;,&quot;sans-serif&quot;;color:black">6000.00
+  </span></p>
+  </td>
+  <td width="85" nowrap="" valign="bottom" style="width:63.8pt;border-top:none;
+  border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  background:#E6F5D8;padding:0cm 5.4pt 0cm 5.4pt;height:14.1pt">
+  <p class="MsoNormal" align="right" style="text-align:right"><span lang="EN-US" style="font-size:10.0pt;font-family:&quot;Tahoma&quot;,&quot;sans-serif&quot;;color:black">6000.00
+  </span></p>
+  </td>
+  <td width="85" nowrap="" valign="bottom" style="width:63.8pt;border-top:none;
+  border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  background:#E6F5D8;padding:0cm 5.4pt 0cm 5.4pt;height:14.1pt">
+  <p class="MsoNormal" align="right" style="text-align:right"><span lang="EN-US" style="font-size:10.0pt;font-family:&quot;Tahoma&quot;,&quot;sans-serif&quot;;color:black">5927.19
+  </span></p>
+  </td>
+  <td width="104" nowrap="" valign="bottom" style="width:77.95pt;border-top:none;
+  border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  background:#E6F5D8;padding:0cm 5.4pt 0cm 5.4pt;height:14.1pt">
+  <p class="MsoNormal" align="right" style="text-align:right"><span lang="EN-US" style="font-size:10.0pt;font-family:&quot;Tahoma&quot;,&quot;sans-serif&quot;;color:black">-72.81
+  </span></p>
+  </td>
+  <td width="85" nowrap="" valign="bottom" style="width:63.8pt;border-top:none;
+  border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  background:#E6F5D8;padding:0cm 5.4pt 0cm 5.4pt;height:14.1pt">
+  <p class="MsoNormal" align="right" style="text-align:right"><span lang="EN-US" style="font-size:10.0pt;font-family:&quot;Tahoma&quot;,&quot;sans-serif&quot;;color:black">-1.21%</span></p>
+  </td>
+  <td width="94" nowrap="" valign="bottom" style="width:70.85pt;border-top:none;
+  border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  background:#E6F5D8;padding:0cm 5.4pt 0cm 5.4pt;height:14.1pt">
+  <p class="MsoNormal" align="right" style="text-align:right"><span lang="EN-US" style="font-size:10.0pt;font-family:&quot;Tahoma&quot;,&quot;sans-serif&quot;;color:black">-1.21%</span></p>
+  </td>
+ </tr>
+ <tr style="height:14.1pt">
+  <td width="82" nowrap="" valign="bottom" style="width:61.75pt;border:solid windowtext 1.0pt;
+  border-top:none;background:white;padding:0cm 5.4pt 0cm 5.4pt;height:14.1pt">
+  <p class="MsoNormal" align="center" style="text-align:center"><span lang="EN-US" style="font-size:10.0pt;font-family:&quot;Tahoma&quot;,&quot;sans-serif&quot;;color:black">2008-12-31</span></p>
+  </td>
+  <td width="79" nowrap="" valign="bottom" style="width:59.5pt;border-top:none;
+  border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:14.1pt">
+  <p class="MsoNormal" align="right" style="text-align:right"><span lang="EN-US" style="font-size:10.0pt;font-family:&quot;Tahoma&quot;,&quot;sans-serif&quot;;color:black">24000.00
+  </span></p>
+  </td>
+  <td width="85" nowrap="" valign="bottom" style="width:63.8pt;border-top:none;
+  border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:14.1pt">
+  <p class="MsoNormal" align="right" style="text-align:right"><span lang="EN-US" style="font-size:10.0pt;font-family:&quot;Tahoma&quot;,&quot;sans-serif&quot;;color:black">30000.00
+  </span></p>
+  </td>
+  <td width="85" nowrap="" valign="bottom" style="width:63.8pt;border-top:none;
+  border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:14.1pt">
+  <p class="MsoNormal" align="right" style="text-align:right"><span lang="EN-US" style="font-size:10.0pt;font-family:&quot;Tahoma&quot;,&quot;sans-serif&quot;;color:black">18616.89
+  </span></p>
+  </td>
+  <td width="104" nowrap="" valign="bottom" style="width:77.95pt;border-top:none;
+  border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:14.1pt">
+  <p class="MsoNormal" align="right" style="text-align:right"><span lang="EN-US" style="font-size:10.0pt;font-family:&quot;Tahoma&quot;,&quot;sans-serif&quot;;color:black">-11383.11
+  </span></p>
+  </td>
+  <td width="85" nowrap="" valign="bottom" style="width:63.8pt;border-top:none;
+  border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:14.1pt">
+  <p class="MsoNormal" align="right" style="text-align:right"><span lang="EN-US" style="font-size:10.0pt;font-family:&quot;Tahoma&quot;,&quot;sans-serif&quot;;color:black">-37.94%</span></p>
+  </td>
+  <td width="94" nowrap="" valign="bottom" style="width:70.85pt;border-top:none;
+  border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:14.1pt">
+  <p class="MsoNormal" align="right" style="text-align:right"><span lang="EN-US" style="font-size:10.0pt;font-family:&quot;Tahoma&quot;,&quot;sans-serif&quot;;color:black">-33.49%</span></p>
+  </td>
+ </tr>
+ <tr style="height:14.1pt">
+  <td width="82" nowrap="" valign="bottom" style="width:61.75pt;border:solid windowtext 1.0pt;
+  border-top:none;background:white;padding:0cm 5.4pt 0cm 5.4pt;height:14.1pt">
+  <p class="MsoNormal" align="center" style="text-align:center"><span lang="EN-US" style="font-size:10.0pt;font-family:&quot;Tahoma&quot;,&quot;sans-serif&quot;;color:black">2009-12-31</span></p>
+  </td>
+  <td width="79" nowrap="" valign="bottom" style="width:59.5pt;border-top:none;
+  border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  background:#E6F5D8;padding:0cm 5.4pt 0cm 5.4pt;height:14.1pt">
+  <p class="MsoNormal" align="right" style="text-align:right"><span lang="EN-US" style="font-size:10.0pt;font-family:&quot;Tahoma&quot;,&quot;sans-serif&quot;;color:black">24000.00
+  </span></p>
+  </td>
+  <td width="85" nowrap="" valign="bottom" style="width:63.8pt;border-top:none;
+  border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  background:#E6F5D8;padding:0cm 5.4pt 0cm 5.4pt;height:14.1pt">
+  <p class="MsoNormal" align="right" style="text-align:right"><span lang="EN-US" style="font-size:10.0pt;font-family:&quot;Tahoma&quot;,&quot;sans-serif&quot;;color:black">54000.00
+  </span></p>
+  </td>
+  <td width="85" nowrap="" valign="bottom" style="width:63.8pt;border-top:none;
+  border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  background:#E6F5D8;padding:0cm 5.4pt 0cm 5.4pt;height:14.1pt">
+  <p class="MsoNormal" align="right" style="text-align:right"><span lang="EN-US" style="font-size:10.0pt;font-family:&quot;Tahoma&quot;,&quot;sans-serif&quot;;color:black">63032.70
+  </span></p>
+  </td>
+  <td width="104" nowrap="" valign="bottom" style="width:77.95pt;border-top:none;
+  border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  background:#E6F5D8;padding:0cm 5.4pt 0cm 5.4pt;height:14.1pt">
+  <p class="MsoNormal" align="right" style="text-align:right"><span lang="EN-US" style="font-size:10.0pt;font-family:&quot;Tahoma&quot;,&quot;sans-serif&quot;;color:black">9032.70
+  </span></p>
+  </td>
+  <td width="85" nowrap="" valign="bottom" style="width:63.8pt;border-top:none;
+  border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  background:#E6F5D8;padding:0cm 5.4pt 0cm 5.4pt;height:14.1pt">
+  <p class="MsoNormal" align="right" style="text-align:right"><span lang="EN-US" style="font-size:10.0pt;font-family:&quot;Tahoma&quot;,&quot;sans-serif&quot;;color:black">16.73%</span></p>
+  </td>
+  <td width="94" nowrap="" valign="bottom" style="width:70.85pt;border-top:none;
+  border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  background:#E6F5D8;padding:0cm 5.4pt 0cm 5.4pt;height:14.1pt">
+  <p class="MsoNormal" align="right" style="text-align:right"><span lang="EN-US" style="font-size:10.0pt;font-family:&quot;Tahoma&quot;,&quot;sans-serif&quot;;color:black">9.60%</span></p>
+  </td>
+ </tr>
+ <tr style="height:14.1pt">
+  <td width="82" nowrap="" valign="bottom" style="width:61.75pt;border:solid windowtext 1.0pt;
+  border-top:none;background:white;padding:0cm 5.4pt 0cm 5.4pt;height:14.1pt">
+  <p class="MsoNormal" align="center" style="text-align:center"><span lang="EN-US" style="font-size:10.0pt;font-family:&quot;Tahoma&quot;,&quot;sans-serif&quot;;color:black">2010-12-31</span></p>
+  </td>
+  <td width="79" nowrap="" valign="bottom" style="width:59.5pt;border-top:none;
+  border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:14.1pt">
+  <p class="MsoNormal" align="right" style="text-align:right"><span lang="EN-US" style="font-size:10.0pt;font-family:&quot;Tahoma&quot;,&quot;sans-serif&quot;;color:black">24000.00
+  </span></p>
+  </td>
+  <td width="85" nowrap="" valign="bottom" style="width:63.8pt;border-top:none;
+  border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:14.1pt">
+  <p class="MsoNormal" align="right" style="text-align:right"><span lang="EN-US" style="font-size:10.0pt;font-family:&quot;Tahoma&quot;,&quot;sans-serif&quot;;color:black">78000.00
+  </span></p>
+  </td>
+  <td width="85" nowrap="" valign="bottom" style="width:63.8pt;border-top:none;
+  border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:14.1pt">
+  <p class="MsoNormal" align="right" style="text-align:right"><span lang="EN-US" style="font-size:10.0pt;font-family:&quot;Tahoma&quot;,&quot;sans-serif&quot;;color:black">78250.00
+  </span></p>
+  </td>
+  <td width="104" nowrap="" valign="bottom" style="width:77.95pt;border-top:none;
+  border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:14.1pt">
+  <p class="MsoNormal" align="right" style="text-align:right"><span lang="EN-US" style="font-size:10.0pt;font-family:&quot;Tahoma&quot;,&quot;sans-serif&quot;;color:black">250.00
+  </span></p>
+  </td>
+  <td width="85" nowrap="" valign="bottom" style="width:63.8pt;border-top:none;
+  border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:14.1pt">
+  <p class="MsoNormal" align="right" style="text-align:right"><span lang="EN-US" style="font-size:10.0pt;font-family:&quot;Tahoma&quot;,&quot;sans-serif&quot;;color:black">0.32%</span></p>
+  </td>
+  <td width="94" nowrap="" valign="bottom" style="width:70.85pt;border-top:none;
+  border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:14.1pt">
+  <p class="MsoNormal" align="right" style="text-align:right"><span lang="EN-US" style="font-size:10.0pt;font-family:&quot;Tahoma&quot;,&quot;sans-serif&quot;;color:black">0.15%</span></p>
+  </td>
+ </tr>
+ <tr style="height:14.1pt">
+  <td width="82" nowrap="" valign="bottom" style="width:61.75pt;border:solid windowtext 1.0pt;
+  border-top:none;background:white;padding:0cm 5.4pt 0cm 5.4pt;height:14.1pt">
+  <p class="MsoNormal" align="center" style="text-align:center"><span lang="EN-US" style="font-size:10.0pt;font-family:&quot;Tahoma&quot;,&quot;sans-serif&quot;;color:black">2011-12-30</span></p>
+  </td>
+  <td width="79" nowrap="" valign="bottom" style="width:59.5pt;border-top:none;
+  border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  background:#E6F5D8;padding:0cm 5.4pt 0cm 5.4pt;height:14.1pt">
+  <p class="MsoNormal" align="right" style="text-align:right"><span lang="EN-US" style="font-size:10.0pt;font-family:&quot;Tahoma&quot;,&quot;sans-serif&quot;;color:black">24000.00
+  </span></p>
+  </td>
+  <td width="85" nowrap="" valign="bottom" style="width:63.8pt;border-top:none;
+  border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  background:#E6F5D8;padding:0cm 5.4pt 0cm 5.4pt;height:14.1pt">
+  <p class="MsoNormal" align="right" style="text-align:right"><span lang="EN-US" style="font-size:10.0pt;font-family:&quot;Tahoma&quot;,&quot;sans-serif&quot;;color:black">102000.00
+  </span></p>
+  </td>
+  <td width="85" nowrap="" valign="bottom" style="width:63.8pt;border-top:none;
+  border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  background:#E6F5D8;padding:0cm 5.4pt 0cm 5.4pt;height:14.1pt">
+  <p class="MsoNormal" align="right" style="text-align:right"><span lang="EN-US" style="font-size:10.0pt;font-family:&quot;Tahoma&quot;,&quot;sans-serif&quot;;color:black">81462.02
+  </span></p>
+  </td>
+  <td width="104" nowrap="" valign="bottom" style="width:77.95pt;border-top:none;
+  border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  background:#E6F5D8;padding:0cm 5.4pt 0cm 5.4pt;height:14.1pt">
+  <p class="MsoNormal" align="right" style="text-align:right"><span lang="EN-US" style="font-size:10.0pt;font-family:&quot;Tahoma&quot;,&quot;sans-serif&quot;;color:black">-20537.98
+  </span></p>
+  </td>
+  <td width="85" nowrap="" valign="bottom" style="width:63.8pt;border-top:none;
+  border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  background:#E6F5D8;padding:0cm 5.4pt 0cm 5.4pt;height:14.1pt">
+  <p class="MsoNormal" align="right" style="text-align:right"><span lang="EN-US" style="font-size:10.0pt;font-family:&quot;Tahoma&quot;,&quot;sans-serif&quot;;color:black">-20.14%</span></p>
+  </td>
+  <td width="94" nowrap="" valign="bottom" style="width:70.85pt;border-top:none;
+  border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  background:#E6F5D8;padding:0cm 5.4pt 0cm 5.4pt;height:14.1pt">
+  <p class="MsoNormal" align="right" style="text-align:right"><span lang="EN-US" style="font-size:10.0pt;font-family:&quot;Tahoma&quot;,&quot;sans-serif&quot;;color:black">-8.34%</span></p>
+  </td>
+ </tr>
+ <tr style="height:14.1pt">
+  <td width="82" nowrap="" valign="bottom" style="width:61.75pt;border:solid windowtext 1.0pt;
+  border-top:none;background:white;padding:0cm 5.4pt 0cm 5.4pt;height:14.1pt">
+  <p class="MsoNormal" align="center" style="text-align:center"><span lang="EN-US" style="font-size:10.0pt;font-family:&quot;Tahoma&quot;,&quot;sans-serif&quot;;color:black">2012-12-31</span></p>
+  </td>
+  <td width="79" nowrap="" valign="bottom" style="width:59.5pt;border-top:none;
+  border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:14.1pt">
+  <p class="MsoNormal" align="right" style="text-align:right"><span lang="EN-US" style="font-size:10.0pt;font-family:&quot;Tahoma&quot;,&quot;sans-serif&quot;;color:black">24000.00
+  </span></p>
+  </td>
+  <td width="85" nowrap="" valign="bottom" style="width:63.8pt;border-top:none;
+  border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:14.1pt">
+  <p class="MsoNormal" align="right" style="text-align:right"><span lang="EN-US" style="font-size:10.0pt;font-family:&quot;Tahoma&quot;,&quot;sans-serif&quot;;color:black">126000.00
+  </span></p>
+  </td>
+  <td width="85" nowrap="" valign="bottom" style="width:63.8pt;border-top:none;
+  border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:14.1pt">
+  <p class="MsoNormal" align="right" style="text-align:right"><span lang="EN-US" style="font-size:10.0pt;font-family:&quot;Tahoma&quot;,&quot;sans-serif&quot;;color:black">108778.73
+  </span></p>
+  </td>
+  <td width="104" nowrap="" valign="bottom" style="width:77.95pt;border-top:none;
+  border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:14.1pt">
+  <p class="MsoNormal" align="right" style="text-align:right"><span lang="EN-US" style="font-size:10.0pt;font-family:&quot;Tahoma&quot;,&quot;sans-serif&quot;;color:black">-17221.27
+  </span></p>
+  </td>
+  <td width="85" nowrap="" valign="bottom" style="width:63.8pt;border-top:none;
+  border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:14.1pt">
+  <p class="MsoNormal" align="right" style="text-align:right"><span lang="EN-US" style="font-size:10.0pt;font-family:&quot;Tahoma&quot;,&quot;sans-serif&quot;;color:black">-13.67%</span></p>
+  </td>
+  <td width="94" nowrap="" valign="bottom" style="width:70.85pt;border-top:none;
+  border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:14.1pt">
+  <p class="MsoNormal" align="right" style="text-align:right"><span lang="EN-US" style="font-size:10.0pt;font-family:&quot;Tahoma&quot;,&quot;sans-serif&quot;;color:black">-4.65%</span></p>
+  </td>
+ </tr>
+ <tr style="height:14.1pt">
+  <td width="82" nowrap="" valign="bottom" style="width:61.75pt;border:solid windowtext 1.0pt;
+  border-top:none;background:white;padding:0cm 5.4pt 0cm 5.4pt;height:14.1pt">
+  <p class="MsoNormal" align="center" style="text-align:center"><span lang="EN-US" style="font-size:10.0pt;font-family:&quot;Tahoma&quot;,&quot;sans-serif&quot;;color:black">2013-12-31</span></p>
+  </td>
+  <td width="79" nowrap="" valign="bottom" style="width:59.5pt;border-top:none;
+  border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  background:#E6F5D8;padding:0cm 5.4pt 0cm 5.4pt;height:14.1pt">
+  <p class="MsoNormal" align="right" style="text-align:right"><span lang="EN-US" style="font-size:10.0pt;font-family:&quot;Tahoma&quot;,&quot;sans-serif&quot;;color:black">24000.00
+  </span></p>
+  </td>
+  <td width="85" nowrap="" valign="bottom" style="width:63.8pt;border-top:none;
+  border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  background:#E6F5D8;padding:0cm 5.4pt 0cm 5.4pt;height:14.1pt">
+  <p class="MsoNormal" align="right" style="text-align:right"><span lang="EN-US" style="font-size:10.0pt;font-family:&quot;Tahoma&quot;,&quot;sans-serif&quot;;color:black">150000.00
+  </span></p>
+  </td>
+  <td width="85" nowrap="" valign="bottom" style="width:63.8pt;border-top:none;
+  border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  background:#E6F5D8;padding:0cm 5.4pt 0cm 5.4pt;height:14.1pt">
+  <p class="MsoNormal" align="right" style="text-align:right"><span lang="EN-US" style="font-size:10.0pt;font-family:&quot;Tahoma&quot;,&quot;sans-serif&quot;;color:black">124780.25
+  </span></p>
+  </td>
+  <td width="104" nowrap="" valign="bottom" style="width:77.95pt;border-top:none;
+  border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  background:#E6F5D8;padding:0cm 5.4pt 0cm 5.4pt;height:14.1pt">
+  <p class="MsoNormal" align="right" style="text-align:right"><span lang="EN-US" style="font-size:10.0pt;font-family:&quot;Tahoma&quot;,&quot;sans-serif&quot;;color:black">-25219.75
+  </span></p>
+  </td>
+  <td width="85" nowrap="" valign="bottom" style="width:63.8pt;border-top:none;
+  border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  background:#E6F5D8;padding:0cm 5.4pt 0cm 5.4pt;height:14.1pt">
+  <p class="MsoNormal" align="right" style="text-align:right"><span lang="EN-US" style="font-size:10.0pt;font-family:&quot;Tahoma&quot;,&quot;sans-serif&quot;;color:black">-16.81%</span></p>
+  </td>
+  <td width="94" nowrap="" valign="bottom" style="width:70.85pt;border-top:none;
+  border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  background:#E6F5D8;padding:0cm 5.4pt 0cm 5.4pt;height:14.1pt">
+  <p class="MsoNormal" align="right" style="text-align:right"><span lang="EN-US" style="font-size:10.0pt;font-family:&quot;Tahoma&quot;,&quot;sans-serif&quot;;color:black">-5.05%</span></p>
+  </td>
+ </tr>
+ <tr style="height:14.1pt">
+  <td width="82" nowrap="" valign="bottom" style="width:61.75pt;border:solid windowtext 1.0pt;
+  border-top:none;background:white;padding:0cm 5.4pt 0cm 5.4pt;height:14.1pt">
+  <p class="MsoNormal" align="center" style="text-align:center"><span lang="EN-US" style="font-size:10.0pt;font-family:&quot;Tahoma&quot;,&quot;sans-serif&quot;;color:black">2014-12-31</span></p>
+  </td>
+  <td width="79" nowrap="" valign="bottom" style="width:59.5pt;border-top:none;
+  border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:14.1pt">
+  <p class="MsoNormal" align="right" style="text-align:right"><span lang="EN-US" style="font-size:10.0pt;font-family:&quot;Tahoma&quot;,&quot;sans-serif&quot;;color:black">24000.00
+  </span></p>
+  </td>
+  <td width="85" nowrap="" valign="bottom" style="width:63.8pt;border-top:none;
+  border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:14.1pt">
+  <p class="MsoNormal" align="right" style="text-align:right"><span lang="EN-US" style="font-size:10.0pt;font-family:&quot;Tahoma&quot;,&quot;sans-serif&quot;;color:black">174000.00
+  </span></p>
+  </td>
+  <td width="85" nowrap="" valign="bottom" style="width:63.8pt;border-top:none;
+  border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:14.1pt">
+  <p class="MsoNormal" align="right" style="text-align:right"><span lang="EN-US" style="font-size:10.0pt;font-family:&quot;Tahoma&quot;,&quot;sans-serif&quot;;color:black">225461.37
+  </span></p>
+  </td>
+  <td width="104" nowrap="" valign="bottom" style="width:77.95pt;border-top:none;
+  border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:14.1pt">
+  <p class="MsoNormal" align="right" style="text-align:right"><span lang="EN-US" style="font-size:10.0pt;font-family:&quot;Tahoma&quot;,&quot;sans-serif&quot;;color:black">51461.37
+  </span></p>
+  </td>
+  <td width="85" nowrap="" valign="bottom" style="width:63.8pt;border-top:none;
+  border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:14.1pt">
+  <p class="MsoNormal" align="right" style="text-align:right"><span lang="EN-US" style="font-size:10.0pt;font-family:&quot;Tahoma&quot;,&quot;sans-serif&quot;;color:black">29.58%</span></p>
+  </td>
+  <td width="94" nowrap="" valign="bottom" style="width:70.85pt;border-top:none;
+  border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:14.1pt">
+  <p class="MsoNormal" align="right" style="text-align:right"><span lang="EN-US" style="font-size:10.0pt;font-family:&quot;Tahoma&quot;,&quot;sans-serif&quot;;color:black">6.25%</span></p>
+  </td>
+ </tr>
+ <tr style="height:14.1pt">
+  <td width="82" nowrap="" valign="bottom" style="width:61.75pt;border:solid windowtext 1.0pt;
+  border-top:none;background:white;padding:0cm 5.4pt 0cm 5.4pt;height:14.1pt">
+  <p class="MsoNormal" align="center" style="text-align:center"><span lang="EN-US" style="font-size:10.0pt;font-family:&quot;Tahoma&quot;,&quot;sans-serif&quot;;color:black">2015-12-31</span></p>
+  </td>
+  <td width="79" nowrap="" valign="bottom" style="width:59.5pt;border-top:none;
+  border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  background:#E6F5D8;padding:0cm 5.4pt 0cm 5.4pt;height:14.1pt">
+  <p class="MsoNormal" align="right" style="text-align:right"><span lang="EN-US" style="font-size:10.0pt;font-family:&quot;Tahoma&quot;,&quot;sans-serif&quot;;color:black">24000.00
+  </span></p>
+  </td>
+  <td width="85" nowrap="" valign="bottom" style="width:63.8pt;border-top:none;
+  border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  background:#E6F5D8;padding:0cm 5.4pt 0cm 5.4pt;height:14.1pt">
+  <p class="MsoNormal" align="right" style="text-align:right"><span lang="EN-US" style="font-size:10.0pt;font-family:&quot;Tahoma&quot;,&quot;sans-serif&quot;;color:black">198000.00
+  </span></p>
+  </td>
+  <td width="85" nowrap="" valign="bottom" style="width:63.8pt;border-top:none;
+  border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  background:#E6F5D8;padding:0cm 5.4pt 0cm 5.4pt;height:14.1pt">
+  <p class="MsoNormal" align="right" style="text-align:right"><span lang="EN-US" style="font-size:10.0pt;font-family:&quot;Tahoma&quot;,&quot;sans-serif&quot;;color:black">270306.11
+  </span></p>
+  </td>
+  <td width="104" nowrap="" valign="bottom" style="width:77.95pt;border-top:none;
+  border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  background:#E6F5D8;padding:0cm 5.4pt 0cm 5.4pt;height:14.1pt">
+  <p class="MsoNormal" align="right" style="text-align:right"><span lang="EN-US" style="font-size:10.0pt;font-family:&quot;Tahoma&quot;,&quot;sans-serif&quot;;color:black">72306.11
+  </span></p>
+  </td>
+  <td width="85" nowrap="" valign="bottom" style="width:63.8pt;border-top:none;
+  border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  background:#E6F5D8;padding:0cm 5.4pt 0cm 5.4pt;height:14.1pt">
+  <p class="MsoNormal" align="right" style="text-align:right"><span lang="EN-US" style="font-size:10.0pt;font-family:&quot;Tahoma&quot;,&quot;sans-serif&quot;;color:black">36.52%</span></p>
+  </td>
+  <td width="94" nowrap="" valign="bottom" style="width:70.85pt;border-top:none;
+  border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  background:#E6F5D8;padding:0cm 5.4pt 0cm 5.4pt;height:14.1pt">
+  <p class="MsoNormal" align="right" style="text-align:right"><span lang="EN-US" style="font-size:10.0pt;font-family:&quot;Tahoma&quot;,&quot;sans-serif&quot;;color:black">6.67%</span></p>
+  </td>
+ </tr>
+ <tr style="height:14.1pt">
+  <td width="82" nowrap="" valign="bottom" style="width:61.75pt;border:solid windowtext 1.0pt;
+  border-top:none;background:white;padding:0cm 5.4pt 0cm 5.4pt;height:14.1pt">
+  <p class="MsoNormal" align="center" style="text-align:center"><span lang="EN-US" style="font-size:10.0pt;font-family:&quot;Tahoma&quot;,&quot;sans-serif&quot;;color:black">2016-12-30</span></p>
+  </td>
+  <td width="79" nowrap="" valign="bottom" style="width:59.5pt;border-top:none;
+  border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:14.1pt">
+  <p class="MsoNormal" align="right" style="text-align:right"><span lang="EN-US" style="font-size:10.0pt;font-family:&quot;Tahoma&quot;,&quot;sans-serif&quot;;color:black">24000.00
+  </span></p>
+  </td>
+  <td width="85" nowrap="" valign="bottom" style="width:63.8pt;border-top:none;
+  border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:14.1pt">
+  <p class="MsoNormal" align="right" style="text-align:right"><span lang="EN-US" style="font-size:10.0pt;font-family:&quot;Tahoma&quot;,&quot;sans-serif&quot;;color:black">222000.00
+  </span></p>
+  </td>
+  <td width="85" nowrap="" valign="bottom" style="width:63.8pt;border-top:none;
+  border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:14.1pt">
+  <p class="MsoNormal" align="right" style="text-align:right"><span lang="EN-US" style="font-size:10.0pt;font-family:&quot;Tahoma&quot;,&quot;sans-serif&quot;;color:black">262117.26
+  </span></p>
+  </td>
+  <td width="104" nowrap="" valign="bottom" style="width:77.95pt;border-top:none;
+  border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:14.1pt">
+  <p class="MsoNormal" align="right" style="text-align:right"><span lang="EN-US" style="font-size:10.0pt;font-family:&quot;Tahoma&quot;,&quot;sans-serif&quot;;color:black">40117.26
+  </span></p>
+  </td>
+  <td width="85" nowrap="" valign="bottom" style="width:63.8pt;border-top:none;
+  border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:14.1pt">
+  <p class="MsoNormal" align="right" style="text-align:right"><span lang="EN-US" style="font-size:10.0pt;font-family:&quot;Tahoma&quot;,&quot;sans-serif&quot;;color:black">18.07%</span></p>
+  </td>
+  <td width="94" nowrap="" valign="bottom" style="width:70.85pt;border-top:none;
+  border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:14.1pt">
+  <p class="MsoNormal" align="right" style="text-align:right"><span lang="EN-US" style="font-size:10.0pt;font-family:&quot;Tahoma&quot;,&quot;sans-serif&quot;;color:black">3.22%</span></p>
+  </td>
+ </tr>
+</tbody></table>
