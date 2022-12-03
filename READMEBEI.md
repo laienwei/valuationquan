@@ -8451,7 +8451,7 @@ From this lesson, we will really enter the exploration journey of quantitative i
   </td>
  </tr>
 </tbody></table>
-<br>The test data is explained as follows:
+The test data is explained as follows:
 <br>1. The above table shows the trading and capital status of the account on each investment day in 15 years. You can see the operation of the model clearly and accurately. Although it is long, it is important.
 <br>2. The Shanghai Index in the table is the Shanghai Stock Exchange Index. For the convenience of calculation, we divide the Shanghai Stock Exchange Index by 1000. For example, the Shanghai Stock Exchange Index on December 30, 2016 is 3103.64 points, and dividing by 1000 is 3.10364 for model calculation.
 <br>3. There are decimals in the number of buying and selling shares in the table, but the actual number of buying and selling shares is an integral multiple of 100. This processing is for the convenience of model calculation. For example, in the purchase operation on December 30, 2016, the purchase amount was 2000 yuan, and the index point was 3.10364, so the number of purchased shares was 644.40. 
@@ -9104,3 +9104,16 @@ As for the golden curve, at the peak of the bull market in 2007, the model made 
   </td>
  </tr>
 </tbody></table>
+Although the numbers are boring, they can more accurately describe our perceptual knowledge.
+<br>(1)	From the perspective of investment funds. A fixed investment of 24000 yuan at a constant amount every year, just like compulsory deposit. By the end of 2016, a total of 360000 yuan had been invested. From a long-term span of 15 years, this amount is suitable for ordinary families.
+<br>(2)	In terms of profit amount. There are two profit peaks in Model 1. In 2007, the principal profit of 144,000 yuan reached 330,000 yuan. One in June 2015. The principal profit of 320000 yuan is 420000 yuan. In 2015, the profit was relatively low. The reason is that the Shanghai Stock Exchange Index in 2015 was not as good as that in 2007. At the end of June, the index was at 4400 points, while in 2007 it reached 6124 points.
+<br>(3)	In terms of absolute rate of return. The fixed investment has started for four years, and Model 1 has been losing money. At the end of 2005, the loss reached 16%. Although the loss is unpleasant, we should see that the Shanghai Stock Exchange Index has dropped by 22.16% in the past four years.
+There is certainly a climax when there is a trough. At the end of the sixth year of the fixed investment, the model invested a total of 144000 yuan in principal, while the total assets soared to more than 470000, with an absolute yield of 229.27%.
+After 2010, Shanghai market began to bear slowly. For the model 1, the profit amount has almost been taken back, but it has been kept without loss. Later, in the bull market of 2015, the return of the king was staged again.
+<br>(4)	From the perspective of annualized rate of return. When it comes to annualized rate of return, we should not underestimate this indicator. In our fixed investment model, capital is not a one-time investment. Instead, it is distributed in the monthly investment.
+Using the absolute rate of return as an indicator, the rate of return of model 1 is 49.53%. The unknown melon eaters may say that it took 15 years to earn such a little. Are you speculating in stocks? But when you think about it, evaluation model 1 like this is fair?
+Obviously, we need a profit evaluation index that can truly measure the continuous capital inflow model. In this way, we must use annualized yield indicators. For a more intuitive understanding, let's use an example to explain.
+<br>Ms. Wang invested 100 yuan in business at the beginning of the first year, but did not make money at the end of the first year, and did not invest in the second year. At the end of the second year, Ms. Wang earned 100 yuan.
+At the end of the second year, Ms. Wang had 200 yuan in total. The annualized yield of Ms. Wang's 100 yuan principal in the past two years is 41.42%. It can be calculated, 100 * 1.4142 * 1.4142=200. 
+That is to say, the 100 yuan is equivalent to 41.42% of the income every year. Further, if Ms. Wang invests 50 yuan more at the beginning of the second year, she will still earn 100 yuan by the end of the second year. 
+At the end of the second year, Ms. Wang's total assets were 250 yuan. This time, Ms. Wang's annualized yield is 35.08%. The calculation is as follows: (100 * 1.3508+50) * 1.3508=250. In practical application, we can easily calculate the annualized rate of return by using the IRR function in the spreadsheet software.
