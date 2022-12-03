@@ -9563,3 +9563,10 @@ Take Model 1 for example. What if the starting point of fixed investment is not 
   </td>
  </tr>
 </tbody></table>
+From October 2007 to December 2016, the Shanghai Stock Exchange Index fell by 47.9%, while the absolute yield of the same period of the model was 18.07%, and the converted yield reached 3.22%. 
+Although we missed the biggest bull market from 2002 to 2007, and started to make a decision from the worst peak, the annualized returns were quite straightforward. From the above two tests, we can recognize the fact that the starting point of the fixed investment may not be important when the fixed investment time reaches a certain length.
+This fact may overturn the original understanding of many people. Many experts have been educating us constantly before. Investment starting from the low point is very important. There is a big difference between making a decision from a high position and making a decision from a low position.
+It cannot be said that this view is completely wrong or incomplete. This is the case in the capital market. There is no absolute right or wrong. What we need is rational judgment. After reading this, I believe you should carefully reflect on your own experience in the past few years. How much time, energy and money have we paid, but have we done better than Model 1?
+<br>As the most basic fixed investment model, Model 1 has verified its "strong" earning ability with real back test data, but we will certainly not be satisfied with this. When the index was 6000 points in 2007 and 5000 points in 2015, the model was still buying. 
+When we used the "rearview mirror" to see, it was certainly not ideal to still buy at such a high point. Can we stop buying at the high level of the index? Yes, we must do that. 
+Then the question arises, how to judge whether the index is in a high or low position? In the next chapter, we will give you a "ruler", a "ruler" that can measure whether the index is high or low.
