@@ -106,9 +106,9 @@ From the perspective of income, Ms. Wang's fixed investment income far outperfor
 <br>The problems involved in model 1 are described as follows:
 <br>1.	Why choose Shanghai Stock Exchange Index for testing?
 <br>As we all know, there are two major exchanges on the A-share main board, Shanghai Stock Exchange and Shenzhen Stock Exchange,the representative indexes of the two exchanges are the Shanghai Composite Index and the Shenzhen Composite Index. The chart below shows the overall historical trend of the Shanghai Composite Index.
-<br>
+![process](images/shang.png)/
 <br>The chart below shows the overall historical trend of Shenzhen Composite Index.
-<br>
+![process](images/shen.png)/
 <br>From the above graph, we can easily see that after 2008, the Shenzhen Composite Index represents the trend of some small and medium-sized listed companies,It is far stronger than the Shanghai Stock Exchange Index.
 If we use the Shenzhen Composite Index, which has risen sharply in the past, as the test sample of the model, it may make our model unable to withstand the test of the sharp decline and big bear market.
 <br>We must put forward more stringent test conditions for the model we are testing. If we can make money on the Shanghai Stock Exchange Index,so the Shenzhen Composite Index must be easy. 
