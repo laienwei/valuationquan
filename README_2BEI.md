@@ -1,4 +1,6 @@
-#Valuationquan
+#Valuationquan 教程
+<br>[chapter 1](https://github.com/laienwei/laienwei.github.io/blob/main/README_1.md)
+<br>[第 一 章](https://github.com/laienwei/laienwei.github.io/blob/main/READMECN_1.md)
 ##Chapter 2
 A Basic Fixed Investment Model
 From this lesson, we will really enter the exploration journey of quantitative investment, starting with a basic and simple fixed investment model, and finally find the quantitative fixed investment model that can guide our actual operation.
