@@ -106,9 +106,9 @@ From the perspective of income, Ms. Wang's fixed investment income far outperfor
 <br>The problems involved in model 1 are described as follows:
 <br>1.	Why choose Shanghai Stock Exchange Index for testing?
 <br>As we all know, there are two major exchanges on the A-share main board, Shanghai Stock Exchange and Shenzhen Stock Exchange,the representative indexes of the two exchanges are the Shanghai Composite Index and the Shenzhen Composite Index. The chart below shows the overall historical trend of the Shanghai Composite Index.
-![process](images/shang.png)/
+![shang](images/shang.png)/
 <br>The chart below shows the overall historical trend of Shenzhen Composite Index.
-![process](images/shen.png)/
+![shen](images/shen.png)/
 <br>From the above graph, we can easily see that after 2008, the Shenzhen Composite Index represents the trend of some small and medium-sized listed companies,It is far stronger than the Shanghai Stock Exchange Index.
 If we use the Shenzhen Composite Index, which has risen sharply in the past, as the test sample of the model, it may make our model unable to withstand the test of the sharp decline and big bear market.
 <br>We must put forward more stringent test conditions for the model we are testing. If we can make money on the Shanghai Stock Exchange Index,so the Shenzhen Composite Index must be easy. 
@@ -8459,7 +8459,7 @@ In fact, we can only buy 600 shares, and the difference between the two purchase
 ###§5analysis for model 1
 <br>In the face of vast numbers, many people are expected to have headaches. How should we analyze this? Let's draw the cocoon and analyze it step by step, and you will naturally understand the performance of Model 1.
 <br>First, let's take a look at the trend chart of investment capital, total assets and profit capital of Model I.
-<br>
+![three2](images/three1.png)/
 <br>The brown line in the figure represents the accumulated principal of our fixed investment. Since we regularly buy 2000 yuan every month, it is a straight line with a fixed slope. The purple curve represents the total market value of the assets we hold. Since there is no selling operation, the total market value is equal to the total assets. The gold curve is the profit amount curve of Model 1.
 <br>In the first four years of fixed investment, due to the continuous decline of the index, the model could not help us make money and was still losing money. This period is an accumulation period. We don't know when we will get a profit, but a bull market will come in the future. 
 From the relationship between the purple curve and the brown line, the loss ratio of model 1 is not large. From the whole graph, the purple curve runs above the brown line most of the time. This shows that after years of fixed investment, Model 1 is a "positive return" system. Even in the future bear market, we can still guarantee that we will not lose money at least when the stock market is at its worst. 
@@ -9127,9 +9127,9 @@ But when we are excited, we should calmly see that the model has lost money in t
 <br>At this point, we must have a thorough understanding of Model 1. Model 1 is characterized by no timing, that is, buying every month regardless of the index. But we know that if the index is bought at a high level and held for a long time, the proportion of losses is still large. 
 So many people say that the starting point of the investment is very important. Of course, it's good to start investment from the low position in the long run. But if you start investment from the high position, wouldn't it be a tragedy?
 Take Model 1 for example. What if the starting point of fixed investment is not January 2002, but October 2007? Starting from the highest point of 6100, this should be the worst start. The following figure is the K line chart of the Shanghai Stock Exchange Index from October 2007 to December 2016.
-<br>
+![shang2007](images/shang2007.png)/
 <br>The testing process will not be shown here. Let's just look at the results.
-<br>
+![three2](images/three2.png)/
 <br>Isn't it amazing to see the relationship between the brown line and the purple line? Don't doubt your own eyes. The model has not lost money at the end of the period, and even has some profits. See the table below.
 <table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" width="615" style="width:461.45pt;margin-left:4.65pt;border-collapse:collapse">
  <tbody><tr style="height:14.1pt">
