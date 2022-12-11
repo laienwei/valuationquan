@@ -1,5 +1,5 @@
 FROM valuation-docker.pkg.coding.net/valuationquan/valuationquan/valueinmodel1s:latest
-COPY unify2index.py /unify2index.py
+COPY unify2.py /unify2.py
 COPY lai/valuationquan/szseinnovation100index.xlsx /lai/valuationquan/
 COPY lai/valuationquan/szseinnovation100index/szseinnovation100indexmodel4.xlsx /lai/valuationquan/szseinnovation100index/
 COPY lai/valuationquan/szseinnovation100index/szseinnovation100indexmodel1.xlsx /lai/valuationquan/szseinnovation100index/
