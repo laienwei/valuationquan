@@ -6,7 +6,7 @@ import openpyxl
 import xlrd
 import sys
 from openpyxl.styles import Font,Alignment
-datelai=str(sys.argv[1])
+datelai=sys.argv[1]
 fontText1 = Font(name='Tahoma', size=10, color='ff0000')
 AlignmentText1 = Alignment(horizontal='center')
 wb0 = openpyxl.load_workbook(r'./lai/valuationquan/szseinnovation100index.xlsx')
