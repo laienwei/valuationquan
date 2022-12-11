@@ -10,4 +10,5 @@ COPY lai/valuationquan/szseinnovation100ETF/szseinnovation100ETFmodel4(SAR).xlsx
 COPY lai/valuationquan/szseinnovation100ETF/szseinnovation100ETFmodel4(CCI).xlsx /lai/valuationquan/szseinnovation100ETF/
 COPY lai/valuationquan/szseinnovation100ETF/szseinnovation100ETFmodel4(RSI&KDJ).xlsx /lai/valuationquan/szseinnovation100ETF/
 RUN pip3 install xlrd==1.2.0
-RUN python3 unify2.py 2022-11-30
+ARG ar=2022-11-30
+RUN python3 unify2.py $ar
