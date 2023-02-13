@@ -1,4 +1,4 @@
-﻿#!/usr/bin/python3
+#!/usr/bin/python3
 # coding: utf-8
 
 # In[28]:
@@ -869,6 +869,7 @@ sheet.cell(row=p+1, column=13).value=datax.sheet_by_name('model1&RSI').cell_valu
 sheet.cell(row=p+1, column=14).value=datax.sheet_by_name('model1&RSI').cell_value(nrowx-1,12)
 sheet.cell(row=p+1, column=15).value=datax.sheet_by_name('model1&RSI').cell_value(nrowx-1,13)
 RSIpre=data.sheet_by_name(sheet.title).cell_value(p-1,14)
+print('RSIpre is :',float(RSIpre))
 if(float(RSIpre)<20):
     sign=2
 elif((float(RSIpre)>20)and(RSIpre<25)):
@@ -1006,6 +1007,7 @@ sheet.cell(row=p+1, column=15).value=datax.sheet_by_name('model1&RSI').cell_valu
 sheet.cell(row=p+1, column=16).value=datax.sheet_by_name('model1&RSI').cell_value(nrowx-1,12)
 sheet.cell(row=p+1, column=17).value=datax.sheet_by_name('model1&RSI').cell_value(nrowx-1,13)
 RSIpre=data.sheet_by_name(sheet.title).cell_value(p-1,14)
+print('RSIpre is :',float(RSIpre))
 if(float(RSIpre)<20):
     sign=2
 elif((float(RSIpre)>20)and(RSIpre<25)):
