@@ -876,7 +876,7 @@ cc=float(mydict3['model4(3)turnover&RSI'])
 sheet.cell(row=p+1, column=15).value=datax.sheet_by_name('model1&RSI').cell_value(nrowx-1,10)
 sheet.cell(row=p+1, column=16).value=datax.sheet_by_name('model1&RSI').cell_value(nrowx-1,12)
 sheet.cell(row=p+1, column=17).value=datax.sheet_by_name('model1&RSI').cell_value(nrowx-1,13)
-RSIpre=data.sheet_by_name(sheet.title).cell_value(p-1,14)
+RSIpre=data.sheet_by_name(sheet.title).cell_value(p-1,16)
 if(float(RSIpre)<20):
     sign=2
 elif((float(RSIpre)>20)and(RSIpre<25)):
@@ -901,10 +901,10 @@ sheet.cell(row=p+1, column=6).value=Turnovermean
 sheet.cell(row=p+1, column=6).font=fontText1
 sheet.cell(row=p+1, column=6).number_format = '0.00_);(0.00)'
 if (sheet2_data.cell_value(nrow-1,2)<=sheet2_data.cell_value(nrow-1,3)):
-    amount=(sheet2_data.cell_value(nrow-1,3)-sheet2_data.cell_value(nrow-1,2))** 3 * 3950 * Turnover / Turnovermean
+    amount=(sheet2_data.cell_value(nrow-1,3)-sheet2_data.cell_value(nrow-1,2))** 3 * 550 * sign * Turnover / Turnovermean
     biaozhi=1
 else:
-    amount=(sheet2_data.cell_value(nrow-1,3)-sheet2_data.cell_value(nrow-1,2))** 3 * -3950 * Turnover / Turnovermean
+    amount=(sheet2_data.cell_value(nrow-1,3)-sheet2_data.cell_value(nrow-1,2))** 3 * -550 * sign * Turnover / Turnovermean
     biaozhi=0
 sheet.cell(row=p+1, column=7).value=amount
 sheet.cell(row=p+1, column=8).value=amount/price
