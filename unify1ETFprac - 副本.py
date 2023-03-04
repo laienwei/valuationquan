@@ -782,66 +782,6 @@ for i in range(3):
     sheet.cell(row=p+1, column=i+13).font=fontText1
     sheet.cell(row=p+1, column=i+13).number_format = '0.000000_);(0.000000)' 
 #########################################################################
-sheet = wb['model4(3)turnover&RSI']
-aa=float(mydict1['model4(3)turnover&RSI'])
-bb=float(mydict2['model4(3)turnover&RSI'])
-cc=float(mydict3['model4(3)turnover&RSI'])
-sheet.cell(row=p+1, column=15).value=datax.sheet_by_name('model1&RSI').cell_value(nrowx-1,10)
-sheet.cell(row=p+1, column=16).value=datax.sheet_by_name('model1&RSI').cell_value(nrowx-1,12)
-sheet.cell(row=p+1, column=17).value=datax.sheet_by_name('model1&RSI').cell_value(nrowx-1,13)
-RSIpre=data.sheet_by_name(sheet.title).cell_value(p-1,16)
-if(float(RSIpre)<20):
-    sign=2
-elif((float(RSIpre)>20)and(RSIpre<25)):
-    sign=1
-elif((float(RSIpre)>25)and(RSIpre<50)):
-    sign=0.95
-elif((float(RSIpre)>50)and(RSIpre<80)):
-    sign=0.2
-else:
-    sign=1
-sheet.cell(row=p+1, column=18).value=sign
-sheet.cell(row=p+1, column=18).font=fontText2
-sheet.cell(row=p+1, column=18).number_format = 'General'
-Turnover=sheet0.cell_value(xx-1,5)
-Turnovermean=sheet0.cell_value(xx-1,8)
-print(type(Turnovermean))
-print(Turnovermean)
-sheet.cell(row=p+1, column=5).value=Turnover
-sheet.cell(row=p+1, column=5).font=fontText1
-sheet.cell(row=p+1, column=5).number_format = '0.00_);(0.00)'
-sheet.cell(row=p+1, column=6).value=Turnovermean
-sheet.cell(row=p+1, column=6).font=fontText1
-sheet.cell(row=p+1, column=6).number_format = '0.00_);(0.00)'
-if (sheet2_data.cell_value(nrow-1,2)<=sheet2_data.cell_value(nrow-1,3)):
-    amount=(sheet2_data.cell_value(nrow-1,3)-sheet2_data.cell_value(nrow-1,2))** 3 * 550 * sign * Turnover / Turnovermean
-    biaozhi=1
-else:
-    amount=(sheet2_data.cell_value(nrow-1,3)-sheet2_data.cell_value(nrow-1,2))** 3 * -550 * sign * Turnover / Turnovermean
-    biaozhi=0
-sheet.cell(row=p+1, column=7).value=amount
-sheet.cell(row=p+1, column=8).value=amount/price
-sheet.cell(row=p+1, column=9).value=amount/price+float(aa)
-sheet.cell(row=p+1, column=10).value=(amount/price+float(aa))*price
-if(biaozhi==1):
-    sheet.cell(row=p+1, column=11).value=float(bb)+amount
-    sheet.cell(row=p+1, column=14).value=float(cc)
-else:
-    sheet.cell(row=p+1, column=11).value=float(bb)
-    sheet.cell(row=p+1, column=14).value=float(cc)-amount
-sheet.cell(row=p+1, column=14).font=fontText1
-sheet.cell(row=p+1, column=14).number_format = '0.00_);(0.00)'
-sheet.cell(row=p+1, column=12).value=sheet.cell(row=p+1, column=10).value+sheet.cell(row=p+1, column=14).value
-sheet.cell(row=p+1, column=13).value=sheet.cell(row=p+1, column=12).value-sheet.cell(row=p+1, column=11).value
-sheet.cell(row=p+1, column=13).font=fontText1
-sheet.cell(row=p+1, column=13).number_format = '0.00_ '
-for i in range(8):
-    sheet.cell(row=p+1, column=i+5).font=fontText1
-    sheet.cell(row=p+1, column=i+5).number_format = '0.00_);(0.00)'
-for i in range(3):
-    sheet.cell(row=p+1, column=i+15).font=fontText1
-    sheet.cell(row=p+1, column=i+15).number_format = '0.000000_);(0.000000)' 
-#########################################################################
 sheet = wb['model4(1)&KDJ']
 aa=float(mydict1['model4(1)&KDJ'])
 bb=float(mydict2['model4(1)&KDJ'])
@@ -928,6 +868,66 @@ sheet.cell(row=p+1, column=13).number_format = '0.00_ '
 for i in range(8):
     sheet.cell(row=p+1, column=i+5).font=fontText1
     sheet.cell(row=p+1, column=i+5).number_format = '0.00_);(0.00)'
+#########################################################################
+sheet = wb['model4(3)turnover&RSI']
+aa=float(mydict1['model4(3)turnover&RSI'])
+bb=float(mydict2['model4(3)turnover&RSI'])
+cc=float(mydict3['model4(3)turnover&RSI'])
+sheet.cell(row=p+1, column=15).value=datax.sheet_by_name('model1&RSI').cell_value(nrowx-1,10)
+sheet.cell(row=p+1, column=16).value=datax.sheet_by_name('model1&RSI').cell_value(nrowx-1,12)
+sheet.cell(row=p+1, column=17).value=datax.sheet_by_name('model1&RSI').cell_value(nrowx-1,13)
+RSIpre=data.sheet_by_name(sheet.title).cell_value(p-1,16)
+if(float(RSIpre)<20):
+    sign=2
+elif((float(RSIpre)>20)and(RSIpre<25)):
+    sign=1
+elif((float(RSIpre)>25)and(RSIpre<50)):
+    sign=0.95
+elif((float(RSIpre)>50)and(RSIpre<80)):
+    sign=0.2
+else:
+    sign=1
+sheet.cell(row=p+1, column=18).value=sign
+sheet.cell(row=p+1, column=18).font=fontText2
+sheet.cell(row=p+1, column=18).number_format = 'General'
+Turnover=sheet0.cell_value(xx-1,5)
+Turnovermean=sheet0.cell_value(xx-1,8)
+print(type(Turnovermean))
+print(Turnovermean)
+sheet.cell(row=p+1, column=5).value=Turnover
+sheet.cell(row=p+1, column=5).font=fontText1
+sheet.cell(row=p+1, column=5).number_format = '0.00_);(0.00)'
+sheet.cell(row=p+1, column=6).value=Turnovermean
+sheet.cell(row=p+1, column=6).font=fontText1
+sheet.cell(row=p+1, column=6).number_format = '0.00_);(0.00)'
+if (sheet2_data.cell_value(nrow-1,2)<=sheet2_data.cell_value(nrow-1,3)):
+    amount=(sheet2_data.cell_value(nrow-1,3)-sheet2_data.cell_value(nrow-1,2))** 3 * 550 * sign * Turnover / Turnovermean
+    biaozhi=1
+else:
+    amount=(sheet2_data.cell_value(nrow-1,3)-sheet2_data.cell_value(nrow-1,2))** 3 * -550 * sign * Turnover / Turnovermean
+    biaozhi=0
+sheet.cell(row=p+1, column=7).value=amount
+sheet.cell(row=p+1, column=8).value=amount/price
+sheet.cell(row=p+1, column=9).value=amount/price+float(aa)
+sheet.cell(row=p+1, column=10).value=(amount/price+float(aa))*price
+if(biaozhi==1):
+    sheet.cell(row=p+1, column=11).value=float(bb)+amount
+    sheet.cell(row=p+1, column=14).value=float(cc)
+else:
+    sheet.cell(row=p+1, column=11).value=float(bb)
+    sheet.cell(row=p+1, column=14).value=float(cc)-amount
+sheet.cell(row=p+1, column=14).font=fontText1
+sheet.cell(row=p+1, column=14).number_format = '0.00_);(0.00)'
+sheet.cell(row=p+1, column=12).value=sheet.cell(row=p+1, column=10).value+sheet.cell(row=p+1, column=14).value
+sheet.cell(row=p+1, column=13).value=sheet.cell(row=p+1, column=12).value-sheet.cell(row=p+1, column=11).value
+sheet.cell(row=p+1, column=13).font=fontText1
+sheet.cell(row=p+1, column=13).number_format = '0.00_ '
+for i in range(8):
+    sheet.cell(row=p+1, column=i+5).font=fontText1
+    sheet.cell(row=p+1, column=i+5).number_format = '0.00_);(0.00)'
+for i in range(3):
+    sheet.cell(row=p+1, column=i+15).font=fontText1
+    sheet.cell(row=p+1, column=i+15).number_format = '0.000000_);(0.000000)' 
 wb.save(filename6)
 
 
