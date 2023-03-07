@@ -29,6 +29,8 @@ for i in range(p-3):
 print("over now")
 print(sum0)
 for i in range(num):
+    print(xx+i+1)
+    print(sheet0.cell(row=xx+i+1, column=22).value)
     sum0=sum0+sheet0.cell(row=xx+i+1, column=22).value
     sheet.cell(row=p+i+1, column=3).value=sheet0.cell(row=xx+i+1, column=22).value
     sheet.cell(row=p+i+1, column=1).value=p+i-1
