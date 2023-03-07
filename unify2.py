@@ -253,7 +253,7 @@ else:
     sheet.cell(row=p+1, column=6).value=float(mydict1['model1&CCI'])*price
     sheet.cell(row=p+1, column=7).value=float(mydict2['model1&CCI'])
     sheet.cell(row=p+1, column=8).value=float(mydict1['model1&CCI'])*price
-    sheet.cell(row=p+1, column=9).value=float(mydict1['model1&CCI'])*price-float(mydict1['model1&CCI'])*price
+    sheet.cell(row=p+1, column=9).value=float(mydict1['model1&CCI'])*price-float(mydict1['model1&CCI'])
 for i in range(6):
     sheet.cell(row=p+1, column=i+3).font=fontText1
     sheet.cell(row=p+1, column=i+3).number_format = '0.00_);(0.00)'
