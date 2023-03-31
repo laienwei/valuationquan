@@ -733,9 +733,9 @@ for sheet in wb:
         b.append(data.sheet_by_name(sheet.title).cell_value(p-1,6))
         c.append(data.sheet_by_name(sheet.title).cell_value(p-1,8))
         d.append(data.sheet_by_name(sheet.title).cell_value(p-1,11))
-        if(sheet.tile=='model4(1)RSI'):
-            print("model4(1)RSI 's RSIpre is:")
-            print(data.sheet_by_name(sheet.title).cell_value(p-1,14))
+#        if(sheet.tile=='model4(1)RSI'):
+#            print("model4(1)RSI 's RSIpre is:")
+#            print(data.sheet_by_name(sheet.title).cell_value(p-1,14))
 #         b.append(sheet1_data.cell_value(p-1,5))
 #         c.append(sheet1_data.cell_value(p-1,7))
     else:
