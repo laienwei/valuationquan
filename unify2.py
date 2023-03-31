@@ -733,6 +733,9 @@ for sheet in wb:
         b.append(data.sheet_by_name(sheet.title).cell_value(p-1,6))
         c.append(data.sheet_by_name(sheet.title).cell_value(p-1,8))
         d.append(data.sheet_by_name(sheet.title).cell_value(p-1,11))
+        if(sheet.tile=='model4(1)RSI'):
+            print("model4(1)RSI 's RSIpre is:")
+            print(data.sheet_by_name(sheet.title).cell_value(p-1,14))
 #         b.append(sheet1_data.cell_value(p-1,5))
 #         c.append(sheet1_data.cell_value(p-1,7))
     else:
@@ -819,7 +822,7 @@ nrowx=sheetx.nrows
 sheet.cell(row=p+1, column=13).value=datax.sheet_by_name('model1&RSI').cell_value(nrowx-1,10)
 sheet.cell(row=p+1, column=14).value=datax.sheet_by_name('model1&RSI').cell_value(nrowx-1,12)
 sheet.cell(row=p+1, column=15).value=datax.sheet_by_name('model1&RSI').cell_value(nrowx-1,13)
-RSIpre=data.sheet_by_name(sheet.title).cell_value(p,14)
+RSIpre=data.sheet_by_name(sheet.title).cell_value(p-1,14)
 print('RSIpre is :',float(RSIpre))
 if(float(RSIpre)<20):
     sign=2
@@ -870,7 +873,7 @@ cc=float(mydict3['model4(3)&RSI'])
 sheet.cell(row=p+1, column=13).value=datax.sheet_by_name('model1&RSI').cell_value(nrowx-1,10)
 sheet.cell(row=p+1, column=14).value=datax.sheet_by_name('model1&RSI').cell_value(nrowx-1,12)
 sheet.cell(row=p+1, column=15).value=datax.sheet_by_name('model1&RSI').cell_value(nrowx-1,13)
-RSIpre=data.sheet_by_name(sheet.title).cell_value(p,14)
+RSIpre=data.sheet_by_name(sheet.title).cell_value(p-1,14)
 print('RSIpre is :',float(RSIpre))
 if(float(RSIpre)<20):
     sign=2
@@ -921,7 +924,7 @@ cc=float(mydict3['model4(3)turnover&RSI'])
 sheet.cell(row=p+1, column=15).value=datax.sheet_by_name('model1&RSI').cell_value(nrowx-1,10)
 sheet.cell(row=p+1, column=16).value=datax.sheet_by_name('model1&RSI').cell_value(nrowx-1,12)
 sheet.cell(row=p+1, column=17).value=datax.sheet_by_name('model1&RSI').cell_value(nrowx-1,13)
-RSIpre=data.sheet_by_name(sheet.title).cell_value(p,16)
+RSIpre=data.sheet_by_name(sheet.title).cell_value(p-1,16)
 print('RSIpre is :',float(RSIpre))
 if(float(RSIpre)<20):
     sign=2
