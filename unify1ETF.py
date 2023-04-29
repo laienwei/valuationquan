@@ -49,7 +49,7 @@ for sheet in wb:
     sheet.cell(row=p+1, column=2).value=price
     sheet.cell(row=p+1, column=2).font=fontText1
     sheet.cell(row=p+1, column=2).number_format = '0.00000'
-    if(sheet.title=='model1&2'):
+    if(sheet.title=='model1&pe'):
         a.append(sheet.title)
         b.append(data.sheet_by_name(sheet.title).cell_value(p-1,5))
         c.append(data.sheet_by_name(sheet.title).cell_value(p-1,7))
@@ -78,7 +78,7 @@ for i in range(6):
 sheet.cell(row=p+1, column=9).font=fontText1
 sheet.cell(row=p+1, column=9).number_format = '0.00_ '
 ###################################################################
-sheet = wb['model1&2']
+sheet = wb['model1&pe']
 sheet.cell(row=p+1, column=3).value=sheet2_data.cell_value(nrow-1,2)#PE值
 sheet.cell(row=p+1, column=3).font=fontText1
 sheet.cell(row=p+1, column=3).number_format = 'General'
@@ -88,19 +88,19 @@ sheet.cell(row=p+1, column=4).number_format = '0.00_);(0.00)'
 sheet.cell(row=p+1, column=5).value=2000/price
 sheet.cell(row=p+1, column=5).font=fontText1
 sheet.cell(row=p+1, column=5).number_format = '0.00_);(0.00)'
-sheet.cell(row=p+1, column=6).value=2000/price+float(mydict1['model1&2'])
+sheet.cell(row=p+1, column=6).value=2000/price+float(mydict1['model1&pe'])
 sheet.cell(row=p+1, column=6).font=fontText1
 sheet.cell(row=p+1, column=6).number_format = '0.00_);(0.00)'
-sheet.cell(row=p+1, column=7).value=(2000/price+float(mydict1['model1&2']))*price
+sheet.cell(row=p+1, column=7).value=(2000/price+float(mydict1['model1&pe']))*price
 sheet.cell(row=p+1, column=7).font=fontText1
 sheet.cell(row=p+1, column=7).number_format = '0.00_);(0.00)'
-sheet.cell(row=p+1, column=8).value=float(mydict2['model1&2'])+2000
+sheet.cell(row=p+1, column=8).value=float(mydict2['model1&pe'])+2000
 sheet.cell(row=p+1, column=8).font=fontText1
 sheet.cell(row=p+1, column=8).number_format = '0.00_);(0.00)'
-sheet.cell(row=p+1, column=9).value=(2000/price+float(mydict1['model1&2']))*price
+sheet.cell(row=p+1, column=9).value=(2000/price+float(mydict1['model1&pe']))*price
 sheet.cell(row=p+1, column=9).font=fontText1
 sheet.cell(row=p+1, column=9).number_format = '0.00_);(0.00)'
-sheet.cell(row=p+1, column=10).value=(2000/price+float(mydict1['model1&2']))*price-float(mydict2['model1&2'])-2000
+sheet.cell(row=p+1, column=10).value=(2000/price+float(mydict1['model1&pe']))*price-float(mydict2['model1&pe'])-2000
 sheet.cell(row=p+1, column=10).font=fontText1
 sheet.cell(row=p+1, column=10).number_format = '0.00_ '
 ###########################################################################
