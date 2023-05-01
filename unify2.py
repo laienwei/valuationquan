@@ -15,7 +15,7 @@ wb0 = openpyxl.load_workbook(r'./lai/valuationquan/szseinnovation100index.xlsx')
 sheet0 = wb0['szse_innovation_100']
 xx=sheet0.max_row 
 index=sheet0.cell(row=xx,column=5).value/1000
-filedir3=['szseinnovation100indexmodel1.xlsx','szseinnovation100indexmodel4.xlsx']
+filedir3=['szseinnovation100indexmodel1.xlsx','szseinnovation100indexmodel2.xlsx']
 dirba1="./lai/valuationquan/szseinnovation100index"
 filename3=dirba1+"/"+filedir3[0]
 data=xlrd.open_workbook(filename3)#openpyxl模块读不出数据，只能读出单元格公式
@@ -69,14 +69,14 @@ wb.save(filename3)
 
 filename4=dirba1+"/"+filedir3[1]
 data=xlrd.open_workbook(filename4)#openpyxl模块读不出数据，只能读出单元格公式
-sheet1_data=data.sheet_by_name('model4(1)')
+sheet1_data=data.sheet_by_name('model2(1)')
 filename3=dirba1+"/"+"szseinnovation100indexmodel1prac.xlsx"
 data1=xlrd.open_workbook(filename3)#openpyxl模块读不出数据，只能读出单元格公式
 sheet2_data=data1.sheet_by_name('myPEPB')
 nrow=sheet2_data.nrows
 
 wb = openpyxl.load_workbook(filename4)
-sheet = wb['model4(1)']
+sheet = wb['model2(1)']
 p=sheet.max_row
 print(p)
 print(sheet1_data.cell_value(p-1,6))
@@ -159,7 +159,7 @@ filename3t=dirba0+"/"+filedir3[0]
 data1=xlrd.open_workbook(filename3t)#openpyxl模块读不出数据，只能读出单元格公式
 sheet2_data=data1.sheet_by_name('myPEPB')
 nrow=sheet2_data.nrows
-filedir3=['szseinnovation100ETFmodel1.xlsx','szseinnovation100ETFmodel4(SAR).xlsx','szseinnovation100ETFmodel4(CCI).xlsx','szseinnovation100ETFmodel4(RSI&KDJ).xlsx']
+filedir3=['szseinnovation100ETFmodel1.xlsx','szseinnovation100ETFmodel2(SAR).xlsx','szseinnovation100ETFmodel2(CCI).xlsx','szseinnovation100ETFmodel2(RSI&KDJ).xlsx']
 dirba1="./lai/valuationquan/szseinnovation100ETF"
 filename3=dirba1+"/"+filedir3[0]
 data=xlrd.open_workbook(filename3)#openpyxl模块读不出数据，只能读出单元格公式
@@ -348,8 +348,8 @@ wb.save(filename3)
 filename4=dirba1+"/"+filedir3[1]
 data=xlrd.open_workbook(filename4)#openpyxl模块读不出数据，只能读出单元格公式
 wb = openpyxl.load_workbook(filename4)
-sheet1_data=data.sheet_by_name('model4(1)&SAR_manual_oper')
-sheet = wb['model4(1)&SAR_manual_oper']
+sheet1_data=data.sheet_by_name('model2(1)&SAR_manual_oper')
+sheet = wb['model2(1)&SAR_manual_oper']
 p=sheet.max_row
 print(p)
 SAR=0
@@ -421,7 +421,7 @@ d=[]
 filename5=dirba1+"/"+filedir3[2]
 data=xlrd.open_workbook(filename5)#openpyxl模块读不出数据，只能读出单元格公式
 wb = openpyxl.load_workbook(filename5)
-sheet = wb['model4(1)']
+sheet = wb['model2(1)']
 p=sheet.max_row
 print(p)
 for sheet in wb:
@@ -440,7 +440,7 @@ for sheet in wb:
     sheet.cell(row=p+1, column=4).value=sheet2_data.cell_value(nrow-1,3)#PE均值
     sheet.cell(row=p+1, column=4).font=fontText1
     sheet.cell(row=p+1, column=4).number_format = 'General'
-    if(sheet.title!='model4(3)turnover&CCI_per_day'):
+    if(sheet.title!='model2(2)turnover&CCI_per_day'):
         a.append(sheet.title)
         b.append(data.sheet_by_name(sheet.title).cell_value(p-1,6))
         c.append(data.sheet_by_name(sheet.title).cell_value(p-1,8))
@@ -461,10 +461,10 @@ print(mydict1)
 print(mydict2)
 print(mydict3)
 #########################################################################
-sheet = wb['model4(1)']
-aa=float(mydict1['model4(1)'])
-bb=float(mydict2['model4(1)'])
-cc=float(mydict3['model4(1)'])
+sheet = wb['model2(1)']
+aa=float(mydict1['model2(1)'])
+bb=float(mydict2['model2(1)'])
+cc=float(mydict3['model2(1)'])
 if (sheet2_data.cell_value(nrow-1,2)<=sheet2_data.cell_value(nrow-1,3)):
     amount=(sheet2_data.cell_value(nrow-1,3)-sheet2_data.cell_value(nrow-1,2))** 2 * 3950
     biaozhi=1
@@ -491,10 +491,10 @@ for i in range(6):
     sheet.cell(row=p+1, column=i+5).font=fontText1
     sheet.cell(row=p+1, column=i+5).number_format = '0.00_);(0.00)'
 ############################################################################
-sheet = wb['model4(1)&CCI_per_day']
-aa=float(mydict1['model4(1)&CCI_per_day'])
-bb=float(mydict2['model4(1)&CCI_per_day'])
-cc=float(mydict3['model4(1)&CCI_per_day'])
+sheet = wb['model2(1)&CCI_per_day']
+aa=float(mydict1['model2(1)&CCI_per_day'])
+bb=float(mydict2['model2(1)&CCI_per_day'])
+cc=float(mydict3['model2(1)&CCI_per_day'])
 CCI=sheet0.cell_value(xx-1,20)
 sheet.cell(row=p+1, column=13).value=CCI
 sheet.cell(row=p+1, column=13).font=fontText2
@@ -534,10 +534,10 @@ for i in range(6):
     sheet.cell(row=p+1, column=i+5).font=fontText1
     sheet.cell(row=p+1, column=i+5).number_format = '0.00_);(0.00)'
 ############################################################################
-sheet = wb['model4(3)&CCI_per_day']
-aa=float(mydict1['model4(3)&CCI_per_day'])
-bb=float(mydict2['model4(3)&CCI_per_day'])
-cc=float(mydict3['model4(3)&CCI_per_day'])
+sheet = wb['model2(2)&CCI_per_day']
+aa=float(mydict1['model2(2)&CCI_per_day'])
+bb=float(mydict2['model2(2)&CCI_per_day'])
+cc=float(mydict3['model2(2)&CCI_per_day'])
 CCI=sheet0.cell_value(xx-1,20)
 sheet.cell(row=p+1, column=13).value=CCI
 sheet.cell(row=p+1, column=13).font=fontText2
@@ -577,10 +577,10 @@ for i in range(6):
     sheet.cell(row=p+1, column=i+5).font=fontText1
     sheet.cell(row=p+1, column=i+5).number_format = '0.00_);(0.00)'
 ############################################################################
-sheet = wb['model4(3)turnover&CCI_per_day']
-aa=float(mydict1['model4(3)turnover&CCI_per_day'])
-bb=float(mydict2['model4(3)turnover&CCI_per_day'])
-cc=float(mydict3['model4(3)turnover&CCI_per_day'])
+sheet = wb['model2(2)turnover&CCI_per_day']
+aa=float(mydict1['model2(2)turnover&CCI_per_day'])
+bb=float(mydict2['model2(2)turnover&CCI_per_day'])
+cc=float(mydict3['model2(2)turnover&CCI_per_day'])
 CCI=sheet0.cell_value(xx-1,20)
 sheet.cell(row=p+1, column=15).value=CCI
 sheet.cell(row=p+1, column=15).font=fontText2
@@ -631,10 +631,10 @@ for i in range(6):
     sheet.cell(row=p+1, column=i+7).number_format = '0.00_);(0.00)'
 ############################################################################
 
-sheet = wb['model4(1)&CCI_per_month']
-aa=float(mydict1['model4(1)&CCI_per_month'])
-bb=float(mydict2['model4(1)&CCI_per_month'])
-cc=float(mydict3['model4(1)&CCI_per_month'])
+sheet = wb['model2(1)&CCI_per_month']
+aa=float(mydict1['model2(1)&CCI_per_month'])
+bb=float(mydict2['model2(1)&CCI_per_month'])
+cc=float(mydict3['model2(1)&CCI_per_month'])
 sheet.cell(row=p+1, column=13).value=high
 sheet.cell(row=p+1, column=14).value=low
 typ=(price+low+high)/3
@@ -709,7 +709,7 @@ d=[]
 filename6=dirba1+"/"+filedir3[3]
 data=xlrd.open_workbook(filename6)#openpyxl模块读不出数据，只能读出单元格公式
 wb = openpyxl.load_workbook(filename6)
-sheet = wb['model4(1)']
+sheet = wb['model2(1)']
 p=sheet.max_row
 print(p)
 for sheet in wb:
@@ -728,13 +728,13 @@ for sheet in wb:
     sheet.cell(row=p+1, column=4).value=sheet2_data.cell_value(nrow-1,3)#PE均值
     sheet.cell(row=p+1, column=4).font=fontText1
     sheet.cell(row=p+1, column=4).number_format = 'General'
-    if(not((sheet.title=='model4(3)turnover&RSI')or(sheet.title=='model4(3)turnover'))):
+    if(not((sheet.title=='model2(2)turnover&RSI')or(sheet.title=='model2(2)turnover'))):
         a.append(sheet.title)
         b.append(data.sheet_by_name(sheet.title).cell_value(p-1,6))
         c.append(data.sheet_by_name(sheet.title).cell_value(p-1,8))
         d.append(data.sheet_by_name(sheet.title).cell_value(p-1,11))
-#        if(sheet.tile=='model4(1)RSI'):
-#            print("model4(1)RSI 's RSIpre is:")
+#        if(sheet.tile=='model2(1)RSI'):
+#            print("model2(1)RSI 's RSIpre is:")
 #            print(data.sheet_by_name(sheet.title).cell_value(p-1,14))
 #         b.append(sheet1_data.cell_value(p-1,5))
 #         c.append(sheet1_data.cell_value(p-1,7))
@@ -752,10 +752,10 @@ print(mydict1)
 print(mydict2)
 print(mydict3)
 #########################################################################
-sheet = wb['model4(1)']
-aa=float(mydict1['model4(1)'])
-bb=float(mydict2['model4(1)'])
-cc=float(mydict3['model4(1)'])
+sheet = wb['model2(1)']
+aa=float(mydict1['model2(1)'])
+bb=float(mydict2['model2(1)'])
+cc=float(mydict3['model2(1)'])
 if (sheet2_data.cell_value(nrow-1,2)<=sheet2_data.cell_value(nrow-1,3)):
     amount=(sheet2_data.cell_value(nrow-1,3)-sheet2_data.cell_value(nrow-1,2))** 2 * 3950
     biaozhi=1
@@ -782,10 +782,10 @@ for i in range(6):
     sheet.cell(row=p+1, column=i+5).font=fontText1
     sheet.cell(row=p+1, column=i+5).number_format = '0.00_);(0.00)'
 #########################################################################
-sheet = wb['model4(3)']
-aa=float(mydict1['model4(3)'])
-bb=float(mydict2['model4(3)'])
-cc=float(mydict3['model4(3)'])
+sheet = wb['model2(2)']
+aa=float(mydict1['model2(2)'])
+bb=float(mydict2['model2(2)'])
+cc=float(mydict3['model2(2)'])
 if (sheet2_data.cell_value(nrow-1,2)<=sheet2_data.cell_value(nrow-1,3)):
     amount=(sheet2_data.cell_value(nrow-1,3)-sheet2_data.cell_value(nrow-1,2))** 3 * 3950
     biaozhi=1
@@ -812,10 +812,10 @@ for i in range(6):
     sheet.cell(row=p+1, column=i+5).font=fontText1
     sheet.cell(row=p+1, column=i+5).number_format = '0.00_);(0.00)'
 #########################################################################
-sheet = wb['model4(1)&RSI']
-aa=float(mydict1['model4(1)&RSI'])
-bb=float(mydict2['model4(1)&RSI'])
-cc=float(mydict3['model4(1)&RSI'])
+sheet = wb['model2(1)&RSI']
+aa=float(mydict1['model2(1)&RSI'])
+bb=float(mydict2['model2(1)&RSI'])
+cc=float(mydict3['model2(1)&RSI'])
 datax=xlrd.open_workbook(filename3)#openpyxl模块读不出数据，只能读出单元格公式
 sheetx=datax.sheet_by_name('model1&RSI')
 nrowx=sheetx.nrows
@@ -866,10 +866,10 @@ for i in range(3):
     sheet.cell(row=p+1, column=i+13).font=fontText1
     sheet.cell(row=p+1, column=i+13).number_format = '0.000000_);(0.000000)' 
 #########################################################################
-sheet = wb['model4(3)&RSI']
-aa=float(mydict1['model4(3)&RSI'])
-bb=float(mydict2['model4(3)&RSI'])
-cc=float(mydict3['model4(3)&RSI'])
+sheet = wb['model2(2)&RSI']
+aa=float(mydict1['model2(2)&RSI'])
+bb=float(mydict2['model2(2)&RSI'])
+cc=float(mydict3['model2(2)&RSI'])
 sheet.cell(row=p+1, column=13).value=datax.sheet_by_name('model1&RSI').cell_value(nrowx-1,10)
 sheet.cell(row=p+1, column=14).value=datax.sheet_by_name('model1&RSI').cell_value(nrowx-1,12)
 sheet.cell(row=p+1, column=15).value=datax.sheet_by_name('model1&RSI').cell_value(nrowx-1,13)
@@ -917,10 +917,10 @@ for i in range(3):
     sheet.cell(row=p+1, column=i+13).font=fontText1
     sheet.cell(row=p+1, column=i+13).number_format = '0.000000_);(0.000000)' 
 #########################################################################
-sheet = wb['model4(3)turnover&RSI']
-aa=float(mydict1['model4(3)turnover&RSI'])
-bb=float(mydict2['model4(3)turnover&RSI'])
-cc=float(mydict3['model4(3)turnover&RSI'])
+sheet = wb['model2(2)turnover&RSI']
+aa=float(mydict1['model2(2)turnover&RSI'])
+bb=float(mydict2['model2(2)turnover&RSI'])
+cc=float(mydict3['model2(2)turnover&RSI'])
 sheet.cell(row=p+1, column=15).value=datax.sheet_by_name('model1&RSI').cell_value(nrowx-1,10)
 sheet.cell(row=p+1, column=16).value=datax.sheet_by_name('model1&RSI').cell_value(nrowx-1,12)
 sheet.cell(row=p+1, column=17).value=datax.sheet_by_name('model1&RSI').cell_value(nrowx-1,13)
@@ -978,10 +978,10 @@ for i in range(3):
     sheet.cell(row=p+1, column=i+15).font=fontText1
     sheet.cell(row=p+1, column=i+15).number_format = '0.000000_);(0.000000)' 
 #########################################################################
-sheet = wb['model4(1)&KDJ']
-aa=float(mydict1['model4(1)&KDJ'])
-bb=float(mydict2['model4(1)&KDJ'])
-cc=float(mydict3['model4(1)&KDJ'])
+sheet = wb['model2(1)&KDJ']
+aa=float(mydict1['model2(1)&KDJ'])
+bb=float(mydict2['model2(1)&KDJ'])
+cc=float(mydict3['model2(1)&KDJ'])
 sheet.cell(row=p+1, column=13).value=datax.sheet_by_name('model1&KDJ').cell_value(nrowx-1,13)
 sheet.cell(row=p+1, column=14).value=datax.sheet_by_name('model1&KDJ').cell_value(nrowx-1,14)
 sheet.cell(row=p+1, column=15).value=datax.sheet_by_name('model1&KDJ').cell_value(nrowx-1,15)
@@ -1025,10 +1025,10 @@ sheet.cell(row=p+1, column=16).number_format = '0.00_ '
 sheet.cell(row=p+1, column=17).font=fontText2
 sheet.cell(row=p+1, column=17).number_format = 'General'
 #########################################################################
-sheet = wb['model4(3)turnover']
-aa=float(mydict1['model4(3)turnover'])
-bb=float(mydict2['model4(3)turnover'])
-cc=float(mydict3['model4(3)turnover'])
+sheet = wb['model2(2)turnover']
+aa=float(mydict1['model2(2)turnover'])
+bb=float(mydict2['model2(2)turnover'])
+cc=float(mydict3['model2(2)turnover'])
 Turnover=sheet0.cell_value(xx-1,5)
 Turnovermean=sheet0.cell_value(xx-1,8)
 print(type(Turnovermean))

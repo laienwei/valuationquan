@@ -1,14 +1,14 @@
 FROM valuation-docker.pkg.coding.net/valuationquan/valuationquan/valueinmodel1s:latest
 COPY unify2.py /unify2.py
 COPY lai/valuationquan/szseinnovation100index.xlsx /lai/valuationquan/
-COPY lai/valuationquan/szseinnovation100index/szseinnovation100indexmodel4.xlsx /lai/valuationquan/szseinnovation100index/
+COPY lai/valuationquan/szseinnovation100index/szseinnovation100indexmodel2.xlsx /lai/valuationquan/szseinnovation100index/
 COPY lai/valuationquan/szseinnovation100index/szseinnovation100indexmodel1.xlsx /lai/valuationquan/szseinnovation100index/
 COPY lai/valuationquan/szseinnovation100index/szseinnovation100indexmodel1prac.xlsx /lai/valuationquan/szseinnovation100index/
 COPY lai/valuationquan/HwabaoWPszseinnovation100ETF.xlsx /lai/valuationquan/
 COPY lai/valuationquan/szseinnovation100ETF/szseinnovation100ETFmodel1.xlsx /lai/valuationquan/szseinnovation100ETF/
-COPY lai/valuationquan/szseinnovation100ETF/szseinnovation100ETFmodel4(SAR).xlsx /lai/valuationquan/szseinnovation100ETF/
-COPY lai/valuationquan/szseinnovation100ETF/szseinnovation100ETFmodel4(CCI).xlsx /lai/valuationquan/szseinnovation100ETF/
-COPY lai/valuationquan/szseinnovation100ETF/szseinnovation100ETFmodel4(RSI&KDJ).xlsx /lai/valuationquan/szseinnovation100ETF/
+COPY lai/valuationquan/szseinnovation100ETF/szseinnovation100ETFmodel2(SAR).xlsx /lai/valuationquan/szseinnovation100ETF/
+COPY lai/valuationquan/szseinnovation100ETF/szseinnovation100ETFmodel2(CCI).xlsx /lai/valuationquan/szseinnovation100ETF/
+COPY lai/valuationquan/szseinnovation100ETF/szseinnovation100ETFmodel2(RSI&KDJ).xlsx /lai/valuationquan/szseinnovation100ETF/
 RUN pip3 install xlrd==1.2.0
 ARG ar
 RUN python3 unify2.py $ar
