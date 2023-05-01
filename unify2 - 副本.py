@@ -90,10 +90,10 @@ print(sheet2_data.cell_value(nrow-1,2))
 print(type(sheet2_data.cell_value(nrow-1,3)))
 print(float(sheet2_data.cell_value(nrow-1,3)))
 if (sheet2_data.cell_value(nrow-1,2)<=sheet2_data.cell_value(nrow-1,3)):
-    amount=(sheet2_data.cell_value(nrow-1,3)-sheet2_data.cell_value(nrow-1,2)) * 3950
+    amount=(sheet2_data.cell_value(nrow-1,3)-sheet2_data.cell_value(nrow-1,2))** 2 * 3950
     biaozhi=1
 else:
-    amount=(sheet2_data.cell_value(nrow-1,3)-sheet2_data.cell_value(nrow-1,2)) * -3950
+    amount=(sheet2_data.cell_value(nrow-1,3)-sheet2_data.cell_value(nrow-1,2))** 2 * -3950
     biaozhi=0
 sheet.cell(row=p+1, column=1).value=datelai
 sheet.cell(row=p+1, column=1).alignment=AlignmentText1
@@ -362,17 +362,17 @@ print(sheet1_data.cell_value(p-1,11))
 cc=sheet1_data.cell_value(p-1,11)
 if(SAR<1):
     if (sheet2_data.cell_value(nrow-1,2)<=sheet2_data.cell_value(nrow-1,3)):
-        amount=(sheet2_data.cell_value(nrow-1,3)-sheet2_data.cell_value(nrow-1,2)) * 3950
+        amount=(sheet2_data.cell_value(nrow-1,3)-sheet2_data.cell_value(nrow-1,2))** 2 * 3950
         biaozhi=1
     else:
-        amount=(sheet2_data.cell_value(nrow-1,3)-sheet2_data.cell_value(nrow-1,2)) * -3950
+        amount=(sheet2_data.cell_value(nrow-1,3)-sheet2_data.cell_value(nrow-1,2))** 2 * -3950
         biaozhi=0
 else:
     if (sheet2_data.cell_value(nrow-1,2)<=sheet2_data.cell_value(nrow-1,3)):
-        amount=2*(sheet2_data.cell_value(nrow-1,3)-sheet2_data.cell_value(nrow-1,2)) * 3950
+        amount=2*(sheet2_data.cell_value(nrow-1,3)-sheet2_data.cell_value(nrow-1,2))** 2 * 3950
         biaozhi=1
     else:
-        amount=2*(sheet2_data.cell_value(nrow-1,3)-sheet2_data.cell_value(nrow-1,2)) * -3950
+        amount=2*(sheet2_data.cell_value(nrow-1,3)-sheet2_data.cell_value(nrow-1,2))** 2 * -3950
         biaozhi=0
 sheet.cell(row=p+1, column=1).value=datelai
 sheet.cell(row=p+1, column=1).alignment=AlignmentText1
@@ -466,10 +466,10 @@ aa=float(mydict1['model2(1)'])
 bb=float(mydict2['model2(1)'])
 cc=float(mydict3['model2(1)'])
 if (sheet2_data.cell_value(nrow-1,2)<=sheet2_data.cell_value(nrow-1,3)):
-    amount=(sheet2_data.cell_value(nrow-1,3)-sheet2_data.cell_value(nrow-1,2)) * 3950
+    amount=(sheet2_data.cell_value(nrow-1,3)-sheet2_data.cell_value(nrow-1,2))** 2 * 3950
     biaozhi=1
 else:
-    amount=(sheet2_data.cell_value(nrow-1,3)-sheet2_data.cell_value(nrow-1,2)) * -3950
+    amount=(sheet2_data.cell_value(nrow-1,3)-sheet2_data.cell_value(nrow-1,2))** 2 * -3950
     biaozhi=0
 sheet.cell(row=p+1, column=5).value=amount
 sheet.cell(row=p+1, column=6).value=amount/price
@@ -509,10 +509,10 @@ sheet.cell(row=p+1, column=14).value=sign
 sheet.cell(row=p+1, column=14).font=fontText2
 sheet.cell(row=p+1, column=14).number_format = 'General'
 if (sheet2_data.cell_value(nrow-1,2)<=sheet2_data.cell_value(nrow-1,3)):
-    amount=(sheet2_data.cell_value(nrow-1,3)-sheet2_data.cell_value(nrow-1,2)) * 3950 * sign
+    amount=(sheet2_data.cell_value(nrow-1,3)-sheet2_data.cell_value(nrow-1,2))** 2 * 3950 * sign
     biaozhi=1
 else:
-    amount=(sheet2_data.cell_value(nrow-1,3)-sheet2_data.cell_value(nrow-1,2)) * -3950 * sign
+    amount=(sheet2_data.cell_value(nrow-1,3)-sheet2_data.cell_value(nrow-1,2))** 2 * -3950 * sign
     biaozhi=0
 sheet.cell(row=p+1, column=5).value=amount
 sheet.cell(row=p+1, column=6).value=amount/price
@@ -552,10 +552,10 @@ sheet.cell(row=p+1, column=14).value=sign
 sheet.cell(row=p+1, column=14).font=fontText2
 sheet.cell(row=p+1, column=14).number_format = 'General'
 if (sheet2_data.cell_value(nrow-1,2)<=sheet2_data.cell_value(nrow-1,3)):
-    amount=(sheet2_data.cell_value(nrow-1,3)-sheet2_data.cell_value(nrow-1,2))** 2 * 3950 * sign
+    amount=(sheet2_data.cell_value(nrow-1,3)-sheet2_data.cell_value(nrow-1,2))** 3 * 3950 * sign
     biaozhi=1
 else:
-    amount=(sheet2_data.cell_value(nrow-1,3)-sheet2_data.cell_value(nrow-1,2))** 2 * -3950 * sign
+    amount=(sheet2_data.cell_value(nrow-1,3)-sheet2_data.cell_value(nrow-1,2))** 3 * -3950 * sign
     biaozhi=0
 sheet.cell(row=p+1, column=5).value=amount
 sheet.cell(row=p+1, column=6).value=amount/price
@@ -605,10 +605,10 @@ sheet.cell(row=p+1, column=6).value=Turnovermean
 sheet.cell(row=p+1, column=6).font=fontText1
 sheet.cell(row=p+1, column=6).number_format = '0.00_);(0.00)'
 if (sheet2_data.cell_value(nrow-1,2)<=sheet2_data.cell_value(nrow-1,3)):
-    amount=(sheet2_data.cell_value(nrow-1,3)-sheet2_data.cell_value(nrow-1,2))** 2 * 3950 * sign * Turnover / Turnovermean
+    amount=(sheet2_data.cell_value(nrow-1,3)-sheet2_data.cell_value(nrow-1,2))** 3 * 3950 * sign * Turnover / Turnovermean
     biaozhi=1
 else:
-    amount=(sheet2_data.cell_value(nrow-1,3)-sheet2_data.cell_value(nrow-1,2))** 2 * -3950 * sign * Turnover / Turnovermean
+    amount=(sheet2_data.cell_value(nrow-1,3)-sheet2_data.cell_value(nrow-1,2))** 3 * -3950 * sign * Turnover / Turnovermean
     biaozhi=0
 sheet.cell(row=p+1, column=7).value=amount
 sheet.cell(row=p+1, column=8).value=amount/price
@@ -672,10 +672,10 @@ sheet.cell(row=p+1, column=20).number_format = '0.000000_ '
 sheet.cell(row=p+1, column=21).font=fontText2
 sheet.cell(row=p+1, column=21).number_format = 'General'
 if (sheet2_data.cell_value(nrow-1,2)<=sheet2_data.cell_value(nrow-1,3)):
-    amount=(sheet2_data.cell_value(nrow-1,3)-sheet2_data.cell_value(nrow-1,2)) * 3950 * sign
+    amount=(sheet2_data.cell_value(nrow-1,3)-sheet2_data.cell_value(nrow-1,2))** 2 * 3950 * sign
     biaozhi=1
 else:
-    amount=(sheet2_data.cell_value(nrow-1,3)-sheet2_data.cell_value(nrow-1,2)) * -3950 * sign
+    amount=(sheet2_data.cell_value(nrow-1,3)-sheet2_data.cell_value(nrow-1,2))** 2 * -3950 * sign
     biaozhi=0
 sheet.cell(row=p+1, column=5).value=amount
 sheet.cell(row=p+1, column=6).value=amount/price
@@ -757,10 +757,10 @@ aa=float(mydict1['model2(1)'])
 bb=float(mydict2['model2(1)'])
 cc=float(mydict3['model2(1)'])
 if (sheet2_data.cell_value(nrow-1,2)<=sheet2_data.cell_value(nrow-1,3)):
-    amount=(sheet2_data.cell_value(nrow-1,3)-sheet2_data.cell_value(nrow-1,2)) * 3950
+    amount=(sheet2_data.cell_value(nrow-1,3)-sheet2_data.cell_value(nrow-1,2))** 2 * 3950
     biaozhi=1
 else:
-    amount=(sheet2_data.cell_value(nrow-1,3)-sheet2_data.cell_value(nrow-1,2)) * -3950
+    amount=(sheet2_data.cell_value(nrow-1,3)-sheet2_data.cell_value(nrow-1,2))** 2 * -3950
     biaozhi=0
 sheet.cell(row=p+1, column=5).value=amount
 sheet.cell(row=p+1, column=6).value=amount/price
@@ -787,10 +787,10 @@ aa=float(mydict1['model2(2)'])
 bb=float(mydict2['model2(2)'])
 cc=float(mydict3['model2(2)'])
 if (sheet2_data.cell_value(nrow-1,2)<=sheet2_data.cell_value(nrow-1,3)):
-    amount=(sheet2_data.cell_value(nrow-1,3)-sheet2_data.cell_value(nrow-1,2))** 2 * 3950
+    amount=(sheet2_data.cell_value(nrow-1,3)-sheet2_data.cell_value(nrow-1,2))** 3 * 3950
     biaozhi=1
 else:
-    amount=(sheet2_data.cell_value(nrow-1,3)-sheet2_data.cell_value(nrow-1,2))** 2 * -3950
+    amount=(sheet2_data.cell_value(nrow-1,3)-sheet2_data.cell_value(nrow-1,2))** 3 * -3950
     biaozhi=0
 sheet.cell(row=p+1, column=5).value=amount
 sheet.cell(row=p+1, column=6).value=amount/price
@@ -838,10 +838,10 @@ sheet.cell(row=p+1, column=16).value=sign
 sheet.cell(row=p+1, column=16).font=fontText2
 sheet.cell(row=p+1, column=16).number_format = 'General'
 if (sheet2_data.cell_value(nrow-1,2)<=sheet2_data.cell_value(nrow-1,3)):
-    amount=(sheet2_data.cell_value(nrow-1,3)-sheet2_data.cell_value(nrow-1,2)) * 3950 * sign
+    amount=(sheet2_data.cell_value(nrow-1,3)-sheet2_data.cell_value(nrow-1,2))** 2 * 3950 * sign
     biaozhi=1
 else:
-    amount=(sheet2_data.cell_value(nrow-1,3)-sheet2_data.cell_value(nrow-1,2)) * -3950 * sign
+    amount=(sheet2_data.cell_value(nrow-1,3)-sheet2_data.cell_value(nrow-1,2))** 2 * -3950 * sign
     biaozhi=0
 sheet.cell(row=p+1, column=5).value=amount
 sheet.cell(row=p+1, column=6).value=amount/price
@@ -889,10 +889,10 @@ sheet.cell(row=p+1, column=16).value=sign
 sheet.cell(row=p+1, column=16).font=fontText2
 sheet.cell(row=p+1, column=16).number_format = 'General'
 if (sheet2_data.cell_value(nrow-1,2)<=sheet2_data.cell_value(nrow-1,3)):
-    amount=(sheet2_data.cell_value(nrow-1,3)-sheet2_data.cell_value(nrow-1,2))** 2 * 3950 * sign
+    amount=(sheet2_data.cell_value(nrow-1,3)-sheet2_data.cell_value(nrow-1,2))** 3 * 3950 * sign
     biaozhi=1
 else:
-    amount=(sheet2_data.cell_value(nrow-1,3)-sheet2_data.cell_value(nrow-1,2))** 2 * -3950 * sign
+    amount=(sheet2_data.cell_value(nrow-1,3)-sheet2_data.cell_value(nrow-1,2))** 3 * -3950 * sign
     biaozhi=0
 sheet.cell(row=p+1, column=5).value=amount
 sheet.cell(row=p+1, column=6).value=amount/price
@@ -950,10 +950,10 @@ sheet.cell(row=p+1, column=6).value=Turnovermean
 sheet.cell(row=p+1, column=6).font=fontText1
 sheet.cell(row=p+1, column=6).number_format = '0.00_);(0.00)'
 if (sheet2_data.cell_value(nrow-1,2)<=sheet2_data.cell_value(nrow-1,3)):
-    amount=(sheet2_data.cell_value(nrow-1,3)-sheet2_data.cell_value(nrow-1,2))** 2 * sign * 550 * Turnover / Turnovermean
+    amount=(sheet2_data.cell_value(nrow-1,3)-sheet2_data.cell_value(nrow-1,2))** 3 * sign * 550 * Turnover / Turnovermean
     biaozhi=1
 else:
-    amount=(sheet2_data.cell_value(nrow-1,3)-sheet2_data.cell_value(nrow-1,2))** 2 * sign * -550 * Turnover / Turnovermean
+    amount=(sheet2_data.cell_value(nrow-1,3)-sheet2_data.cell_value(nrow-1,2))** 3 * sign * -550 * Turnover / Turnovermean
     biaozhi=0
 sheet.cell(row=p+1, column=7).value=amount
 sheet.cell(row=p+1, column=8).value=amount/price
@@ -993,10 +993,10 @@ else:
     sign=1
 sheet.cell(row=p+1, column=17).value=sign
 if (sheet2_data.cell_value(nrow-1,2)<=sheet2_data.cell_value(nrow-1,3)):
-    amount=(sheet2_data.cell_value(nrow-1,3)-sheet2_data.cell_value(nrow-1,2)) * 3950 * sign
+    amount=(sheet2_data.cell_value(nrow-1,3)-sheet2_data.cell_value(nrow-1,2))** 2 * 3950 * sign
     biaozhi=1
 else:
-    amount=(sheet2_data.cell_value(nrow-1,3)-sheet2_data.cell_value(nrow-1,2)) * -3950 * sign
+    amount=(sheet2_data.cell_value(nrow-1,3)-sheet2_data.cell_value(nrow-1,2))** 2 * -3950 * sign
     biaozhi=0
 sheet.cell(row=p+1, column=5).value=amount
 sheet.cell(row=p+1, column=6).value=amount/price
@@ -1040,10 +1040,10 @@ sheet.cell(row=p+1, column=6).value=Turnovermean
 sheet.cell(row=p+1, column=6).font=fontText1
 sheet.cell(row=p+1, column=6).number_format = '0.00_);(0.00)'
 if (sheet2_data.cell_value(nrow-1,2)<=sheet2_data.cell_value(nrow-1,3)):
-    amount=(sheet2_data.cell_value(nrow-1,3)-sheet2_data.cell_value(nrow-1,2))** 2 * 3950 * Turnover / Turnovermean
+    amount=(sheet2_data.cell_value(nrow-1,3)-sheet2_data.cell_value(nrow-1,2))** 3 * 3950 * Turnover / Turnovermean
     biaozhi=1
 else:
-    amount=(sheet2_data.cell_value(nrow-1,3)-sheet2_data.cell_value(nrow-1,2))** 2 * -3950 * Turnover / Turnovermean
+    amount=(sheet2_data.cell_value(nrow-1,3)-sheet2_data.cell_value(nrow-1,2))** 3 * -3950 * Turnover / Turnovermean
     biaozhi=0
 sheet.cell(row=p+1, column=7).value=amount
 sheet.cell(row=p+1, column=8).value=amount/price
