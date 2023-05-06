@@ -5,7 +5,7 @@
 import openpyxl
 import xlrd
 from openpyxl.styles import Font,Alignment
-datelai='2023-03-31'
+datelai='2023-04-28'
 fontText1 = Font(name='Tahoma', size=10, color='ff0000')
 AlignmentText1 = Alignment(horizontal='center')
 wb0 = openpyxl.load_workbook(r'./lai/valuationquan/szseinnovation100index.xlsx')
@@ -157,10 +157,10 @@ print(sheet2_data.cell_value(nrow-1,2))
 print(type(sheet2_data.cell_value(nrow-1,3)))
 print(float(sheet2_data.cell_value(nrow-1,3)))
 if (sheet2_data.cell_value(nrow-1,2)<=sheet2_data.cell_value(nrow-1,3)):
-    amount=(sheet2_data.cell_value(nrow-1,3)-sheet2_data.cell_value(nrow-1,2))** 2 * 3950
+    amount=(sheet2_data.cell_value(nrow-1,3)-sheet2_data.cell_value(nrow-1,2)) * 3950
     biaozhi=1
 else:
-    amount=(sheet2_data.cell_value(nrow-1,3)-sheet2_data.cell_value(nrow-1,2))** 2 * -3950
+    amount=(sheet2_data.cell_value(nrow-1,3)-sheet2_data.cell_value(nrow-1,2)) * -3950
     biaozhi=0
 sheet.cell(row=p+1, column=1).value=datelai
 sheet.cell(row=p+1, column=1).alignment=AlignmentText1
