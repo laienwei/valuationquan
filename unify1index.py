@@ -71,7 +71,7 @@ sheet2_data=data1.sheet_by_name('myPEPB')
 nrow=sheet2_data.nrows
 
 wb = openpyxl.load_workbook(filename4)
-sheet = wb['model4(1)']
+sheet = wb['model2(1)']
 p=sheet.max_row
 print(p)
 print(sheet1_data.cell_value(p-1,6))
@@ -85,10 +85,10 @@ print(sheet2_data.cell_value(nrow-1,2))
 print(type(sheet2_data.cell_value(nrow-1,3)))
 print(float(sheet2_data.cell_value(nrow-1,3)))
 if (sheet2_data.cell_value(nrow-1,2)<=sheet2_data.cell_value(nrow-1,3)):
-    amount=(sheet2_data.cell_value(nrow-1,3)-sheet2_data.cell_value(nrow-1,2))** 2 * 3950
+    amount=(sheet2_data.cell_value(nrow-1,3)-sheet2_data.cell_value(nrow-1,2)) * 3950
     biaozhi=1
 else:
-    amount=(sheet2_data.cell_value(nrow-1,3)-sheet2_data.cell_value(nrow-1,2))** 2 * -3950
+    amount=(sheet2_data.cell_value(nrow-1,3)-sheet2_data.cell_value(nrow-1,2)) * -3950
     biaozhi=0
 sheet.cell(row=p+1, column=1).value=datelai
 sheet.cell(row=p+1, column=1).alignment=AlignmentText1
@@ -137,7 +137,7 @@ wb.save(filename4)
 filename5=dirba1+"/"+filedir3[2]
 data=xlrd.open_workbook(filename5)#openpyxl模块读不出数据，只能读出单元格公式
 sheet1_data=data.sheet_by_name('model4(1)')
-filename3=dirba1+"/"+"szseinnovation100indexmodel1prac.xlsx"
+#filename3=dirba1+"/"+"szseinnovation100indexmodel1prac.xlsx"
 data1=xlrd.open_workbook(filename3)#openpyxl模块读不出数据，只能读出单元格公式
 sheet2_data=data1.sheet_by_name('myPEPB')
 nrow=sheet2_data.nrows
@@ -157,10 +157,10 @@ print(sheet2_data.cell_value(nrow-1,2))
 print(type(sheet2_data.cell_value(nrow-1,3)))
 print(float(sheet2_data.cell_value(nrow-1,3)))
 if (sheet2_data.cell_value(nrow-1,2)<=sheet2_data.cell_value(nrow-1,3)):
-    amount=(sheet2_data.cell_value(nrow-1,3)-sheet2_data.cell_value(nrow-1,2)) * 3950
+    amount=(sheet2_data.cell_value(nrow-1,3)-sheet2_data.cell_value(nrow-1,2))**2 * 3950
     biaozhi=1
 else:
-    amount=(sheet2_data.cell_value(nrow-1,3)-sheet2_data.cell_value(nrow-1,2)) * -3950
+    amount=(sheet2_data.cell_value(nrow-1,3)-sheet2_data.cell_value(nrow-1,2))**2 * -3950
     biaozhi=0
 sheet.cell(row=p+1, column=1).value=datelai
 sheet.cell(row=p+1, column=1).alignment=AlignmentText1
