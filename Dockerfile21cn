@@ -1,0 +1,8 @@
+FROM valuation-docker.pkg.coding.net/valuationquan/valuationquan/szseinnovation100index:latest
+COPY unify1ETFcn.py /unify1ETFcn.py
+COPY lai/valuationquan/HwabaoWPszseinnovation100ETF.xlsx /lai/valuationquan/
+COPY lai/valuationquan/szseinnovation100ETF/szseinnovation100ETFmodel1cn.xlsx /lai/valuationquan/szseinnovation100ETF/
+COPY lai/valuationquan/szseinnovation100ETF/szseinnovation100ETFmodel4(SAR)cn.xlsx /lai/valuationquan/szseinnovation100ETF/
+COPY lai/valuationquan/szseinnovation100ETF/szseinnovation100ETFmodel4(CCI)cn.xlsx /lai/valuationquan/szseinnovation100ETF/
+COPY lai/valuationquan/szseinnovation100ETF/szseinnovation100ETFmodel4(RSI&KDJ)cn.xlsx /lai/valuationquan/szseinnovation100ETF/
+RUN python3 unify1ETFcn.py
