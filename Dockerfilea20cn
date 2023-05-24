@@ -1,0 +1,7 @@
+﻿FROM valuation-docker.pkg.coding.net/valuationquan/valuationquan/valueinmodel1s:latest
+COPY unifyaindexcn.py /unifyaindexcn.py
+COPY lai/valuationquan/AIinduindex.xlsx /lai/valuationquan/
+COPY lai/valuationquan/AIindex/AIinduindexmodel2cn.xlsx /lai/valuationquan/AIindex/
+COPY lai/valuationquan/AIindex/AIinduindexmodel4cn.xlsx /lai/valuationquan/AIindex/
+RUN pip3 install xlrd==1.2.0
+RUN python3 unifyaindexcn.py
