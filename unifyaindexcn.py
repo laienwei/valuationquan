@@ -25,8 +25,8 @@ wb0 = openpyxl.load_workbook(r'./lai/valuationquan/AIinduindex.xlsx')
 sheet0 = wb0['AI_indu_index']
 xx=sheet0.max_row 
 index=sheet0.cell(row=xx,column=5).value/1000
-indexmean=sheet0.cell(row=xx,column=10).value
-indexMA250=sheet0.cell(row=xx,column=11).value
+indexmean=float(sheet0.cell(row=xx,column=10).value)
+indexMA250=float(sheet0.cell(row=xx,column=11).value)
 filedir3=['AIinduindexmodel2cn.xlsx','AIinduindexmodel4cn.xlsx']
 dirba1="./lai/valuationquan/AIindex"
 filename3=dirba1+"/"+filedir3[0]
