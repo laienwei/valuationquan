@@ -44,6 +44,7 @@ wb = openpyxl.load_workbook(filename3)
 for sheet in wb:
     print(sheet.title)
     p=sheet.max_row
+    print(p)
     sheet.cell(row=p+1, column=1).value=datelai
     sheet.cell(row=p+1, column=1).alignment=AlignmentText1
     sheet.cell(row=p+1, column=1).number_format = 'yyyy-mm-dd'
