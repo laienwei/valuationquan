@@ -1,0 +1,7 @@
+FROM valuation-docker.pkg.coding.net/valuationquan/valuationquan/aiindexcn:latest
+COPY unifyaLOFcn.py /unifyaLOFcn.py
+COPY lai/valuationquan/RTcsiAIindexLOF.xlsx /lai/valuationquan/
+COPY lai/valuationquan/AILOF/csiAILOFmodel1meancn.xlsx /lai/valuationquan/AILOF/
+COPY lai/valuationquan/AILOF/csiAILOFmodel2meancn.xlsx /lai/valuationquan/AILOF/
+COPY lai/valuationquan/AILOF/csiAILOFmodel4meancn.xlsx /lai/valuationquan/AILOF/
+RUN python3 unifyaLOFcn.py
