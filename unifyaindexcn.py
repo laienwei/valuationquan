@@ -72,16 +72,16 @@ sheet.cell(row=p+1, column=3).font=fontText1
 sheet.cell(row=p+1, column=3).number_format = '0.00000'
 sheet.cell(row=p+1, column=4).value=amount
 sheet.cell(row=p+1, column=4).font=fontText1
-sheet.cell(row=p+1, column=4).number_format = '0.00_);(0.00)'
+sheet.cell(row=p+1, column=4).number_format = '0.00_);-0.00'
 sheet.cell(row=p+1, column=5).value=amount/index
 sheet.cell(row=p+1, column=5).font=fontText1
-sheet.cell(row=p+1, column=5).number_format = '0.00_);(0.00)'
+sheet.cell(row=p+1, column=5).number_format = '0.00_);-0.00'
 sheet.cell(row=p+1, column=6).value=amount/index+float(aa)
 sheet.cell(row=p+1, column=6).font=fontText1
-sheet.cell(row=p+1, column=6).number_format = '0.00_);(0.00)'
+sheet.cell(row=p+1, column=6).number_format = '0.00_);-0.00'
 sheet.cell(row=p+1, column=7).value=(amount/index+float(aa))*index
 sheet.cell(row=p+1, column=7).font=fontText1
-sheet.cell(row=p+1, column=7).number_format = '0.00_);(0.00)'
+sheet.cell(row=p+1, column=7).number_format = '0.00_);-0.00'
 if(biaozhi==1):
     sheet.cell(row=p+1, column=8).value=float(bb)+amount
     sheet.cell(row=p+1, column=11).value=float(cc)
@@ -89,12 +89,12 @@ else:
     sheet.cell(row=p+1, column=8).value=float(bb)
     sheet.cell(row=p+1, column=11).value=float(cc)-amount
 sheet.cell(row=p+1, column=8).font=fontText1
-sheet.cell(row=p+1, column=8).number_format = '0.00_);(0.00)'
+sheet.cell(row=p+1, column=8).number_format = '0.00_);-0.00'
 sheet.cell(row=p+1, column=11).font=fontText1
-sheet.cell(row=p+1, column=11).number_format = '0.00_);(0.00)'
+sheet.cell(row=p+1, column=11).number_format = '0.00_);-0.00'
 sheet.cell(row=p+1, column=9).value=sheet.cell(row=p+1, column=7).value+sheet.cell(row=p+1, column=11).value
 sheet.cell(row=p+1, column=9).font=fontText1
-sheet.cell(row=p+1, column=9).number_format = '0.00_);(0.00)'
+sheet.cell(row=p+1, column=9).number_format = '0.00_);-0.00'
 sheet.cell(row=p+1, column=10).value=sheet.cell(row=p+1, column=9).value-sheet.cell(row=p+1, column=8).value
 sheet.cell(row=p+1, column=10).font=fontText1
 sheet.cell(row=p+1, column=10).number_format = '0.00_ '
@@ -127,16 +127,16 @@ sheet.cell(row=p+1, column=3).font=fontText1
 sheet.cell(row=p+1, column=3).number_format = '0.00000'
 sheet.cell(row=p+1, column=4).value=amount
 sheet.cell(row=p+1, column=4).font=fontText1
-sheet.cell(row=p+1, column=4).number_format = '0.00_);(0.00)'
+sheet.cell(row=p+1, column=4).number_format = '0.00_);-0.00'
 sheet.cell(row=p+1, column=5).value=amount/index
 sheet.cell(row=p+1, column=5).font=fontText1
-sheet.cell(row=p+1, column=5).number_format = '0.00_);(0.00)'
+sheet.cell(row=p+1, column=5).number_format = '0.00_);-0.00'
 sheet.cell(row=p+1, column=6).value=amount/index+float(aa)
 sheet.cell(row=p+1, column=6).font=fontText1
-sheet.cell(row=p+1, column=6).number_format = '0.00_);(0.00)'
+sheet.cell(row=p+1, column=6).number_format = '0.00_);-0.00'
 sheet.cell(row=p+1, column=7).value=(amount/index+float(aa))*index
 sheet.cell(row=p+1, column=7).font=fontText1
-sheet.cell(row=p+1, column=7).number_format = '0.00_);(0.00)'
+sheet.cell(row=p+1, column=7).number_format = '0.00_);-0.00'
 if(biaozhi==1):
     sheet.cell(row=p+1, column=8).value=float(bb)+amount
     sheet.cell(row=p+1, column=11).value=float(cc)
@@ -144,12 +144,12 @@ else:
     sheet.cell(row=p+1, column=8).value=float(bb)
     sheet.cell(row=p+1, column=11).value=float(cc)-amount
 sheet.cell(row=p+1, column=8).font=fontText1
-sheet.cell(row=p+1, column=8).number_format = '0.00_);(0.00)'
+sheet.cell(row=p+1, column=8).number_format = '0.00_);-0.00'
 sheet.cell(row=p+1, column=11).font=fontText1
-sheet.cell(row=p+1, column=11).number_format = '0.00_);(0.00)'
+sheet.cell(row=p+1, column=11).number_format = '0.00_);-0.00'
 sheet.cell(row=p+1, column=9).value=sheet.cell(row=p+1, column=7).value+sheet.cell(row=p+1, column=11).value
 sheet.cell(row=p+1, column=9).font=fontText1
-sheet.cell(row=p+1, column=9).number_format = '0.00_);(0.00)'
+sheet.cell(row=p+1, column=9).number_format = '0.00_);-0.00'
 sheet.cell(row=p+1, column=10).value=sheet.cell(row=p+1, column=9).value-sheet.cell(row=p+1, column=8).value
 sheet.cell(row=p+1, column=10).font=fontText1
 sheet.cell(row=p+1, column=10).number_format = '0.00_ '
@@ -189,16 +189,16 @@ sheet.cell(row=p+1, column=3).font=fontText1
 sheet.cell(row=p+1, column=3).number_format = '0.00000'
 sheet.cell(row=p+1, column=4).value=amount
 sheet.cell(row=p+1, column=4).font=fontText1
-sheet.cell(row=p+1, column=4).number_format = '0.00_);(0.00)'
+sheet.cell(row=p+1, column=4).number_format = '0.00_);-0.00'
 sheet.cell(row=p+1, column=5).value=amount/index
 sheet.cell(row=p+1, column=5).font=fontText1
-sheet.cell(row=p+1, column=5).number_format = '0.00_);(0.00)'
+sheet.cell(row=p+1, column=5).number_format = '0.00_);-0.00'
 sheet.cell(row=p+1, column=6).value=amount/index+float(aa)
 sheet.cell(row=p+1, column=6).font=fontText1
-sheet.cell(row=p+1, column=6).number_format = '0.00_);(0.00)'
+sheet.cell(row=p+1, column=6).number_format = '0.00_);-0.00'
 sheet.cell(row=p+1, column=7).value=(amount/index+float(aa))*index
 sheet.cell(row=p+1, column=7).font=fontText1
-sheet.cell(row=p+1, column=7).number_format = '0.00_);(0.00)'
+sheet.cell(row=p+1, column=7).number_format = '0.00_);-0.00'
 if(biaozhi==1):
     sheet.cell(row=p+1, column=8).value=float(bb)+amount
     sheet.cell(row=p+1, column=11).value=float(cc)
@@ -206,12 +206,12 @@ else:
     sheet.cell(row=p+1, column=8).value=float(bb)
     sheet.cell(row=p+1, column=11).value=float(cc)-amount
 sheet.cell(row=p+1, column=8).font=fontText1
-sheet.cell(row=p+1, column=8).number_format = '0.00_);(0.00)'
+sheet.cell(row=p+1, column=8).number_format = '0.00_);-0.00'
 sheet.cell(row=p+1, column=11).font=fontText1
-sheet.cell(row=p+1, column=11).number_format = '0.00_);(0.00)'
+sheet.cell(row=p+1, column=11).number_format = '0.00_);-0.00'
 sheet.cell(row=p+1, column=9).value=sheet.cell(row=p+1, column=7).value+sheet.cell(row=p+1, column=11).value
 sheet.cell(row=p+1, column=9).font=fontText1
-sheet.cell(row=p+1, column=9).number_format = '0.00_);(0.00)'
+sheet.cell(row=p+1, column=9).number_format = '0.00_);-0.00'
 sheet.cell(row=p+1, column=10).value=sheet.cell(row=p+1, column=9).value-sheet.cell(row=p+1, column=8).value
 sheet.cell(row=p+1, column=10).font=fontText1
 sheet.cell(row=p+1, column=10).number_format = '0.00_ '
@@ -244,16 +244,16 @@ sheet.cell(row=p+1, column=3).font=fontText1
 sheet.cell(row=p+1, column=3).number_format = '0.00000'
 sheet.cell(row=p+1, column=4).value=amount
 sheet.cell(row=p+1, column=4).font=fontText1
-sheet.cell(row=p+1, column=4).number_format = '0.00_);(0.00)'
+sheet.cell(row=p+1, column=4).number_format = '0.00_);-0.00'
 sheet.cell(row=p+1, column=5).value=amount/index
 sheet.cell(row=p+1, column=5).font=fontText1
-sheet.cell(row=p+1, column=5).number_format = '0.00_);(0.00)'
+sheet.cell(row=p+1, column=5).number_format = '0.00_);-0.00'
 sheet.cell(row=p+1, column=6).value=amount/index+float(aa)
 sheet.cell(row=p+1, column=6).font=fontText1
-sheet.cell(row=p+1, column=6).number_format = '0.00_);(0.00)'
+sheet.cell(row=p+1, column=6).number_format = '0.00_);-0.00'
 sheet.cell(row=p+1, column=7).value=(amount/index+float(aa))*index
 sheet.cell(row=p+1, column=7).font=fontText1
-sheet.cell(row=p+1, column=7).number_format = '0.00_);(0.00)'
+sheet.cell(row=p+1, column=7).number_format = '0.00_);-0.00'
 if(biaozhi==1):
     sheet.cell(row=p+1, column=8).value=float(bb)+amount
     sheet.cell(row=p+1, column=11).value=float(cc)
@@ -261,12 +261,12 @@ else:
     sheet.cell(row=p+1, column=8).value=float(bb)
     sheet.cell(row=p+1, column=11).value=float(cc)-amount
 sheet.cell(row=p+1, column=8).font=fontText1
-sheet.cell(row=p+1, column=8).number_format = '0.00_);(0.00)'
+sheet.cell(row=p+1, column=8).number_format = '0.00_);-0.00'
 sheet.cell(row=p+1, column=11).font=fontText1
-sheet.cell(row=p+1, column=11).number_format = '0.00_);(0.00)'
+sheet.cell(row=p+1, column=11).number_format = '0.00_);-0.00'
 sheet.cell(row=p+1, column=9).value=sheet.cell(row=p+1, column=7).value+sheet.cell(row=p+1, column=11).value
 sheet.cell(row=p+1, column=9).font=fontText1
-sheet.cell(row=p+1, column=9).number_format = '0.00_);(0.00)'
+sheet.cell(row=p+1, column=9).number_format = '0.00_);-0.00'
 sheet.cell(row=p+1, column=10).value=sheet.cell(row=p+1, column=9).value-sheet.cell(row=p+1, column=8).value
 sheet.cell(row=p+1, column=10).font=fontText1
 sheet.cell(row=p+1, column=10).number_format = '0.00_ '
@@ -299,16 +299,16 @@ sheet.cell(row=p+1, column=3).font=fontText1
 sheet.cell(row=p+1, column=3).number_format = '0.00000'
 sheet.cell(row=p+1, column=4).value=amount
 sheet.cell(row=p+1, column=4).font=fontText1
-sheet.cell(row=p+1, column=4).number_format = '0.00_);(0.00)'
+sheet.cell(row=p+1, column=4).number_format = '0.00_);-0.00'
 sheet.cell(row=p+1, column=5).value=amount/index
 sheet.cell(row=p+1, column=5).font=fontText1
-sheet.cell(row=p+1, column=5).number_format = '0.00_);(0.00)'
+sheet.cell(row=p+1, column=5).number_format = '0.00_);-0.00'
 sheet.cell(row=p+1, column=6).value=amount/index+float(aa)
 sheet.cell(row=p+1, column=6).font=fontText1
-sheet.cell(row=p+1, column=6).number_format = '0.00_);(0.00)'
+sheet.cell(row=p+1, column=6).number_format = '0.00_);-0.00'
 sheet.cell(row=p+1, column=7).value=(amount/index+float(aa))*index
 sheet.cell(row=p+1, column=7).font=fontText1
-sheet.cell(row=p+1, column=7).number_format = '0.00_);(0.00)'
+sheet.cell(row=p+1, column=7).number_format = '0.00_);-0.00'
 if(biaozhi==1):
     sheet.cell(row=p+1, column=8).value=float(bb)+amount
     sheet.cell(row=p+1, column=11).value=float(cc)
@@ -316,12 +316,12 @@ else:
     sheet.cell(row=p+1, column=8).value=float(bb)
     sheet.cell(row=p+1, column=11).value=float(cc)-amount
 sheet.cell(row=p+1, column=8).font=fontText1
-sheet.cell(row=p+1, column=8).number_format = '0.00_);(0.00)'
+sheet.cell(row=p+1, column=8).number_format = '0.00_);-0.00'
 sheet.cell(row=p+1, column=11).font=fontText1
-sheet.cell(row=p+1, column=11).number_format = '0.00_);(0.00)'
+sheet.cell(row=p+1, column=11).number_format = '0.00_);-0.00'
 sheet.cell(row=p+1, column=9).value=sheet.cell(row=p+1, column=7).value+sheet.cell(row=p+1, column=11).value
 sheet.cell(row=p+1, column=9).font=fontText1
-sheet.cell(row=p+1, column=9).number_format = '0.00_);(0.00)'
+sheet.cell(row=p+1, column=9).number_format = '0.00_);-0.00'
 sheet.cell(row=p+1, column=10).value=sheet.cell(row=p+1, column=9).value-sheet.cell(row=p+1, column=8).value
 sheet.cell(row=p+1, column=10).font=fontText1
 sheet.cell(row=p+1, column=10).number_format = '0.00_ '
