@@ -67,7 +67,7 @@ sheet.cell(row=p+1, column=8).value=(2000/price+float(mydict1['模型一']))*pri
 sheet.cell(row=p+1, column=9).value=(2000/price+float(mydict1['模型一']))*price-float(mydict2['模型一'])-2000
 for i in range(6):
     sheet.cell(row=p+1, column=i+3).font=fontText1
-    sheet.cell(row=p+1, column=i+3).number_format = '0.00_);(0.00)'
+    sheet.cell(row=p+1, column=i+3).number_format = '0.00_);-0.00'
 sheet.cell(row=p+1, column=9).font=fontText1
 sheet.cell(row=p+1, column=9).number_format = '0.00_ '
 ###################################################################
@@ -101,7 +101,7 @@ else:
     sheet.cell(row=p+1, column=9).value=(2000/price+float(mydict1['模型一计算RSI']))*price-float(mydict2['模型一计算RSI'])-2000
 for i in range(6):
     sheet.cell(row=p+1, column=i+3).font=fontText1
-    sheet.cell(row=p+1, column=i+3).number_format = '0.00_);(0.00)'
+    sheet.cell(row=p+1, column=i+3).number_format = '0.00_);-0.00'
 sheet.cell(row=p+1, column=9).font=fontText1
 sheet.cell(row=p+1, column=9).number_format = '0.00_ '
 
@@ -109,9 +109,9 @@ sheet.cell(row=p+1, column=9).number_format = '0.00_ '
 sheet = wb['模型一计算KDJ']
 sheet.cell(row=p+1, column=10).value=high
 sheet.cell(row=p+1, column=11).value=low
-maxlai=data.sheet_by_name(sheet.title).cell_value(p-1,9)
-minlai=data.sheet_by_name(sheet.title).cell_value(p-1,10)
-t=1
+maxlai=high
+minlai=low
+t=0
 while t<8:
     maxlai=max(maxlai,data.sheet_by_name(sheet.title).cell_value(p-1-t,9))
     minlai=min(minlai,data.sheet_by_name(sheet.title).cell_value(p-1-t,10))
@@ -148,7 +148,7 @@ else:
     sheet.cell(row=p+1, column=9).value=(2000/price+float(mydict1['模型一计算KDJ']))*price-float(mydict2['模型一计算KDJ'])-2000
 for i in range(6):
     sheet.cell(row=p+1, column=i+3).font=fontText1
-    sheet.cell(row=p+1, column=i+3).number_format = '0.00_);(0.00)'
+    sheet.cell(row=p+1, column=i+3).number_format = '0.00_);-0.00'
 sheet.cell(row=p+1, column=9).font=fontText1
 sheet.cell(row=p+1, column=9).number_format = '0.00_ '
 wb.save(filename3)
@@ -219,14 +219,14 @@ else:
     sheet.cell(row=p+1, column=8).value=float(bb)
     sheet.cell(row=p+1, column=11).value=float(cc)-amount
 sheet.cell(row=p+1, column=11).font=fontText1
-sheet.cell(row=p+1, column=11).number_format = '0.00_);(0.00)'
+sheet.cell(row=p+1, column=11).number_format = '0.00_);-0.00'
 sheet.cell(row=p+1, column=9).value=sheet.cell(row=p+1, column=7).value+sheet.cell(row=p+1, column=11).value
 sheet.cell(row=p+1, column=10).value=sheet.cell(row=p+1, column=9).value-sheet.cell(row=p+1, column=8).value
 sheet.cell(row=p+1, column=10).font=fontText1
 sheet.cell(row=p+1, column=10).number_format = '0.00_ '
 for i in range(6):
     sheet.cell(row=p+1, column=i+4).font=fontText1
-    sheet.cell(row=p+1, column=i+4).number_format = '0.00_);(0.00)'
+    sheet.cell(row=p+1, column=i+4).number_format = '0.00_);-0.00'
 ############################################################################
 sheet = wb['模型二 (2)平均线']
 aa=float(mydict1['模型二 (2)平均线'])
@@ -249,14 +249,14 @@ else:
     sheet.cell(row=p+1, column=8).value=float(bb)
     sheet.cell(row=p+1, column=11).value=float(cc)-amount
 sheet.cell(row=p+1, column=11).font=fontText1
-sheet.cell(row=p+1, column=11).number_format = '0.00_);(0.00)'
+sheet.cell(row=p+1, column=11).number_format = '0.00_);-0.00'
 sheet.cell(row=p+1, column=9).value=sheet.cell(row=p+1, column=7).value+sheet.cell(row=p+1, column=11).value
 sheet.cell(row=p+1, column=10).value=sheet.cell(row=p+1, column=9).value-sheet.cell(row=p+1, column=8).value
 sheet.cell(row=p+1, column=10).font=fontText1
 sheet.cell(row=p+1, column=10).number_format = '0.00_ '
 for i in range(6):
     sheet.cell(row=p+1, column=i+4).font=fontText1
-    sheet.cell(row=p+1, column=i+4).number_format = '0.00_);(0.00)'
+    sheet.cell(row=p+1, column=i+4).number_format = '0.00_);-0.00'
 ###########################################################################
 sheet = wb['模型二 (1)平均线成交量']
 aa=float(mydict1['模型二 (1)平均线成交量'])
@@ -281,14 +281,14 @@ else:
     sheet.cell(row=p+1, column=10).value=float(bb)
     sheet.cell(row=p+1, column=13).value=float(cc)-amount
 sheet.cell(row=p+1, column=13).font=fontText1
-sheet.cell(row=p+1, column=13).number_format = '0.00_);(0.00)'
+sheet.cell(row=p+1, column=13).number_format = '0.00_);-0.00'
 sheet.cell(row=p+1, column=11).value=sheet.cell(row=p+1, column=9).value+sheet.cell(row=p+1, column=13).value
 sheet.cell(row=p+1, column=12).value=sheet.cell(row=p+1, column=11).value-sheet.cell(row=p+1, column=10).value
 sheet.cell(row=p+1, column=12).font=fontText1
 sheet.cell(row=p+1, column=12).number_format = '0.00_ '
 for i in range(8):
     sheet.cell(row=p+1, column=i+4).font=fontText1
-    sheet.cell(row=p+1, column=i+4).number_format = '0.00_);(0.00)'
+    sheet.cell(row=p+1, column=i+4).number_format = '0.00_);-0.00'
 ############################################################################
 sheet = wb['模型二 (2)平均线成交量']
 aa=float(mydict1['模型二 (2)平均线成交量'])
@@ -313,14 +313,14 @@ else:
     sheet.cell(row=p+1, column=10).value=float(bb)
     sheet.cell(row=p+1, column=13).value=float(cc)-amount
 sheet.cell(row=p+1, column=13).font=fontText1
-sheet.cell(row=p+1, column=13).number_format = '0.00_);(0.00)'
+sheet.cell(row=p+1, column=13).number_format = '0.00_);-0.00'
 sheet.cell(row=p+1, column=11).value=sheet.cell(row=p+1, column=9).value+sheet.cell(row=p+1, column=13).value
 sheet.cell(row=p+1, column=12).value=sheet.cell(row=p+1, column=11).value-sheet.cell(row=p+1, column=10).value
 sheet.cell(row=p+1, column=12).font=fontText1
 sheet.cell(row=p+1, column=12).number_format = '0.00_ '
 for i in range(8):
     sheet.cell(row=p+1, column=i+4).font=fontText1
-    sheet.cell(row=p+1, column=i+4).number_format = '0.00_);(0.00)'
+    sheet.cell(row=p+1, column=i+4).number_format = '0.00_);-0.00'
 #####################################################################
 sheet = wb['模型二 (1)平均线计算RSI']
 aa=float(mydict1['模型二 (1)平均线计算RSI'])
@@ -363,14 +363,14 @@ else:
     sheet.cell(row=p+1, column=8).value=float(bb)
     sheet.cell(row=p+1, column=11).value=float(cc)-amount
 sheet.cell(row=p+1, column=11).font=fontText1
-sheet.cell(row=p+1, column=11).number_format = '0.00_);(0.00)'
+sheet.cell(row=p+1, column=11).number_format = '0.00_);-0.00'
 sheet.cell(row=p+1, column=9).value=sheet.cell(row=p+1, column=7).value+sheet.cell(row=p+1, column=11).value
 sheet.cell(row=p+1, column=10).value=sheet.cell(row=p+1, column=9).value-sheet.cell(row=p+1, column=8).value
 sheet.cell(row=p+1, column=10).font=fontText1
 sheet.cell(row=p+1, column=10).number_format = '0.00_ '
 for i in range(6):
     sheet.cell(row=p+1, column=i+4).font=fontText1
-    sheet.cell(row=p+1, column=i+4).number_format = '0.00_);(0.00)'
+    sheet.cell(row=p+1, column=i+4).number_format = '0.00_);-0.00'
 for i in range(4):
     sheet.cell(row=p+1, column=i+12).font=fontText1
     sheet.cell(row=p+1, column=i+12).number_format = '0.000000_);(0.000000)' 
@@ -416,14 +416,14 @@ else:
     sheet.cell(row=p+1, column=8).value=float(bb)
     sheet.cell(row=p+1, column=11).value=float(cc)-amount
 sheet.cell(row=p+1, column=11).font=fontText1
-sheet.cell(row=p+1, column=11).number_format = '0.00_);(0.00)'
+sheet.cell(row=p+1, column=11).number_format = '0.00_);-0.00'
 sheet.cell(row=p+1, column=9).value=sheet.cell(row=p+1, column=7).value+sheet.cell(row=p+1, column=11).value
 sheet.cell(row=p+1, column=10).value=sheet.cell(row=p+1, column=9).value-sheet.cell(row=p+1, column=8).value
 sheet.cell(row=p+1, column=10).font=fontText1
 sheet.cell(row=p+1, column=10).number_format = '0.00_ '
 for i in range(6):
     sheet.cell(row=p+1, column=i+4).font=fontText1
-    sheet.cell(row=p+1, column=i+4).number_format = '0.00_);(0.00)'
+    sheet.cell(row=p+1, column=i+4).number_format = '0.00_);-0.00'
 for i in range(4):
     sheet.cell(row=p+1, column=i+12).font=fontText1
     sheet.cell(row=p+1, column=i+12).number_format = '0.000000_);(0.000000)'
@@ -437,10 +437,12 @@ sheet.cell(row=p+1, column=13).value=datax.sheet_by_name('模型一计算KDJ').c
 sheet.cell(row=p+1, column=14).value=datax.sheet_by_name('模型一计算KDJ').cell_value(nrowx-1,15)
 sheet.cell(row=p+1, column=15).value=datax.sheet_by_name('模型一计算KDJ').cell_value(nrowx-1,16)
 KDJ=datax.sheet_by_name('模型一计算KDJ').cell_value(nrowx-1,16)
-if((KDJ<0)or(KDJ>100)):
-    sign=1.2
-else:
+if((KDJ<-10)or(KDJ>110)):
     sign=1
+elif((KDJ<55)and(KDJ>45)):
+    sign=0.2
+else:
+    sign=0.95
 sheet.cell(row=p+1, column=16).value=sign
 if (price<=pricemean):
     amount=(pricemean-price) * 1550 * sign
@@ -459,17 +461,17 @@ else:
     sheet.cell(row=p+1, column=8).value=float(bb)
     sheet.cell(row=p+1, column=11).value=float(cc)-amount
 sheet.cell(row=p+1, column=11).font=fontText1
-sheet.cell(row=p+1, column=11).number_format = '0.00_);(0.00)'
+sheet.cell(row=p+1, column=11).number_format = '0.00_);-0.00'
 sheet.cell(row=p+1, column=9).value=sheet.cell(row=p+1, column=7).value+sheet.cell(row=p+1, column=11).value
 sheet.cell(row=p+1, column=10).value=sheet.cell(row=p+1, column=9).value-sheet.cell(row=p+1, column=8).value
 sheet.cell(row=p+1, column=10).font=fontText1
 sheet.cell(row=p+1, column=10).number_format = '0.00_ '
 for i in range(6):
     sheet.cell(row=p+1, column=i+4).font=fontText1
-    sheet.cell(row=p+1, column=i+4).number_format = '0.00_);(0.00)'
+    sheet.cell(row=p+1, column=i+4).number_format = '0.00_);-0.00'
 for i in range(4):
     sheet.cell(row=p+1, column=i+12).font=fontText1
-    sheet.cell(row=p+1, column=i+12).number_format = '0.00_);(0.00)'   
+    sheet.cell(row=p+1, column=i+12).number_format = '0.00_);-0.00'   
 sheet.cell(row=p+1, column=15).font=fontText1
 sheet.cell(row=p+1, column=15).number_format = '0.00_ '  
 sheet.cell(row=p+1, column=16).font=fontText2
@@ -484,10 +486,12 @@ sheet.cell(row=p+1, column=13).value=datax.sheet_by_name('模型一计算KDJ').c
 sheet.cell(row=p+1, column=14).value=datax.sheet_by_name('模型一计算KDJ').cell_value(nrowx-1,15)
 sheet.cell(row=p+1, column=15).value=datax.sheet_by_name('模型一计算KDJ').cell_value(nrowx-1,16)
 KDJ=datax.sheet_by_name('模型一计算KDJ').cell_value(nrowx-1,16)
-if((KDJ<0)or(KDJ>100)):
-    sign=1.2
-else:
+if((KDJ<-10)or(KDJ>110)):
     sign=1
+elif((KDJ<55)and(KDJ>45)):
+    sign=0.2
+else:
+    sign=0.95
 sheet.cell(row=p+1, column=16).value=sign
 if (price<=pricemean):
     amount=(pricemean-price)**2 * 1550 * sign
@@ -506,17 +510,17 @@ else:
     sheet.cell(row=p+1, column=8).value=float(bb)
     sheet.cell(row=p+1, column=11).value=float(cc)-amount
 sheet.cell(row=p+1, column=11).font=fontText1
-sheet.cell(row=p+1, column=11).number_format = '0.00_);(0.00)'
+sheet.cell(row=p+1, column=11).number_format = '0.00_);-0.00'
 sheet.cell(row=p+1, column=9).value=sheet.cell(row=p+1, column=7).value+sheet.cell(row=p+1, column=11).value
 sheet.cell(row=p+1, column=10).value=sheet.cell(row=p+1, column=9).value-sheet.cell(row=p+1, column=8).value
 sheet.cell(row=p+1, column=10).font=fontText1
 sheet.cell(row=p+1, column=10).number_format = '0.00_ '
 for i in range(6):
     sheet.cell(row=p+1, column=i+4).font=fontText1
-    sheet.cell(row=p+1, column=i+4).number_format = '0.00_);(0.00)'
+    sheet.cell(row=p+1, column=i+4).number_format = '0.00_);-0.00'
 for i in range(4):
     sheet.cell(row=p+1, column=i+12).font=fontText1
-    sheet.cell(row=p+1, column=i+12).number_format = '0.00_);(0.00)'   
+    sheet.cell(row=p+1, column=i+12).number_format = '0.00_);-0.00'   
 sheet.cell(row=p+1, column=15).font=fontText1
 sheet.cell(row=p+1, column=15).number_format = '0.00_ '  
 sheet.cell(row=p+1, column=16).font=fontText2
@@ -591,14 +595,14 @@ else:
     sheet.cell(row=p+1, column=8).value=float(bb)
     sheet.cell(row=p+1, column=11).value=float(cc)-amount
 sheet.cell(row=p+1, column=11).font=fontText1
-sheet.cell(row=p+1, column=11).number_format = '0.00_);(0.00)'
+sheet.cell(row=p+1, column=11).number_format = '0.00_);-0.00'
 sheet.cell(row=p+1, column=9).value=sheet.cell(row=p+1, column=7).value+sheet.cell(row=p+1, column=11).value
 sheet.cell(row=p+1, column=10).value=sheet.cell(row=p+1, column=9).value-sheet.cell(row=p+1, column=8).value
 sheet.cell(row=p+1, column=10).font=fontText1
 sheet.cell(row=p+1, column=10).number_format = '0.00_ '
 for i in range(6):
     sheet.cell(row=p+1, column=i+4).font=fontText1
-    sheet.cell(row=p+1, column=i+4).number_format = '0.00_);(0.00)'
+    sheet.cell(row=p+1, column=i+4).number_format = '0.00_);-0.00'
 ############################################################################
 sheet = wb['模型四 (3)平均线']
 aa=float(mydict1['模型四 (3)平均线'])
@@ -621,14 +625,14 @@ else:
     sheet.cell(row=p+1, column=8).value=float(bb)
     sheet.cell(row=p+1, column=11).value=float(cc)-amount
 sheet.cell(row=p+1, column=11).font=fontText1
-sheet.cell(row=p+1, column=11).number_format = '0.00_);(0.00)'
+sheet.cell(row=p+1, column=11).number_format = '0.00_);-0.00'
 sheet.cell(row=p+1, column=9).value=sheet.cell(row=p+1, column=7).value+sheet.cell(row=p+1, column=11).value
 sheet.cell(row=p+1, column=10).value=sheet.cell(row=p+1, column=9).value-sheet.cell(row=p+1, column=8).value
 sheet.cell(row=p+1, column=10).font=fontText1
 sheet.cell(row=p+1, column=10).number_format = '0.00_ '
 for i in range(6):
     sheet.cell(row=p+1, column=i+4).font=fontText1
-    sheet.cell(row=p+1, column=i+4).number_format = '0.00_);(0.00)'
+    sheet.cell(row=p+1, column=i+4).number_format = '0.00_);-0.00'
 ###########################################################################
 sheet = wb['模型四 (1)平均线成交量']
 aa=float(mydict1['模型四 (1)平均线成交量'])
@@ -653,14 +657,14 @@ else:
     sheet.cell(row=p+1, column=10).value=float(bb)
     sheet.cell(row=p+1, column=13).value=float(cc)-amount
 sheet.cell(row=p+1, column=13).font=fontText1
-sheet.cell(row=p+1, column=13).number_format = '0.00_);(0.00)'
+sheet.cell(row=p+1, column=13).number_format = '0.00_);-0.00'
 sheet.cell(row=p+1, column=11).value=sheet.cell(row=p+1, column=9).value+sheet.cell(row=p+1, column=13).value
 sheet.cell(row=p+1, column=12).value=sheet.cell(row=p+1, column=11).value-sheet.cell(row=p+1, column=10).value
 sheet.cell(row=p+1, column=12).font=fontText1
 sheet.cell(row=p+1, column=12).number_format = '0.00_ '
 for i in range(8):
     sheet.cell(row=p+1, column=i+4).font=fontText1
-    sheet.cell(row=p+1, column=i+4).number_format = '0.00_);(0.00)'
+    sheet.cell(row=p+1, column=i+4).number_format = '0.00_);-0.00'
 ############################################################################
 sheet = wb['模型四 (3)平均线成交量']
 aa=float(mydict1['模型四 (3)平均线成交量'])
@@ -685,14 +689,14 @@ else:
     sheet.cell(row=p+1, column=10).value=float(bb)
     sheet.cell(row=p+1, column=13).value=float(cc)-amount
 sheet.cell(row=p+1, column=13).font=fontText1
-sheet.cell(row=p+1, column=13).number_format = '0.00_);(0.00)'
+sheet.cell(row=p+1, column=13).number_format = '0.00_);-0.00'
 sheet.cell(row=p+1, column=11).value=sheet.cell(row=p+1, column=9).value+sheet.cell(row=p+1, column=13).value
 sheet.cell(row=p+1, column=12).value=sheet.cell(row=p+1, column=11).value-sheet.cell(row=p+1, column=10).value
 sheet.cell(row=p+1, column=12).font=fontText1
 sheet.cell(row=p+1, column=12).number_format = '0.00_ '
 for i in range(8):
     sheet.cell(row=p+1, column=i+4).font=fontText1
-    sheet.cell(row=p+1, column=i+4).number_format = '0.00_);(0.00)'
+    sheet.cell(row=p+1, column=i+4).number_format = '0.00_);-0.00'
 #####################################################################
 sheet = wb['模型四 (1)平均线计算RSI']
 aa=float(mydict1['模型四 (1)平均线计算RSI'])
@@ -735,14 +739,14 @@ else:
     sheet.cell(row=p+1, column=8).value=float(bb)
     sheet.cell(row=p+1, column=11).value=float(cc)-amount
 sheet.cell(row=p+1, column=11).font=fontText1
-sheet.cell(row=p+1, column=11).number_format = '0.00_);(0.00)'
+sheet.cell(row=p+1, column=11).number_format = '0.00_);-0.00'
 sheet.cell(row=p+1, column=9).value=sheet.cell(row=p+1, column=7).value+sheet.cell(row=p+1, column=11).value
 sheet.cell(row=p+1, column=10).value=sheet.cell(row=p+1, column=9).value-sheet.cell(row=p+1, column=8).value
 sheet.cell(row=p+1, column=10).font=fontText1
 sheet.cell(row=p+1, column=10).number_format = '0.00_ '
 for i in range(6):
     sheet.cell(row=p+1, column=i+4).font=fontText1
-    sheet.cell(row=p+1, column=i+4).number_format = '0.00_);(0.00)'
+    sheet.cell(row=p+1, column=i+4).number_format = '0.00_);-0.00'
 for i in range(4):
     sheet.cell(row=p+1, column=i+12).font=fontText1
     sheet.cell(row=p+1, column=i+12).number_format = '0.000000_);(0.000000)' 
@@ -788,14 +792,14 @@ else:
     sheet.cell(row=p+1, column=8).value=float(bb)
     sheet.cell(row=p+1, column=11).value=float(cc)-amount
 sheet.cell(row=p+1, column=11).font=fontText1
-sheet.cell(row=p+1, column=11).number_format = '0.00_);(0.00)'
+sheet.cell(row=p+1, column=11).number_format = '0.00_);-0.00'
 sheet.cell(row=p+1, column=9).value=sheet.cell(row=p+1, column=7).value+sheet.cell(row=p+1, column=11).value
 sheet.cell(row=p+1, column=10).value=sheet.cell(row=p+1, column=9).value-sheet.cell(row=p+1, column=8).value
 sheet.cell(row=p+1, column=10).font=fontText1
 sheet.cell(row=p+1, column=10).number_format = '0.00_ '
 for i in range(6):
     sheet.cell(row=p+1, column=i+4).font=fontText1
-    sheet.cell(row=p+1, column=i+4).number_format = '0.00_);(0.00)'
+    sheet.cell(row=p+1, column=i+4).number_format = '0.00_);-0.00'
 for i in range(4):
     sheet.cell(row=p+1, column=i+12).font=fontText1
     sheet.cell(row=p+1, column=i+12).number_format = '0.000000_);(0.000000)'
@@ -809,10 +813,12 @@ sheet.cell(row=p+1, column=13).value=datax.sheet_by_name('模型一计算KDJ').c
 sheet.cell(row=p+1, column=14).value=datax.sheet_by_name('模型一计算KDJ').cell_value(nrowx-1,15)
 sheet.cell(row=p+1, column=15).value=datax.sheet_by_name('模型一计算KDJ').cell_value(nrowx-1,16)
 KDJ=datax.sheet_by_name('模型一计算KDJ').cell_value(nrowx-1,16)
-if((KDJ<0)or(KDJ>100)):
-    sign=1.2
-else:
+if((KDJ<-10)or(KDJ>110)):
     sign=1
+elif((KDJ<55)and(KDJ>45)):
+    sign=0.2
+else:
+    sign=0.95
 sheet.cell(row=p+1, column=16).value=sign
 if (price<=pricemean):
     amount=(pricemean-price)**2 * 1550 * sign
@@ -831,17 +837,17 @@ else:
     sheet.cell(row=p+1, column=8).value=float(bb)
     sheet.cell(row=p+1, column=11).value=float(cc)-amount
 sheet.cell(row=p+1, column=11).font=fontText1
-sheet.cell(row=p+1, column=11).number_format = '0.00_);(0.00)'
+sheet.cell(row=p+1, column=11).number_format = '0.00_);-0.00'
 sheet.cell(row=p+1, column=9).value=sheet.cell(row=p+1, column=7).value+sheet.cell(row=p+1, column=11).value
 sheet.cell(row=p+1, column=10).value=sheet.cell(row=p+1, column=9).value-sheet.cell(row=p+1, column=8).value
 sheet.cell(row=p+1, column=10).font=fontText1
 sheet.cell(row=p+1, column=10).number_format = '0.00_ '
 for i in range(6):
     sheet.cell(row=p+1, column=i+4).font=fontText1
-    sheet.cell(row=p+1, column=i+4).number_format = '0.00_);(0.00)'
+    sheet.cell(row=p+1, column=i+4).number_format = '0.00_);-0.00'
 for i in range(4):
     sheet.cell(row=p+1, column=i+12).font=fontText1
-    sheet.cell(row=p+1, column=i+12).number_format = '0.00_);(0.00)'   
+    sheet.cell(row=p+1, column=i+12).number_format = '0.00_);-0.00'   
 sheet.cell(row=p+1, column=15).font=fontText1
 sheet.cell(row=p+1, column=15).number_format = '0.00_ '  
 sheet.cell(row=p+1, column=16).font=fontText2
@@ -856,10 +862,12 @@ sheet.cell(row=p+1, column=13).value=datax.sheet_by_name('模型一计算KDJ').c
 sheet.cell(row=p+1, column=14).value=datax.sheet_by_name('模型一计算KDJ').cell_value(nrowx-1,15)
 sheet.cell(row=p+1, column=15).value=datax.sheet_by_name('模型一计算KDJ').cell_value(nrowx-1,16)
 KDJ=datax.sheet_by_name('模型一计算KDJ').cell_value(nrowx-1,16)
-if((KDJ<0)or(KDJ>100)):
-    sign=1.2
-else:
+if((KDJ<-10)or(KDJ>110)):
     sign=1
+elif((KDJ<55)and(KDJ>45)):
+    sign=0.2
+else:
+    sign=0.95
 sheet.cell(row=p+1, column=16).value=sign
 if (price<=pricemean):
     amount=(pricemean-price)**3 * 1550 * sign
@@ -878,17 +886,17 @@ else:
     sheet.cell(row=p+1, column=8).value=float(bb)
     sheet.cell(row=p+1, column=11).value=float(cc)-amount
 sheet.cell(row=p+1, column=11).font=fontText1
-sheet.cell(row=p+1, column=11).number_format = '0.00_);(0.00)'
+sheet.cell(row=p+1, column=11).number_format = '0.00_);-0.00'
 sheet.cell(row=p+1, column=9).value=sheet.cell(row=p+1, column=7).value+sheet.cell(row=p+1, column=11).value
 sheet.cell(row=p+1, column=10).value=sheet.cell(row=p+1, column=9).value-sheet.cell(row=p+1, column=8).value
 sheet.cell(row=p+1, column=10).font=fontText1
 sheet.cell(row=p+1, column=10).number_format = '0.00_ '
 for i in range(6):
     sheet.cell(row=p+1, column=i+4).font=fontText1
-    sheet.cell(row=p+1, column=i+4).number_format = '0.00_);(0.00)'
+    sheet.cell(row=p+1, column=i+4).number_format = '0.00_);-0.00'
 for i in range(4):
     sheet.cell(row=p+1, column=i+12).font=fontText1
-    sheet.cell(row=p+1, column=i+12).number_format = '0.00_);(0.00)'   
+    sheet.cell(row=p+1, column=i+12).number_format = '0.00_);-0.00'   
 sheet.cell(row=p+1, column=15).font=fontText1
 sheet.cell(row=p+1, column=15).number_format = '0.00_ '  
 sheet.cell(row=p+1, column=16).font=fontText2
