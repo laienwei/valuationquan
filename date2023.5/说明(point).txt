@@ -1,0 +1,2 @@
+2023年5月23日，爬虫运行时不知何故而提前终止，大部分数据未能获取，仅399001至399088的滚动市盈率为真实。其余缺少部分以5月22日相应数据和5月24日相应数据的均值代替。
+On May 23, 2023, the operation of the crawler was terminated prematurely as unknown reasons, and most of the data was not obtained. Only the rolling P/E ratios of 399001 to 399088 were true. The remaining missing parts are replaced by the mean of the corresponding data on May 22nd and May 24th.
