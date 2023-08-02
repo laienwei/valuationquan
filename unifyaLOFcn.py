@@ -13,7 +13,7 @@
 import openpyxl
 import xlrd
 from openpyxl.styles import Font,Alignment
-datelai='2023-06-30'
+datelai='2023-07-31'
 a=[]
 b=[]
 c=[]
