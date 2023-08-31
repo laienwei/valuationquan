@@ -54,8 +54,8 @@ for i in range(p-3):
 print("over now")
 print(sum0)
 for i in range(num):
-    sum0=sum0+sheet0.cell(row=xx+i+1, column=125).value
-    sheet.cell(row=p+i+1, column=3).value=sheet0.cell(row=xx+i+1, column=125).value
+    sum0=sum0+sheet0.cell(row=xx+i+1, column=129).value
+    sheet.cell(row=p+i+1, column=3).value=sheet0.cell(row=xx+i+1, column=129).value
     sheet.cell(row=p+i+1, column=1).value=p+i-1
     sheet.cell(row=p+i+1, column=2).value=lines[i]
     sheet.cell(row=p+i+1, column=4).value=sum0/(p+i-1)
@@ -102,8 +102,8 @@ for i in range(p-3):
 print("over now")
 print(sum0)
 for i in range(num):
-    sum0=sum0+sheet0.cell(row=xx+i+1, column=125).value
-    sheet.cell(row=p+i+1, column=3).value=sheet0.cell(row=xx+i+1, column=125).value
+    sum0=sum0+sheet0.cell(row=xx+i+1, column=129).value
+    sheet.cell(row=p+i+1, column=3).value=sheet0.cell(row=xx+i+1, column=129).value
     sheet.cell(row=p+i+1, column=1).value=p+i-1
     sheet.cell(row=p+i+1, column=2).value=lines[i]
     sheet.cell(row=p+i+1, column=4).value=sum0/(p+i-1)
