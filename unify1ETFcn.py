@@ -7,7 +7,7 @@
 import openpyxl
 import xlrd
 from openpyxl.styles import Font,Alignment
-datelai='2023-07-31'
+datelai='2023-09-28'
 a=[]
 b=[]
 c=[]
@@ -460,21 +460,21 @@ else:
 sheet.cell(row=p+1, column=16).value=sign
 sheet.cell(row=p+1, column=16).font=fontText2
 sheet.cell(row=p+1, column=16).number_format = 'General'
-Turnover=sheet0.cell_value(xx-1,5)
-Turnovermean=sheet0.cell_value(xx-1,8)
-print(type(Turnovermean))
-print(Turnovermean)
-sheet.cell(row=p+1, column=5).value=Turnover
+vol=sheet0.cell_value(xx-1,5)
+volmean=sheet0.cell_value(xx-1,8)
+print(type(volmean))
+print(volmean)
+sheet.cell(row=p+1, column=5).value=vol
 sheet.cell(row=p+1, column=5).font=fontText1
 sheet.cell(row=p+1, column=5).number_format = '0.00_);-0.00'
-sheet.cell(row=p+1, column=6).value=Turnovermean
+sheet.cell(row=p+1, column=6).value=volmean
 sheet.cell(row=p+1, column=6).font=fontText1
 sheet.cell(row=p+1, column=6).number_format = '0.00_);-0.00'
 if (sheet2_data.cell_value(nrow-1,2)<=sheet2_data.cell_value(nrow-1,3)):
-    amount=(sheet2_data.cell_value(nrow-1,3)-sheet2_data.cell_value(nrow-1,2))** 3 * 3950 * sign * Turnover / Turnovermean
+    amount=(sheet2_data.cell_value(nrow-1,3)-sheet2_data.cell_value(nrow-1,2))** 3 * 3950 * sign * vol / volmean
     biaozhi=1
 else:
-    amount=(sheet2_data.cell_value(nrow-1,3)-sheet2_data.cell_value(nrow-1,2))** 3 * -3950 * sign * Turnover / Turnovermean
+    amount=(sheet2_data.cell_value(nrow-1,3)-sheet2_data.cell_value(nrow-1,2))** 3 * -3950 * sign * vol / volmean
     biaozhi=0
 sheet.cell(row=p+1, column=7).value=amount
 sheet.cell(row=p+1, column=8).value=amount/price
@@ -829,21 +829,21 @@ sheet = wb['模型四 (3)PE副本成交量']
 aa=float(mydict1['模型四 (3)PE副本成交量'])
 bb=float(mydict2['模型四 (3)PE副本成交量'])
 cc=float(mydict3['模型四 (3)PE副本成交量'])
-Turnover=sheet0.cell_value(xx-1,5)
-Turnovermean=sheet0.cell_value(xx-1,8)
-print(type(Turnovermean))
-print(Turnovermean)
-sheet.cell(row=p+1, column=5).value=Turnover
+vol=sheet0.cell_value(xx-1,5)
+volmean=sheet0.cell_value(xx-1,8)
+print(type(volmean))
+print(volmean)
+sheet.cell(row=p+1, column=5).value=vol
 sheet.cell(row=p+1, column=5).font=fontText1
 sheet.cell(row=p+1, column=5).number_format = '0.00_);-0.00'
-sheet.cell(row=p+1, column=6).value=Turnovermean
+sheet.cell(row=p+1, column=6).value=volmean
 sheet.cell(row=p+1, column=6).font=fontText1
 sheet.cell(row=p+1, column=6).number_format = '0.00_);-0.00'
 if (sheet2_data.cell_value(nrow-1,2)<=sheet2_data.cell_value(nrow-1,3)):
-    amount=(sheet2_data.cell_value(nrow-1,3)-sheet2_data.cell_value(nrow-1,2))** 3 * 3950 * Turnover / Turnovermean
+    amount=(sheet2_data.cell_value(nrow-1,3)-sheet2_data.cell_value(nrow-1,2))** 3 * 3950 * vol / volmean
     biaozhi=1
 else:
-    amount=(sheet2_data.cell_value(nrow-1,3)-sheet2_data.cell_value(nrow-1,2))** 3 * -3950 * Turnover / Turnovermean
+    amount=(sheet2_data.cell_value(nrow-1,3)-sheet2_data.cell_value(nrow-1,2))** 3 * -3950 * vol / volmean
     biaozhi=0
 sheet.cell(row=p+1, column=7).value=amount
 sheet.cell(row=p+1, column=8).value=amount/price
@@ -886,21 +886,21 @@ else:
 sheet.cell(row=p+1, column=18).value=sign
 sheet.cell(row=p+1, column=18).font=fontText2
 sheet.cell(row=p+1, column=18).number_format = 'General'
-Turnover=sheet0.cell_value(xx-1,5)
-Turnovermean=sheet0.cell_value(xx-1,8)
-print(type(Turnovermean))
-print(Turnovermean)
-sheet.cell(row=p+1, column=5).value=Turnover
+vol=sheet0.cell_value(xx-1,5)
+volmean=sheet0.cell_value(xx-1,8)
+print(type(volmean))
+print(volmean)
+sheet.cell(row=p+1, column=5).value=vol
 sheet.cell(row=p+1, column=5).font=fontText1
 sheet.cell(row=p+1, column=5).number_format = '0.00_);-0.00'
-sheet.cell(row=p+1, column=6).value=Turnovermean
+sheet.cell(row=p+1, column=6).value=volmean
 sheet.cell(row=p+1, column=6).font=fontText1
 sheet.cell(row=p+1, column=6).number_format = '0.00_);-0.00'
 if (sheet2_data.cell_value(nrow-1,2)<=sheet2_data.cell_value(nrow-1,3)):
-    amount=(sheet2_data.cell_value(nrow-1,3)-sheet2_data.cell_value(nrow-1,2))** 3 * sign * 550 * Turnover / Turnovermean
+    amount=(sheet2_data.cell_value(nrow-1,3)-sheet2_data.cell_value(nrow-1,2))** 3 * sign * 550 * vol / volmean
     biaozhi=1
 else:
-    amount=(sheet2_data.cell_value(nrow-1,3)-sheet2_data.cell_value(nrow-1,2))** 3 * sign * -550 * Turnover / Turnovermean
+    amount=(sheet2_data.cell_value(nrow-1,3)-sheet2_data.cell_value(nrow-1,2))** 3 * sign * -550 * vol / volmean
     biaozhi=0
 sheet.cell(row=p+1, column=7).value=amount
 sheet.cell(row=p+1, column=8).value=amount/price

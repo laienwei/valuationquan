@@ -7,7 +7,7 @@
 import openpyxl
 import xlrd
 from openpyxl.styles import Font,Alignment
-datelai='2023-07-31'
+datelai='2023-09-28'
 a=[]
 b=[]
 c=[]
@@ -311,7 +311,7 @@ for sheet in wb:
     sheet.cell(row=p+1, column=4).value=sheet2_data.cell_value(nrow-1,3)#PE均值
     sheet.cell(row=p+1, column=4).font=fontText1
     sheet.cell(row=p+1, column=4).number_format = 'General'
-    if(sheet.title!='model4(3)turnover&CCI_per_day'):
+    if(sheet.title!='model4(3)vol&CCI_per_day'):
         a.append(sheet.title)
         b.append(data.sheet_by_name(sheet.title).cell_value(p-1,6))
         c.append(data.sheet_by_name(sheet.title).cell_value(p-1,8))
@@ -448,10 +448,10 @@ for i in range(6):
     sheet.cell(row=p+1, column=i+5).font=fontText1
     sheet.cell(row=p+1, column=i+5).number_format = '0.00_);-0.00'
 ############################################################################
-sheet = wb['model4(3)turnover&CCI_per_day']
-aa=float(mydict1['model4(3)turnover&CCI_per_day'])
-bb=float(mydict2['model4(3)turnover&CCI_per_day'])
-cc=float(mydict3['model4(3)turnover&CCI_per_day'])
+sheet = wb['model4(3)vol&CCI_per_day']
+aa=float(mydict1['model4(3)vol&CCI_per_day'])
+bb=float(mydict2['model4(3)vol&CCI_per_day'])
+cc=float(mydict3['model4(3)vol&CCI_per_day'])
 CCI=sheet0.cell_value(xx-1,20)
 sheet.cell(row=p+1, column=15).value=CCI
 sheet.cell(row=p+1, column=15).font=fontText2
@@ -465,21 +465,21 @@ else:
 sheet.cell(row=p+1, column=16).value=sign
 sheet.cell(row=p+1, column=16).font=fontText2
 sheet.cell(row=p+1, column=16).number_format = 'General'
-Turnover=sheet0.cell_value(xx-1,5)
-Turnovermean=sheet0.cell_value(xx-1,8)
-print(type(Turnovermean))
-print(Turnovermean)
-sheet.cell(row=p+1, column=5).value=Turnover
+vol=sheet0.cell_value(xx-1,5)
+volmean=sheet0.cell_value(xx-1,8)
+print(type(volmean))
+print(volmean)
+sheet.cell(row=p+1, column=5).value=vol
 sheet.cell(row=p+1, column=5).font=fontText1
 sheet.cell(row=p+1, column=5).number_format = '0.00_);-0.00'
-sheet.cell(row=p+1, column=6).value=Turnovermean
+sheet.cell(row=p+1, column=6).value=volmean
 sheet.cell(row=p+1, column=6).font=fontText1
 sheet.cell(row=p+1, column=6).number_format = '0.00_);-0.00'
 if (sheet2_data.cell_value(nrow-1,2)<=sheet2_data.cell_value(nrow-1,3)):
-    amount=(sheet2_data.cell_value(nrow-1,3)-sheet2_data.cell_value(nrow-1,2))** 3 * 3950 * sign * Turnover / Turnovermean
+    amount=(sheet2_data.cell_value(nrow-1,3)-sheet2_data.cell_value(nrow-1,2))** 3 * 3950 * sign * vol / volmean
     biaozhi=1
 else:
-    amount=(sheet2_data.cell_value(nrow-1,3)-sheet2_data.cell_value(nrow-1,2))** 3 * -3950 * sign * Turnover / Turnovermean
+    amount=(sheet2_data.cell_value(nrow-1,3)-sheet2_data.cell_value(nrow-1,2))** 3 * -3950 * sign * vol / volmean
     biaozhi=0
 sheet.cell(row=p+1, column=7).value=amount
 sheet.cell(row=p+1, column=8).value=amount/price
@@ -599,7 +599,7 @@ for sheet in wb:
     sheet.cell(row=p+1, column=4).value=sheet2_data.cell_value(nrow-1,3)#PE均值
     sheet.cell(row=p+1, column=4).font=fontText1
     sheet.cell(row=p+1, column=4).number_format = 'General'
-    if(not((sheet.title=='model4(3)turnover&RSI')or(sheet.title=='model4(3)turnover'))):
+    if(not((sheet.title=='model4(3)vol&RSI')or(sheet.title=='model4(3)vol'))):
         a.append(sheet.title)
         b.append(data.sheet_by_name(sheet.title).cell_value(p-1,6))
         c.append(data.sheet_by_name(sheet.title).cell_value(p-1,8))
@@ -830,25 +830,25 @@ sheet.cell(row=p+1, column=16).number_format = '0.00_ '
 sheet.cell(row=p+1, column=17).font=fontText2
 sheet.cell(row=p+1, column=17).number_format = 'General'
 #########################################################################
-sheet = wb['model4(3)turnover']
-aa=float(mydict1['model4(3)turnover'])
-bb=float(mydict2['model4(3)turnover'])
-cc=float(mydict3['model4(3)turnover'])
-Turnover=sheet0.cell_value(xx-1,5)
-Turnovermean=sheet0.cell_value(xx-1,8)
-print(type(Turnovermean))
-print(Turnovermean)
-sheet.cell(row=p+1, column=5).value=Turnover
+sheet = wb['model4(3)vol']
+aa=float(mydict1['model4(3)vol'])
+bb=float(mydict2['model4(3)vol'])
+cc=float(mydict3['model4(3)vol'])
+vol=sheet0.cell_value(xx-1,5)
+volmean=sheet0.cell_value(xx-1,8)
+print(type(volmean))
+print(volmean)
+sheet.cell(row=p+1, column=5).value=vol
 sheet.cell(row=p+1, column=5).font=fontText1
 sheet.cell(row=p+1, column=5).number_format = '0.00_);-0.00'
-sheet.cell(row=p+1, column=6).value=Turnovermean
+sheet.cell(row=p+1, column=6).value=volmean
 sheet.cell(row=p+1, column=6).font=fontText1
 sheet.cell(row=p+1, column=6).number_format = '0.00_);-0.00'
 if (sheet2_data.cell_value(nrow-1,2)<=sheet2_data.cell_value(nrow-1,3)):
-    amount=(sheet2_data.cell_value(nrow-1,3)-sheet2_data.cell_value(nrow-1,2))** 3 * 3950 * Turnover / Turnovermean
+    amount=(sheet2_data.cell_value(nrow-1,3)-sheet2_data.cell_value(nrow-1,2))** 3 * 3950 * vol / volmean
     biaozhi=1
 else:
-    amount=(sheet2_data.cell_value(nrow-1,3)-sheet2_data.cell_value(nrow-1,2))** 3 * -3950 * Turnover / Turnovermean
+    amount=(sheet2_data.cell_value(nrow-1,3)-sheet2_data.cell_value(nrow-1,2))** 3 * -3950 * vol / volmean
     biaozhi=0
 sheet.cell(row=p+1, column=7).value=amount
 sheet.cell(row=p+1, column=8).value=amount/price
@@ -870,10 +870,10 @@ for i in range(8):
     sheet.cell(row=p+1, column=i+5).font=fontText1
     sheet.cell(row=p+1, column=i+5).number_format = '0.00_);-0.00'
 #########################################################################
-sheet = wb['model4(3)turnover&RSI']
-aa=float(mydict1['model4(3)turnover&RSI'])
-bb=float(mydict2['model4(3)turnover&RSI'])
-cc=float(mydict3['model4(3)turnover&RSI'])
+sheet = wb['model4(3)vol&RSI']
+aa=float(mydict1['model4(3)vol&RSI'])
+bb=float(mydict2['model4(3)vol&RSI'])
+cc=float(mydict3['model4(3)vol&RSI'])
 sheet.cell(row=p+1, column=15).value=datax.sheet_by_name('model1&RSI').cell_value(nrowx-1,10)
 sheet.cell(row=p+1, column=16).value=datax.sheet_by_name('model1&RSI').cell_value(nrowx-1,12)
 sheet.cell(row=p+1, column=17).value=datax.sheet_by_name('model1&RSI').cell_value(nrowx-1,13)
@@ -891,21 +891,21 @@ else:
 sheet.cell(row=p+1, column=18).value=sign
 sheet.cell(row=p+1, column=18).font=fontText2
 sheet.cell(row=p+1, column=18).number_format = 'General'
-Turnover=sheet0.cell_value(xx-1,5)
-Turnovermean=sheet0.cell_value(xx-1,8)
-print(type(Turnovermean))
-print(Turnovermean)
-sheet.cell(row=p+1, column=5).value=Turnover
+vol=sheet0.cell_value(xx-1,5)
+volmean=sheet0.cell_value(xx-1,8)
+print(type(volmean))
+print(volmean)
+sheet.cell(row=p+1, column=5).value=vol
 sheet.cell(row=p+1, column=5).font=fontText1
 sheet.cell(row=p+1, column=5).number_format = '0.00_);-0.00'
-sheet.cell(row=p+1, column=6).value=Turnovermean
+sheet.cell(row=p+1, column=6).value=volmean
 sheet.cell(row=p+1, column=6).font=fontText1
 sheet.cell(row=p+1, column=6).number_format = '0.00_);-0.00'
 if (sheet2_data.cell_value(nrow-1,2)<=sheet2_data.cell_value(nrow-1,3)):
-    amount=(sheet2_data.cell_value(nrow-1,3)-sheet2_data.cell_value(nrow-1,2))** 3 * sign * 550 * Turnover / Turnovermean
+    amount=(sheet2_data.cell_value(nrow-1,3)-sheet2_data.cell_value(nrow-1,2))** 3 * sign * 550 * vol / volmean
     biaozhi=1
 else:
-    amount=(sheet2_data.cell_value(nrow-1,3)-sheet2_data.cell_value(nrow-1,2))** 3 * sign * -550 * Turnover / Turnovermean
+    amount=(sheet2_data.cell_value(nrow-1,3)-sheet2_data.cell_value(nrow-1,2))** 3 * sign * -550 * vol / volmean
     biaozhi=0
 sheet.cell(row=p+1, column=7).value=amount
 sheet.cell(row=p+1, column=8).value=amount/price

@@ -13,7 +13,7 @@
 import openpyxl
 import xlrd
 from openpyxl.styles import Font,Alignment
-datelai='2023-07-31'
+datelai='2023-09-28'
 a=[]
 b=[]
 c=[]
@@ -183,7 +183,7 @@ for sheet in wb:
     sheet.cell(row=p+1, column=3).value=pricemean
     sheet.cell(row=p+1, column=3).font=fontText1
     sheet.cell(row=p+1, column=3).number_format = 'General'
-    if((sheet.title!='model2(1)turnover')and(sheet.title!='model2(2)turnover')):
+    if((sheet.title!='model2(1)vol')and(sheet.title!='model2(2)vol')):
         a.append(sheet.title)
         b.append(data.sheet_by_name(sheet.title).cell_value(p-1,5))
         c.append(data.sheet_by_name(sheet.title).cell_value(p-1,7))
@@ -260,10 +260,10 @@ for i in range(6):
     sheet.cell(row=p+1, column=i+4).font=fontText1
     sheet.cell(row=p+1, column=i+4).number_format = '0.00_);-0.00'
 ###########################################################################
-sheet = wb['model2(1)turnover']
-aa=float(mydict1['model2(1)turnover'])
-bb=float(mydict2['model2(1)turnover'])
-cc=float(mydict3['model2(1)turnover'])
+sheet = wb['model2(1)vol']
+aa=float(mydict1['model2(1)vol'])
+bb=float(mydict2['model2(1)vol'])
+cc=float(mydict3['model2(1)vol'])
 if (price<=pricemean):
     amount=(pricemean-price) * (vol/volmean) * 1550
     biaozhi=1
@@ -292,10 +292,10 @@ for i in range(8):
     sheet.cell(row=p+1, column=i+4).font=fontText1
     sheet.cell(row=p+1, column=i+4).number_format = '0.00_);-0.00'
 ############################################################################
-sheet = wb['model2(2)turnover']
-aa=float(mydict1['model2(2)turnover'])
-bb=float(mydict2['model2(2)turnover'])
-cc=float(mydict3['model2(2)turnover'])
+sheet = wb['model2(2)vol']
+aa=float(mydict1['model2(2)vol'])
+bb=float(mydict2['model2(2)vol'])
+cc=float(mydict3['model2(2)vol'])
 if (price<=pricemean):
     amount=(pricemean-price) **2 * (vol/volmean) * 1550
     biaozhi=1
@@ -559,7 +559,7 @@ for sheet in wb:
     sheet.cell(row=p+1, column=3).value=pricemean
     sheet.cell(row=p+1, column=3).font=fontText1
     sheet.cell(row=p+1, column=3).number_format = 'General'
-    if((sheet.title!='model4(1)turnover')and(sheet.title!='model4(3)turnover')):
+    if((sheet.title!='model4(1)vol')and(sheet.title!='model4(3)vol')):
         a.append(sheet.title)
         b.append(data.sheet_by_name(sheet.title).cell_value(p-1,5))
         c.append(data.sheet_by_name(sheet.title).cell_value(p-1,7))
@@ -636,10 +636,10 @@ for i in range(6):
     sheet.cell(row=p+1, column=i+4).font=fontText1
     sheet.cell(row=p+1, column=i+4).number_format = '0.00_);-0.00'
 ###########################################################################
-sheet = wb['model4(1)turnover']
-aa=float(mydict1['model4(1)turnover'])
-bb=float(mydict2['model4(1)turnover'])
-cc=float(mydict3['model4(1)turnover'])
+sheet = wb['model4(1)vol']
+aa=float(mydict1['model4(1)vol'])
+bb=float(mydict2['model4(1)vol'])
+cc=float(mydict3['model4(1)vol'])
 if (price<=pricemean):
     amount=(pricemean-price) * (vol/volmean)**2 * 1550
     biaozhi=1
@@ -668,10 +668,10 @@ for i in range(8):
     sheet.cell(row=p+1, column=i+4).font=fontText1
     sheet.cell(row=p+1, column=i+4).number_format = '0.00_);-0.00'
 ############################################################################
-sheet = wb['model4(3)turnover']
-aa=float(mydict1['model4(3)turnover'])
-bb=float(mydict2['model4(3)turnover'])
-cc=float(mydict3['model4(3)turnover'])
+sheet = wb['model4(3)vol']
+aa=float(mydict1['model4(3)vol'])
+bb=float(mydict2['model4(3)vol'])
+cc=float(mydict3['model4(3)vol'])
 if (price<=pricemean):
     amount=(pricemean-price) **3 * (vol/volmean) * 1550
     biaozhi=1
