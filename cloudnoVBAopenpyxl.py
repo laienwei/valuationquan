@@ -9,7 +9,7 @@ laistr1=".csv"
 laistr11="Jing.csv"
 laistr12="Dong.csv"
 laistr13="PB.csv"
-year="2023"
+year="2024"
 for root,dirs,files in os.walk(file_dir):
     for q in range(len(dirs)):
         print(dirs[q])
@@ -45,21 +45,21 @@ for root,dirs,files in os.walk(file_dir):
 #         date1="2022/7/25"
         wb=ox.load_workbook(r'./crawler/headpagepestatic.xlsx')
 #         mymac=wb.macro('ptxoo1')
-        sh=wb['start_from_2021.4.9']
+        sh=wb['start_from_2024.1.4']
         lairow=sh.max_row+1
         sh.cell(row=lairow,column=1,value=date1)        
         for npp in range(num2):
             sh.cell(row=lairow,column=npp+2,value=float(PEjing[num2-1-npp]))
         wb.save(r'./crawler/headpagepestatic.xlsx')
         wb=ox.load_workbook(r'./crawler/headpagepedynamic.xlsx')
-        sh=wb['start_from_2021.4.9']
+        sh=wb['start_from_2024.1.4']
         lairow=sh.max_row+1
         sh.cell(row=lairow,column=1,value=date1)        
         for npp in range(num2):
             sh.cell(row=lairow,column=npp+2,value=float(PEdong[num2-1-npp]))
         wb.save(r'./crawler/headpagepedynamic.xlsx')
         wb=ox.load_workbook(r'./crawler/headpagepb.xlsx')
-        sh=wb['start_from_2021.4.9']
+        sh=wb['start_from_2024.1.4']
         lairow=sh.max_row+1
         sh.cell(row=lairow,column=1,value=date1)        
         for npp in range(num2):
