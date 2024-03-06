@@ -11,7 +11,7 @@
 import openpyxl
 import xlrd
 from openpyxl.styles import Font,Alignment
-datelai='2024-1-31'
+datelai='2024-2-29'
 fontText1 = Font(name='Tahoma', size=10, color='ff0000')
 AlignmentText1 = Alignment(horizontal='center')
 wb0 = openpyxl.load_workbook(r'./lai/valuationquan/AIinduindex.xlsx')
