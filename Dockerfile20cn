@@ -1,4 +1,4 @@
-﻿FROM valuation-docker.pkg.coding.net/valuationquan/valuationquan/valueinmodel1s:latest
+﻿FROM valuation-docker.pkg.coding.net/valuationquan/valuationquan/valueinfourfiles:latest 
 COPY unify1indexcn.py /unify1indexcn.py
 COPY lai/valuationquan/szseinnovation100index.xlsx /lai/valuationquan/
 COPY lai/valuationquan/szseinnovation100index/szseinnovation100indexmodel4cn.xlsx /lai/valuationquan/szseinnovation100index/
