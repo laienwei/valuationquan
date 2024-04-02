@@ -1,7 +1,8 @@
 class publai1:
     def __init__(self):
-        filename='./data/datefortest85 - 副本.csv'
-        filename1='../data/datefortest85 - 副本.csv'
+        date='2024-3-29'
+        filename='./data/datefortest86 - 副本.csv'
+        filename1='../data/datefortest86 - 副本.csv'
         self.filename=filename
         self.filename1=filename1
     def __str__(self):
