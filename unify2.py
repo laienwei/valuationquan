@@ -352,7 +352,8 @@ sheet1_data=data.sheet_by_name('model2(1)&SAR_manual_oper')
 sheet = wb['model2(1)&SAR_manual_oper']
 p=sheet.max_row
 print(p)
-SAR=0
+print(sheet1_data.cell_value(p-1,12))
+SAR=sheet1_data.cell_value(p-1,12)
 
 print(sheet1_data.cell_value(p-1,6))
 aa=sheet1_data.cell_value(p-1,6)

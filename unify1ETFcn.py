@@ -220,7 +220,8 @@ sheet1_data=data.sheet_by_name('模型四 (1)PE副本SAR值非智能计算')
 sheet = wb['模型四 (1)PE副本SAR值非智能计算']
 p=sheet.max_row
 print(p)
-SAR=0
+print(sheet1_data.cell_value(p-1,12))
+SAR=sheet1_data.cell_value(p-1,12)
 
 print(sheet1_data.cell_value(p-1,6))
 aa=sheet1_data.cell_value(p-1,6)
