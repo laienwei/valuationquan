@@ -51,14 +51,14 @@ for sheet in wb:
     sheet.cell(row=p+1, column=2).number_format = '0.00000'
     if(sheet.title=='model1&pe'):
         a.append(sheet.title)
-        b.append(data.sheet_by_name(sheet.title).cell_value(p-2,5))
-        c.append(data.sheet_by_name(sheet.title).cell_value(p-2,7))
+        b.append(data.sheet_by_name(sheet.title).cell_value(p-1,5))
+        c.append(data.sheet_by_name(sheet.title).cell_value(p-1,7))
 #         b.append(sheet1_data.cell_value(p-1,5))
 #         c.append(sheet1_data.cell_value(p-1,7))
     else:
         a.append(sheet.title)
-        b.append(data.sheet_by_name(sheet.title).cell_value(p-2,4))
-        c.append(data.sheet_by_name(sheet.title).cell_value(p-2,6))
+        b.append(data.sheet_by_name(sheet.title).cell_value(p-1,4))
+        c.append(data.sheet_by_name(sheet.title).cell_value(p-1,6))
 #         b.append(sheet1_data.cell_value(p-1,4))
 #         c.append(sheet1_data.cell_value(p-1,6))        
 mydict1=dict(zip(a,b))
@@ -131,13 +131,13 @@ sheet.cell(row=p+1, column=9).font=fontText1
 sheet.cell(row=p+1, column=9).number_format = '0.00_ '
 ###########################################################################
 sheet = wb['model1&RSI']
-tt=price-float(data.sheet_by_name(sheet.title).cell_value(p-2,1))
+tt=price-float(data.sheet_by_name(sheet.title).cell_value(p-1,1))
 sheet.cell(row=p+1, column=10).value=max(tt,0)
-sheet.cell(row=p+1, column=11).value=(max(tt,0)+float(data.sheet_by_name(sheet.title).cell_value(p-2,10))*5)/6
+sheet.cell(row=p+1, column=11).value=(max(tt,0)+float(data.sheet_by_name(sheet.title).cell_value(p-1,10))*5)/6
 sheet.cell(row=p+1, column=12).value=abs(tt)
-sheet.cell(row=p+1, column=13).value=(abs(tt)+float(data.sheet_by_name(sheet.title).cell_value(p-2,12))*5)/6
-sma1=(max(tt,0)+float(data.sheet_by_name(sheet.title).cell_value(p-2,10))*5)/6
-sma2=(abs(tt)+float(data.sheet_by_name(sheet.title).cell_value(p-2,12))*5)/6
+sheet.cell(row=p+1, column=13).value=(abs(tt)+float(data.sheet_by_name(sheet.title).cell_value(p-1,12))*5)/6
+sma1=(max(tt,0)+float(data.sheet_by_name(sheet.title).cell_value(p-1,10))*5)/6
+sma2=(abs(tt)+float(data.sheet_by_name(sheet.title).cell_value(p-1,12))*5)/6
 sheet.cell(row=p+1, column=14).value=sma1*100/sma2
 for i in range(5):
     sheet.cell(row=p+1, column=i+10).font=fontText2
@@ -171,16 +171,16 @@ maxlai=high
 minlai=low
 t=0
 while t<8:
-    maxlai=max(maxlai,data.sheet_by_name(sheet.title).cell_value(p-2-t,9))
-    minlai=min(minlai,data.sheet_by_name(sheet.title).cell_value(p-2-t,10))
+    maxlai=max(maxlai,data.sheet_by_name(sheet.title).cell_value(p-1-t,9))
+    minlai=min(minlai,data.sheet_by_name(sheet.title).cell_value(p-1-t,10))
     t=t+1
 print(maxlai)
 print(minlai)
 sheet.cell(row=p+1, column=12).value=maxlai
 sheet.cell(row=p+1, column=13).value=minlai
 sheet.cell(row=p+1, column=14).value=(price-minlai)*100/(maxlai-minlai)
-K=(2*data.sheet_by_name(sheet.title).cell_value(p-2,14)+(price-minlai)*100/(maxlai-minlai))/3
-D=(2*data.sheet_by_name(sheet.title).cell_value(p-2,15)+K)/3
+K=(2*data.sheet_by_name(sheet.title).cell_value(p-1,14)+(price-minlai)*100/(maxlai-minlai))/3
+D=(2*data.sheet_by_name(sheet.title).cell_value(p-1,15)+K)/3
 J=3*K-2*D
 sheet.cell(row=p+1, column=15).value=K
 sheet.cell(row=p+1, column=16).value=D
@@ -220,7 +220,7 @@ data=xlrd.open_workbook(filename4)#openpyxl模块读不出数据，只能读出�
 wb = openpyxl.load_workbook(filename4)
 sheet1_data=data.sheet_by_name('model4(1)&SAR_manual_oper')
 sheet = wb['model4(1)&SAR_manual_oper']
-p=sheet1_data.nrows
+p=sheet.max_row
 print(p)
 print(sheet1_data.cell_value(p-1,12))
 SAR=sheet1_data.cell_value(p-1,12)
@@ -313,16 +313,16 @@ for sheet in wb:
     sheet.cell(row=p+1, column=4).number_format = 'General'
     if(sheet.title!='model4(3)vol&CCI_per_day'):
         a.append(sheet.title)
-        b.append(data.sheet_by_name(sheet.title).cell_value(p-2,6))
-        c.append(data.sheet_by_name(sheet.title).cell_value(p-2,8))
-        d.append(data.sheet_by_name(sheet.title).cell_value(p-2,11))
+        b.append(data.sheet_by_name(sheet.title).cell_value(p-1,6))
+        c.append(data.sheet_by_name(sheet.title).cell_value(p-1,8))
+        d.append(data.sheet_by_name(sheet.title).cell_value(p-1,11))
 #         b.append(sheet1_data.cell_value(p-1,5))
 #         c.append(sheet1_data.cell_value(p-1,7))
     else:
         a.append(sheet.title)
-        b.append(data.sheet_by_name(sheet.title).cell_value(p-2,8))
-        c.append(data.sheet_by_name(sheet.title).cell_value(p-2,10))
-        d.append(data.sheet_by_name(sheet.title).cell_value(p-2,13))
+        b.append(data.sheet_by_name(sheet.title).cell_value(p-1,8))
+        c.append(data.sheet_by_name(sheet.title).cell_value(p-1,10))
+        d.append(data.sheet_by_name(sheet.title).cell_value(p-1,13))
 #         b.append(sheet1_data.cell_value(p-1,4))
 #         c.append(sheet1_data.cell_value(p-1,6))        
 mydict1=dict(zip(a,b))
@@ -512,12 +512,12 @@ typ=(price+low+high)/3
 sheet.cell(row=p+1, column=15).value=typ
 sumtyp=typ
 for i in range(13):
-    sumtyp=sumtyp+float(data.sheet_by_name(sheet.title).cell_value(p-2-i,14))
+    sumtyp=sumtyp+float(data.sheet_by_name(sheet.title).cell_value(p-1-i,14))
 sheet.cell(row=p+1, column=16).value=sumtyp/14
 sheet.cell(row=p+1, column=17).value=typ-sumtyp/14
 avedev=abs(typ-sumtyp/14)
 for i in range(13):
-    avedev=avedev+abs(float(data.sheet_by_name(sheet.title).cell_value(p-2-i,14))-sumtyp/14)
+    avedev=avedev+abs(float(data.sheet_by_name(sheet.title).cell_value(p-1-i,14))-sumtyp/14)
 sheet.cell(row=p+1, column=18).value=avedev/14
 sheet.cell(row=p+1, column=19).value=0.015*avedev/14
 CCI=(typ-sumtyp/14)/(0.015*avedev/14)
@@ -601,16 +601,16 @@ for sheet in wb:
     sheet.cell(row=p+1, column=4).number_format = 'General'
     if(not((sheet.title=='model4(3)vol&RSI')or(sheet.title=='model4(3)vol'))):
         a.append(sheet.title)
-        b.append(data.sheet_by_name(sheet.title).cell_value(p-2,6))
-        c.append(data.sheet_by_name(sheet.title).cell_value(p-2,8))
-        d.append(data.sheet_by_name(sheet.title).cell_value(p-2,11))
+        b.append(data.sheet_by_name(sheet.title).cell_value(p-1,6))
+        c.append(data.sheet_by_name(sheet.title).cell_value(p-1,8))
+        d.append(data.sheet_by_name(sheet.title).cell_value(p-1,11))
 #         b.append(sheet1_data.cell_value(p-1,5))
 #         c.append(sheet1_data.cell_value(p-1,7))
     else:
         a.append(sheet.title)
-        b.append(data.sheet_by_name(sheet.title).cell_value(p-2,8))
-        c.append(data.sheet_by_name(sheet.title).cell_value(p-2,10))
-        d.append(data.sheet_by_name(sheet.title).cell_value(p-2,13))
+        b.append(data.sheet_by_name(sheet.title).cell_value(p-1,8))
+        c.append(data.sheet_by_name(sheet.title).cell_value(p-1,10))
+        d.append(data.sheet_by_name(sheet.title).cell_value(p-1,13))
 #         b.append(sheet1_data.cell_value(p-1,4))
 #         c.append(sheet1_data.cell_value(p-1,6))        
 mydict1=dict(zip(a,b))
