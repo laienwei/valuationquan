@@ -350,17 +350,17 @@ data=xlrd.open_workbook(filename4)#openpyxl模块读不出数据，只能读出�
 wb = openpyxl.load_workbook(filename4)
 sheet1_data=data.sheet_by_name('model2(1)&SAR_manual_oper')
 sheet = wb['model2(1)&SAR_manual_oper']
-p=sheet1_data.nrows
+p=sheet.max_row
 print(p)
-print(sheet1_data.cell_value(p-1,12))
-SAR=sheet1_data.cell_value(p-1,12)
+print(sheet1_data.cell_value(p-2,12))
+SAR=sheet1_data.cell_value(p-2,12)
 
-print(sheet1_data.cell_value(p-1,6))
-aa=sheet1_data.cell_value(p-1,6)
-print(sheet1_data.cell_value(p-1,8))
-bb=sheet1_data.cell_value(p-1,8)
-print(sheet1_data.cell_value(p-1,11))
-cc=sheet1_data.cell_value(p-1,11)
+print(sheet1_data.cell_value(p-2,6))
+aa=sheet1_data.cell_value(p-2,6)
+print(sheet1_data.cell_value(p-2,8))
+bb=sheet1_data.cell_value(p-2,8)
+print(sheet1_data.cell_value(p-2,11))
+cc=sheet1_data.cell_value(p-2,11)
 if(SAR<1):
     if (sheet2_data.cell_value(nrow-1,2)<=sheet2_data.cell_value(nrow-1,3)):
         amount=(sheet2_data.cell_value(nrow-1,3)-sheet2_data.cell_value(nrow-1,2)) * 3950
