@@ -51,7 +51,7 @@ for sheet in wb:
     sheet.cell(row=p+1, column=2).value=price
     sheet.cell(row=p+1, column=2).font=fontText1
     sheet.cell(row=p+1, column=2).number_format = '0.00000'
-    if(sheet.title=='model1&pe'):
+    if(sheet.title=='模型一&PE'):
         a.append(sheet.title)
         b.append(data.sheet_by_name(sheet.title).cell_value(p-1,5))
         c.append(data.sheet_by_name(sheet.title).cell_value(p-1,7))
