@@ -31,7 +31,7 @@ filename3t=dirba0+"/"+filedir3[0]
 data1=xlrd.open_workbook(filename3t)#openpyxl模块读不出数据，只能读出单元格公式
 sheet2_data=data1.sheet_by_name('myPEPB')
 nrow=sheet2_data.nrows
-filedir3=['szseinnovation100ETFmodel1cn.xlsx','szseinnovation100ETFmodel4(SAR)cn.xlsx','szseinnovation100ETFmodel4(CCI)cn.xlsx','szseinnovation100ETFmodel4(RSI&KDJ)cn.xlsx']
+filedir3=['szseinnovation100ETFmodel1.xlsx','szseinnovation100ETFmodel4(SAR).xlsx','szseinnovation100ETFmodel4(CCI).xlsx','szseinnovation100ETFmodel4(RSI&KDJ).xlsx']
 dirba1="./lai/valuationquan/szseinnovation100ETF"
 filename3=dirba1+"/"+filedir3[0]
 data=xlrd.open_workbook(filename3)#openpyxl模块读不出数据，只能读出单元格公式
@@ -51,32 +51,36 @@ for sheet in wb:
     sheet.cell(row=p+1, column=2).value=price
     sheet.cell(row=p+1, column=2).font=fontText1
     sheet.cell(row=p+1, column=2).number_format = '0.00000'
-    if(sheet.title=='模型一&PE'):
+    if(sheet.title=='model1&pe'):
         a.append(sheet.title)
-        b.append(data.sheet_by_name(sheet.title).cell_value(p-1,5))
-        c.append(data.sheet_by_name(sheet.title).cell_value(p-1,7))
+        b.append(data.sheet_by_name(sheet.title).cell_value(p-2,5))
+        c.append(data.sheet_by_name(sheet.title).cell_value(p-2,7))
+#         b.append(sheet1_data.cell_value(p-1,5))
+#         c.append(sheet1_data.cell_value(p-1,7))
     else:
         a.append(sheet.title)
-        b.append(data.sheet_by_name(sheet.title).cell_value(p-1,4))
-        c.append(data.sheet_by_name(sheet.title).cell_value(p-1,6))
+        b.append(data.sheet_by_name(sheet.title).cell_value(p-2,4))
+        c.append(data.sheet_by_name(sheet.title).cell_value(p-2,6))
+#         b.append(sheet1_data.cell_value(p-1,4))
+#         c.append(sheet1_data.cell_value(p-1,6))        
 mydict1=dict(zip(a,b))
 mydict2=dict(zip(a,c))
 ###################################################################
-sheet = wb['模型一']
+sheet = wb['model1']
 sheet.cell(row=p+1, column=3).value=2000
 sheet.cell(row=p+1, column=4).value=2000/price
-sheet.cell(row=p+1, column=5).value=2000/price+float(mydict1['模型一'])
-sheet.cell(row=p+1, column=6).value=(2000/price+float(mydict1['模型一']))*price
-sheet.cell(row=p+1, column=7).value=float(mydict2['模型一'])+2000
-sheet.cell(row=p+1, column=8).value=(2000/price+float(mydict1['模型一']))*price
-sheet.cell(row=p+1, column=9).value=(2000/price+float(mydict1['模型一']))*price-float(mydict2['模型一'])-2000
+sheet.cell(row=p+1, column=5).value=2000/price+float(mydict1['model1'])
+sheet.cell(row=p+1, column=6).value=(2000/price+float(mydict1['model1']))*price
+sheet.cell(row=p+1, column=7).value=float(mydict2['model1'])+2000
+sheet.cell(row=p+1, column=8).value=(2000/price+float(mydict1['model1']))*price
+sheet.cell(row=p+1, column=9).value=(2000/price+float(mydict1['model1']))*price-float(mydict2['model1'])-2000
 for i in range(6):
     sheet.cell(row=p+1, column=i+3).font=fontText1
     sheet.cell(row=p+1, column=i+3).number_format = '0.00_);-0.00'
 sheet.cell(row=p+1, column=9).font=fontText1
 sheet.cell(row=p+1, column=9).number_format = '0.00_ '
 ###################################################################
-sheet = wb['模型一&PE']
+sheet = wb['model1&pe']
 sheet.cell(row=p+1, column=3).value=sheet2_data.cell_value(nrow-1,2)#PE值
 sheet.cell(row=p+1, column=3).font=fontText1
 sheet.cell(row=p+1, column=3).number_format = 'General'
@@ -86,56 +90,56 @@ sheet.cell(row=p+1, column=4).number_format = '0.00_);-0.00'
 sheet.cell(row=p+1, column=5).value=2000/price
 sheet.cell(row=p+1, column=5).font=fontText1
 sheet.cell(row=p+1, column=5).number_format = '0.00_);-0.00'
-sheet.cell(row=p+1, column=6).value=2000/price+float(mydict1['模型一&PE'])
+sheet.cell(row=p+1, column=6).value=2000/price+float(mydict1['model1&pe'])
 sheet.cell(row=p+1, column=6).font=fontText1
 sheet.cell(row=p+1, column=6).number_format = '0.00_);-0.00'
-sheet.cell(row=p+1, column=7).value=(2000/price+float(mydict1['模型一&PE']))*price
+sheet.cell(row=p+1, column=7).value=(2000/price+float(mydict1['model1&pe']))*price
 sheet.cell(row=p+1, column=7).font=fontText1
 sheet.cell(row=p+1, column=7).number_format = '0.00_);-0.00'
-sheet.cell(row=p+1, column=8).value=float(mydict2['模型一&PE'])+2000
+sheet.cell(row=p+1, column=8).value=float(mydict2['model1&pe'])+2000
 sheet.cell(row=p+1, column=8).font=fontText1
 sheet.cell(row=p+1, column=8).number_format = '0.00_);-0.00'
-sheet.cell(row=p+1, column=9).value=(2000/price+float(mydict1['模型一&PE']))*price
+sheet.cell(row=p+1, column=9).value=(2000/price+float(mydict1['model1&pe']))*price
 sheet.cell(row=p+1, column=9).font=fontText1
 sheet.cell(row=p+1, column=9).number_format = '0.00_);-0.00'
-sheet.cell(row=p+1, column=10).value=(2000/price+float(mydict1['模型一&PE']))*price-float(mydict2['模型一&PE'])-2000
+sheet.cell(row=p+1, column=10).value=(2000/price+float(mydict1['model1&pe']))*price-float(mydict2['model1&pe'])-2000
 sheet.cell(row=p+1, column=10).font=fontText1
 sheet.cell(row=p+1, column=10).number_format = '0.00_ '
 ###########################################################################
-sheet = wb['模型一计算CCI']
+sheet = wb['model1&CCI']
 sheet.cell(row=p+1, column=10).value=CCI
 sheet.cell(row=p+1, column=10).font=fontText2
 sheet.cell(row=p+1, column=10).number_format = 'General'
 if(float(CCI)<-100):
     sheet.cell(row=p+1, column=3).value=2000
     sheet.cell(row=p+1, column=4).value=2000/price
-    sheet.cell(row=p+1, column=5).value=2000/price+float(mydict1['模型一计算CCI'])
-    sheet.cell(row=p+1, column=6).value=(2000/price+float(mydict1['模型一计算CCI']))*price
-    sheet.cell(row=p+1, column=7).value=2000+float(mydict2['模型一计算CCI'])
-    sheet.cell(row=p+1, column=8).value=(2000/price+float(mydict1['模型一计算CCI']))*price
-    sheet.cell(row=p+1, column=9).value=(2000/price+float(mydict1['模型一计算CCI']))*price-float(mydict2['模型一计算CCI'])-2000
+    sheet.cell(row=p+1, column=5).value=2000/price+float(mydict1['model1&CCI'])
+    sheet.cell(row=p+1, column=6).value=(2000/price+float(mydict1['model1&CCI']))*price
+    sheet.cell(row=p+1, column=7).value=2000+float(mydict2['model1&CCI'])
+    sheet.cell(row=p+1, column=8).value=(2000/price+float(mydict1['model1&CCI']))*price
+    sheet.cell(row=p+1, column=9).value=(2000/price+float(mydict1['model1&CCI']))*price-float(mydict2['model1&CCI'])-2000
 else:
     sheet.cell(row=p+1, column=3).value=0
     sheet.cell(row=p+1, column=4).value=0
-    sheet.cell(row=p+1, column=5).value=float(mydict1['模型一计算CCI'])
-    sheet.cell(row=p+1, column=6).value=float(mydict1['模型一计算CCI'])*price
-    sheet.cell(row=p+1, column=7).value=float(mydict2['模型一计算CCI'])
-    sheet.cell(row=p+1, column=8).value=float(mydict1['模型一计算CCI'])*price
-    sheet.cell(row=p+1, column=9).value=float(mydict1['模型一计算CCI'])*price-float(mydict2['模型一计算CCI'])
+    sheet.cell(row=p+1, column=5).value=float(mydict1['model1&CCI'])
+    sheet.cell(row=p+1, column=6).value=float(mydict1['model1&CCI'])*price
+    sheet.cell(row=p+1, column=7).value=float(mydict2['model1&CCI'])
+    sheet.cell(row=p+1, column=8).value=float(mydict1['model1&CCI'])*price
+    sheet.cell(row=p+1, column=9).value=float(mydict1['model1&CCI'])*price-float(mydict2['model1&CCI'])
 for i in range(6):
     sheet.cell(row=p+1, column=i+3).font=fontText1
     sheet.cell(row=p+1, column=i+3).number_format = '0.00_);-0.00'
 sheet.cell(row=p+1, column=9).font=fontText1
 sheet.cell(row=p+1, column=9).number_format = '0.00_ '
 ###########################################################################
-sheet = wb['模型一计算RSI']
-tt=price-float(data.sheet_by_name(sheet.title).cell_value(p-1,1))
+sheet = wb['model1&RSI']
+tt=price-float(data.sheet_by_name(sheet.title).cell_value(p-2,1))
 sheet.cell(row=p+1, column=10).value=max(tt,0)
-sheet.cell(row=p+1, column=11).value=(max(tt,0)+float(data.sheet_by_name(sheet.title).cell_value(p-1,10))*5)/6
+sheet.cell(row=p+1, column=11).value=(max(tt,0)+float(data.sheet_by_name(sheet.title).cell_value(p-2,10))*5)/6
 sheet.cell(row=p+1, column=12).value=abs(tt)
-sheet.cell(row=p+1, column=13).value=(abs(tt)+float(data.sheet_by_name(sheet.title).cell_value(p-1,12))*5)/6
-sma1=(max(tt,0)+float(data.sheet_by_name(sheet.title).cell_value(p-1,10))*5)/6
-sma2=(abs(tt)+float(data.sheet_by_name(sheet.title).cell_value(p-1,12))*5)/6
+sheet.cell(row=p+1, column=13).value=(abs(tt)+float(data.sheet_by_name(sheet.title).cell_value(p-2,12))*5)/6
+sma1=(max(tt,0)+float(data.sheet_by_name(sheet.title).cell_value(p-2,10))*5)/6
+sma2=(abs(tt)+float(data.sheet_by_name(sheet.title).cell_value(p-2,12))*5)/6
 sheet.cell(row=p+1, column=14).value=sma1*100/sma2
 for i in range(5):
     sheet.cell(row=p+1, column=i+10).font=fontText2
@@ -143,42 +147,43 @@ for i in range(5):
 if((sma1*100/sma2)<20):
     sheet.cell(row=p+1, column=3).value=3000
     sheet.cell(row=p+1, column=4).value=3000/price
-    sheet.cell(row=p+1, column=5).value=3000/price+float(mydict1['模型一计算RSI'])
-    sheet.cell(row=p+1, column=6).value=(3000/price+float(mydict1['模型一计算RSI']))*price
-    sheet.cell(row=p+1, column=7).value=3000+float(mydict2['模型一计算RSI'])
-    sheet.cell(row=p+1, column=8).value=(3000/price+float(mydict1['模型一计算RSI']))*price
-    sheet.cell(row=p+1, column=9).value=(3000/price+float(mydict1['模型一计算RSI']))*price-float(mydict2['模型一计算RSI'])-3000
+    sheet.cell(row=p+1, column=5).value=3000/price+float(mydict1['model1&RSI'])
+    sheet.cell(row=p+1, column=6).value=(3000/price+float(mydict1['model1&RSI']))*price
+    sheet.cell(row=p+1, column=7).value=3000+float(mydict2['model1&RSI'])
+    sheet.cell(row=p+1, column=8).value=(3000/price+float(mydict1['model1&RSI']))*price
+    sheet.cell(row=p+1, column=9).value=(3000/price+float(mydict1['model1&RSI']))*price-float(mydict2['model1&RSI'])-3000
 else:
     sheet.cell(row=p+1, column=3).value=2000
     sheet.cell(row=p+1, column=4).value=2000/price
-    sheet.cell(row=p+1, column=5).value=2000/price+float(mydict1['模型一计算RSI'])
-    sheet.cell(row=p+1, column=6).value=(2000/price+float(mydict1['模型一计算RSI']))*price
-    sheet.cell(row=p+1, column=7).value=2000+float(mydict2['模型一计算RSI'])
-    sheet.cell(row=p+1, column=8).value=(2000/price+float(mydict1['模型一计算RSI']))*price
-    sheet.cell(row=p+1, column=9).value=(2000/price+float(mydict1['模型一计算RSI']))*price-float(mydict2['模型一计算RSI'])-2000
+    sheet.cell(row=p+1, column=5).value=2000/price+float(mydict1['model1&RSI'])
+    sheet.cell(row=p+1, column=6).value=(2000/price+float(mydict1['model1&RSI']))*price
+    sheet.cell(row=p+1, column=7).value=2000+float(mydict2['model1&RSI'])
+    sheet.cell(row=p+1, column=8).value=(2000/price+float(mydict1['model1&RSI']))*price
+    sheet.cell(row=p+1, column=9).value=(2000/price+float(mydict1['model1&RSI']))*price-float(mydict2['model1&RSI'])-2000
 for i in range(6):
     sheet.cell(row=p+1, column=i+3).font=fontText1
     sheet.cell(row=p+1, column=i+3).number_format = '0.00_);-0.00'
 sheet.cell(row=p+1, column=9).font=fontText1
 sheet.cell(row=p+1, column=9).number_format = '0.00_ '
 #######################################################################
-sheet = wb['模型一计算KDJ']
+sheet = wb['model1&KDJ']
 sheet.cell(row=p+1, column=10).value=high
 sheet.cell(row=p+1, column=11).value=low
 maxlai=high
 minlai=low
 t=0
 while t<8:
-    maxlai=max(maxlai,data.sheet_by_name(sheet.title).cell_value(p-1-t,9))
-    minlai=min(minlai,data.sheet_by_name(sheet.title).cell_value(p-1-t,10))
+    maxlai=max(maxlai,data.sheet_by_name(sheet.title).cell_value(p-2-t,9))
+    minlai=min(minlai,data.sheet_by_name(sheet.title).cell_value(p-2-t,10))
     t=t+1
+print("laienwei")
 print(maxlai)
 print(minlai)
 sheet.cell(row=p+1, column=12).value=maxlai
 sheet.cell(row=p+1, column=13).value=minlai
 sheet.cell(row=p+1, column=14).value=(price-minlai)*100/(maxlai-minlai)
-K=(2*data.sheet_by_name(sheet.title).cell_value(p-1,14)+(price-minlai)*100/(maxlai-minlai))/3
-D=(2*data.sheet_by_name(sheet.title).cell_value(p-1,15)+K)/3
+K=(2*data.sheet_by_name(sheet.title).cell_value(p-2,14)+(price-minlai)*100/(maxlai-minlai))/3
+D=(2*data.sheet_by_name(sheet.title).cell_value(p-2,15)+K)/3
 J=3*K-2*D
 sheet.cell(row=p+1, column=15).value=K
 sheet.cell(row=p+1, column=16).value=D
@@ -189,19 +194,19 @@ for i in range(8):
 if(J<0):
     sheet.cell(row=p+1, column=3).value=3000
     sheet.cell(row=p+1, column=4).value=3000/price
-    sheet.cell(row=p+1, column=5).value=3000/price+float(mydict1['模型一计算KDJ'])
-    sheet.cell(row=p+1, column=6).value=(3000/price+float(mydict1['模型一计算KDJ']))*price
-    sheet.cell(row=p+1, column=7).value=3000+float(mydict2['模型一计算KDJ'])  
-    sheet.cell(row=p+1, column=8).value=(3000/price+float(mydict1['模型一计算KDJ']))*price
-    sheet.cell(row=p+1, column=9).value=(3000/price+float(mydict1['模型一计算KDJ']))*price-float(mydict2['模型一计算KDJ'])-3000
+    sheet.cell(row=p+1, column=5).value=3000/price+float(mydict1['model1&KDJ'])
+    sheet.cell(row=p+1, column=6).value=(3000/price+float(mydict1['model1&KDJ']))*price
+    sheet.cell(row=p+1, column=7).value=3000+float(mydict2['model1&KDJ'])  
+    sheet.cell(row=p+1, column=8).value=(3000/price+float(mydict1['model1&KDJ']))*price
+    sheet.cell(row=p+1, column=9).value=(3000/price+float(mydict1['model1&KDJ']))*price-float(mydict2['model1&KDJ'])-3000
 else:
     sheet.cell(row=p+1, column=3).value=2000
     sheet.cell(row=p+1, column=4).value=2000/price
-    sheet.cell(row=p+1, column=5).value=2000/price+float(mydict1['模型一计算KDJ'])
-    sheet.cell(row=p+1, column=6).value=(2000/price+float(mydict1['模型一计算KDJ']))*price
-    sheet.cell(row=p+1, column=7).value=2000+float(mydict2['模型一计算KDJ'])
-    sheet.cell(row=p+1, column=8).value=(2000/price+float(mydict1['模型一计算KDJ']))*price
-    sheet.cell(row=p+1, column=9).value=(2000/price+float(mydict1['模型一计算KDJ']))*price-float(mydict2['模型一计算KDJ'])-2000
+    sheet.cell(row=p+1, column=5).value=2000/price+float(mydict1['model1&KDJ'])
+    sheet.cell(row=p+1, column=6).value=(2000/price+float(mydict1['model1&KDJ']))*price
+    sheet.cell(row=p+1, column=7).value=2000+float(mydict2['model1&KDJ'])
+    sheet.cell(row=p+1, column=8).value=(2000/price+float(mydict1['model1&KDJ']))*price
+    sheet.cell(row=p+1, column=9).value=(2000/price+float(mydict1['model1&KDJ']))*price-float(mydict2['model1&KDJ'])-2000
 for i in range(6):
     sheet.cell(row=p+1, column=i+3).font=fontText1
     sheet.cell(row=p+1, column=i+3).number_format = '0.00_);-0.00'
@@ -216,19 +221,19 @@ wb.save(filename3)
 filename4=dirba1+"/"+filedir3[1]
 data=xlrd.open_workbook(filename4)#openpyxl模块读不出数据，只能读出单元格公式
 wb = openpyxl.load_workbook(filename4)
-sheet1_data=data.sheet_by_name('模型四 (1)PE副本SAR值非智能计算')
-sheet = wb['模型四 (1)PE副本SAR值非智能计算']
+sheet1_data=data.sheet_by_name('model4(1)&SAR_manual_oper')
+sheet = wb['model4(1)&SAR_manual_oper']
 p=sheet.max_row
 print(p)
-print(sheet1_data.cell_value(p-1,12))
-SAR=sheet1_data.cell_value(p-1,12)
+print(sheet1_data.cell_value(p-2,12))
+SAR=sheet1_data.cell_value(p-2,12)
 
-print(sheet1_data.cell_value(p-1,6))
-aa=sheet1_data.cell_value(p-1,6)
-print(sheet1_data.cell_value(p-1,8))
-bb=sheet1_data.cell_value(p-1,8)
-print(sheet1_data.cell_value(p-1,11))
-cc=sheet1_data.cell_value(p-1,11)
+print(sheet1_data.cell_value(p-2,6))
+aa=sheet1_data.cell_value(p-2,6)
+print(sheet1_data.cell_value(p-2,8))
+bb=sheet1_data.cell_value(p-2,8)
+print(sheet1_data.cell_value(p-2,11))
+cc=sheet1_data.cell_value(p-2,11)
 if(SAR<1):
     if (sheet2_data.cell_value(nrow-1,2)<=sheet2_data.cell_value(nrow-1,3)):
         amount=(sheet2_data.cell_value(nrow-1,3)-sheet2_data.cell_value(nrow-1,2))** 2 * 3950
@@ -290,7 +295,7 @@ d=[]
 filename5=dirba1+"/"+filedir3[2]
 data=xlrd.open_workbook(filename5)#openpyxl模块读不出数据，只能读出单元格公式
 wb = openpyxl.load_workbook(filename5)
-sheet = wb['模型四 (1)PE副本']
+sheet = wb['model4(1)']
 p=sheet.max_row
 print(p)
 for sheet in wb:
@@ -309,18 +314,18 @@ for sheet in wb:
     sheet.cell(row=p+1, column=4).value=sheet2_data.cell_value(nrow-1,3)#PE均值
     sheet.cell(row=p+1, column=4).font=fontText1
     sheet.cell(row=p+1, column=4).number_format = 'General'
-    if(sheet.title!='模型四 (3)PE副本成交量计算CCI日线'):
+    if(sheet.title!='model4(3)vol&CCI_per_day'):
         a.append(sheet.title)
-        b.append(data.sheet_by_name(sheet.title).cell_value(p-1,6))
-        c.append(data.sheet_by_name(sheet.title).cell_value(p-1,8))
-        d.append(data.sheet_by_name(sheet.title).cell_value(p-1,11))
+        b.append(data.sheet_by_name(sheet.title).cell_value(p-2,6))
+        c.append(data.sheet_by_name(sheet.title).cell_value(p-2,8))
+        d.append(data.sheet_by_name(sheet.title).cell_value(p-2,11))
 #         b.append(sheet1_data.cell_value(p-1,5))
 #         c.append(sheet1_data.cell_value(p-1,7))
     else:
         a.append(sheet.title)
-        b.append(data.sheet_by_name(sheet.title).cell_value(p-1,8))
-        c.append(data.sheet_by_name(sheet.title).cell_value(p-1,10))
-        d.append(data.sheet_by_name(sheet.title).cell_value(p-1,13))
+        b.append(data.sheet_by_name(sheet.title).cell_value(p-2,8))
+        c.append(data.sheet_by_name(sheet.title).cell_value(p-2,10))
+        d.append(data.sheet_by_name(sheet.title).cell_value(p-2,13))
 #         b.append(sheet1_data.cell_value(p-1,4))
 #         c.append(sheet1_data.cell_value(p-1,6))        
 mydict1=dict(zip(a,b))
@@ -330,10 +335,10 @@ print(mydict1)
 print(mydict2)
 print(mydict3)
 #########################################################################
-sheet = wb['模型四 (1)PE副本']
-aa=float(mydict1['模型四 (1)PE副本'])
-bb=float(mydict2['模型四 (1)PE副本'])
-cc=float(mydict3['模型四 (1)PE副本'])
+sheet = wb['model4(1)']
+aa=float(mydict1['model4(1)'])
+bb=float(mydict2['model4(1)'])
+cc=float(mydict3['model4(1)'])
 if (sheet2_data.cell_value(nrow-1,2)<=sheet2_data.cell_value(nrow-1,3)):
     amount=(sheet2_data.cell_value(nrow-1,3)-sheet2_data.cell_value(nrow-1,2))** 2 * 3950
     biaozhi=1
@@ -360,10 +365,10 @@ for i in range(6):
     sheet.cell(row=p+1, column=i+5).font=fontText1
     sheet.cell(row=p+1, column=i+5).number_format = '0.00_);-0.00'
 ############################################################################
-sheet = wb['模型四 (1)PE副本计算CCI日线']
-aa=float(mydict1['模型四 (1)PE副本计算CCI日线'])
-bb=float(mydict2['模型四 (1)PE副本计算CCI日线'])
-cc=float(mydict3['模型四 (1)PE副本计算CCI日线'])
+sheet = wb['model4(1)&CCI_per_day']
+aa=float(mydict1['model4(1)&CCI_per_day'])
+bb=float(mydict2['model4(1)&CCI_per_day'])
+cc=float(mydict3['model4(1)&CCI_per_day'])
 CCI=sheet0.cell_value(xx-1,20)
 sheet.cell(row=p+1, column=13).value=CCI
 sheet.cell(row=p+1, column=13).font=fontText2
@@ -403,10 +408,10 @@ for i in range(6):
     sheet.cell(row=p+1, column=i+5).font=fontText1
     sheet.cell(row=p+1, column=i+5).number_format = '0.00_);-0.00'
 ############################################################################
-sheet = wb['模型四 (3)PE副本计算CCI日线']
-aa=float(mydict1['模型四 (3)PE副本计算CCI日线'])
-bb=float(mydict2['模型四 (3)PE副本计算CCI日线'])
-cc=float(mydict3['模型四 (3)PE副本计算CCI日线'])
+sheet = wb['model4(3)&CCI_per_day']
+aa=float(mydict1['model4(3)&CCI_per_day'])
+bb=float(mydict2['model4(3)&CCI_per_day'])
+cc=float(mydict3['model4(3)&CCI_per_day'])
 CCI=sheet0.cell_value(xx-1,20)
 sheet.cell(row=p+1, column=13).value=CCI
 sheet.cell(row=p+1, column=13).font=fontText2
@@ -446,10 +451,10 @@ for i in range(6):
     sheet.cell(row=p+1, column=i+5).font=fontText1
     sheet.cell(row=p+1, column=i+5).number_format = '0.00_);-0.00'
 ############################################################################
-sheet = wb['模型四 (3)PE副本成交量计算CCI日线']
-aa=float(mydict1['模型四 (3)PE副本成交量计算CCI日线'])
-bb=float(mydict2['模型四 (3)PE副本成交量计算CCI日线'])
-cc=float(mydict3['模型四 (3)PE副本成交量计算CCI日线'])
+sheet = wb['model4(3)vol&CCI_per_day']
+aa=float(mydict1['model4(3)vol&CCI_per_day'])
+bb=float(mydict2['model4(3)vol&CCI_per_day'])
+cc=float(mydict3['model4(3)vol&CCI_per_day'])
 CCI=sheet0.cell_value(xx-1,20)
 sheet.cell(row=p+1, column=15).value=CCI
 sheet.cell(row=p+1, column=15).font=fontText2
@@ -500,22 +505,22 @@ for i in range(6):
     sheet.cell(row=p+1, column=i+7).number_format = '0.00_);-0.00'
 ############################################################################
 
-sheet = wb['模型四 (1)PE副本计算CCI月线']
-aa=float(mydict1['模型四 (1)PE副本计算CCI月线'])
-bb=float(mydict2['模型四 (1)PE副本计算CCI月线'])
-cc=float(mydict3['模型四 (1)PE副本计算CCI月线'])
+sheet = wb['model4(1)&CCI_per_month']
+aa=float(mydict1['model4(1)&CCI_per_month'])
+bb=float(mydict2['model4(1)&CCI_per_month'])
+cc=float(mydict3['model4(1)&CCI_per_month'])
 sheet.cell(row=p+1, column=13).value=high
 sheet.cell(row=p+1, column=14).value=low
 typ=(price+low+high)/3
 sheet.cell(row=p+1, column=15).value=typ
 sumtyp=typ
 for i in range(13):
-    sumtyp=sumtyp+float(data.sheet_by_name(sheet.title).cell_value(p-1-i,14))
+    sumtyp=sumtyp+float(data.sheet_by_name(sheet.title).cell_value(p-2-i,14))
 sheet.cell(row=p+1, column=16).value=sumtyp/14
 sheet.cell(row=p+1, column=17).value=typ-sumtyp/14
 avedev=abs(typ-sumtyp/14)
 for i in range(13):
-    avedev=avedev+abs(float(data.sheet_by_name(sheet.title).cell_value(p-1-i,14))-sumtyp/14)
+    avedev=avedev+abs(float(data.sheet_by_name(sheet.title).cell_value(p-2-i,14))-sumtyp/14)
 sheet.cell(row=p+1, column=18).value=avedev/14
 sheet.cell(row=p+1, column=19).value=0.015*avedev/14
 CCI=(typ-sumtyp/14)/(0.015*avedev/14)
@@ -578,7 +583,7 @@ d=[]
 filename6=dirba1+"/"+filedir3[3]
 data=xlrd.open_workbook(filename6)#openpyxl模块读不出数据，只能读出单元格公式
 wb = openpyxl.load_workbook(filename6)
-sheet = wb['模型四 (1)PE副本']
+sheet = wb['model4(1)']
 p=sheet.max_row
 print(p)
 for sheet in wb:
@@ -597,18 +602,18 @@ for sheet in wb:
     sheet.cell(row=p+1, column=4).value=sheet2_data.cell_value(nrow-1,3)#PE均值
     sheet.cell(row=p+1, column=4).font=fontText1
     sheet.cell(row=p+1, column=4).number_format = 'General'
-    if(not((sheet.title=='模型四 (3)PE副本成交量计算RSI')or(sheet.title=='模型四 (3)PE副本成交量'))):
+    if(not((sheet.title=='model4(3)vol&RSI')or(sheet.title=='model4(3)vol'))):
         a.append(sheet.title)
-        b.append(data.sheet_by_name(sheet.title).cell_value(p-1,6))
-        c.append(data.sheet_by_name(sheet.title).cell_value(p-1,8))
-        d.append(data.sheet_by_name(sheet.title).cell_value(p-1,11))
+        b.append(data.sheet_by_name(sheet.title).cell_value(p-2,6))
+        c.append(data.sheet_by_name(sheet.title).cell_value(p-2,8))
+        d.append(data.sheet_by_name(sheet.title).cell_value(p-2,11))
 #         b.append(sheet1_data.cell_value(p-1,5))
 #         c.append(sheet1_data.cell_value(p-1,7))
     else:
         a.append(sheet.title)
-        b.append(data.sheet_by_name(sheet.title).cell_value(p-1,8))
-        c.append(data.sheet_by_name(sheet.title).cell_value(p-1,10))
-        d.append(data.sheet_by_name(sheet.title).cell_value(p-1,13))
+        b.append(data.sheet_by_name(sheet.title).cell_value(p-2,8))
+        c.append(data.sheet_by_name(sheet.title).cell_value(p-2,10))
+        d.append(data.sheet_by_name(sheet.title).cell_value(p-2,13))
 #         b.append(sheet1_data.cell_value(p-1,4))
 #         c.append(sheet1_data.cell_value(p-1,6))        
 mydict1=dict(zip(a,b))
@@ -618,10 +623,10 @@ print(mydict1)
 print(mydict2)
 print(mydict3)
 #########################################################################
-sheet = wb['模型四 (1)PE副本']
-aa=float(mydict1['模型四 (1)PE副本'])
-bb=float(mydict2['模型四 (1)PE副本'])
-cc=float(mydict3['模型四 (1)PE副本'])
+sheet = wb['model4(1)']
+aa=float(mydict1['model4(1)'])
+bb=float(mydict2['model4(1)'])
+cc=float(mydict3['model4(1)'])
 if (sheet2_data.cell_value(nrow-1,2)<=sheet2_data.cell_value(nrow-1,3)):
     amount=(sheet2_data.cell_value(nrow-1,3)-sheet2_data.cell_value(nrow-1,2))** 2 * 3950
     biaozhi=1
@@ -648,10 +653,10 @@ for i in range(6):
     sheet.cell(row=p+1, column=i+5).font=fontText1
     sheet.cell(row=p+1, column=i+5).number_format = '0.00_);-0.00'
 #########################################################################
-sheet = wb['模型四 (3)PE副本']
-aa=float(mydict1['模型四 (3)PE副本'])
-bb=float(mydict2['模型四 (3)PE副本'])
-cc=float(mydict3['模型四 (3)PE副本'])
+sheet = wb['model4(3)']
+aa=float(mydict1['model4(3)'])
+bb=float(mydict2['model4(3)'])
+cc=float(mydict3['model4(3)'])
 if (sheet2_data.cell_value(nrow-1,2)<=sheet2_data.cell_value(nrow-1,3)):
     amount=(sheet2_data.cell_value(nrow-1,3)-sheet2_data.cell_value(nrow-1,2))** 3 * 3950
     biaozhi=1
@@ -678,17 +683,17 @@ for i in range(6):
     sheet.cell(row=p+1, column=i+5).font=fontText1
     sheet.cell(row=p+1, column=i+5).number_format = '0.00_);-0.00'
 #########################################################################
-sheet = wb['模型四 (1)PE副本计算RSI']
-aa=float(mydict1['模型四 (1)PE副本计算RSI'])
-bb=float(mydict2['模型四 (1)PE副本计算RSI'])
-cc=float(mydict3['模型四 (1)PE副本计算RSI'])
+sheet = wb['model4(1)&RSI']
+aa=float(mydict1['model4(1)&RSI'])
+bb=float(mydict2['model4(1)&RSI'])
+cc=float(mydict3['model4(1)&RSI'])
 datax=xlrd.open_workbook(filename3)#openpyxl模块读不出数据，只能读出单元格公式
-sheetx=datax.sheet_by_name('模型一计算RSI')
+sheetx=datax.sheet_by_name('model1&RSI')
 nrowx=sheetx.nrows
-sheet.cell(row=p+1, column=13).value=datax.sheet_by_name('模型一计算RSI').cell_value(nrowx-1,10)
-sheet.cell(row=p+1, column=14).value=datax.sheet_by_name('模型一计算RSI').cell_value(nrowx-1,12)
-sheet.cell(row=p+1, column=15).value=datax.sheet_by_name('模型一计算RSI').cell_value(nrowx-1,13)
-RSIpre=datax.sheet_by_name('模型一计算RSI').cell_value(nrowx-1,13)
+sheet.cell(row=p+1, column=13).value=datax.sheet_by_name('model1&RSI').cell_value(nrowx-1,10)
+sheet.cell(row=p+1, column=14).value=datax.sheet_by_name('model1&RSI').cell_value(nrowx-1,12)
+sheet.cell(row=p+1, column=15).value=datax.sheet_by_name('model1&RSI').cell_value(nrowx-1,13)
+RSIpre=datax.sheet_by_name('model1&RSI').cell_value(nrowx-1,13)
 if(float(RSIpre)<20):
     sign=2
 elif((float(RSIpre)>20)and(RSIpre<25)):
@@ -731,14 +736,14 @@ for i in range(3):
     sheet.cell(row=p+1, column=i+13).font=fontText1
     sheet.cell(row=p+1, column=i+13).number_format = '0.000000_);(0.000000)' 
 #########################################################################
-sheet = wb['模型四 (3)PE副本计算RSI']
-aa=float(mydict1['模型四 (3)PE副本计算RSI'])
-bb=float(mydict2['模型四 (3)PE副本计算RSI'])
-cc=float(mydict3['模型四 (3)PE副本计算RSI'])
-sheet.cell(row=p+1, column=13).value=datax.sheet_by_name('模型一计算RSI').cell_value(nrowx-1,10)
-sheet.cell(row=p+1, column=14).value=datax.sheet_by_name('模型一计算RSI').cell_value(nrowx-1,12)
-sheet.cell(row=p+1, column=15).value=datax.sheet_by_name('模型一计算RSI').cell_value(nrowx-1,13)
-RSIpre=datax.sheet_by_name('模型一计算RSI').cell_value(nrowx-1,13)
+sheet = wb['model4(3)&RSI']
+aa=float(mydict1['model4(3)&RSI'])
+bb=float(mydict2['model4(3)&RSI'])
+cc=float(mydict3['model4(3)&RSI'])
+sheet.cell(row=p+1, column=13).value=datax.sheet_by_name('model1&RSI').cell_value(nrowx-1,10)
+sheet.cell(row=p+1, column=14).value=datax.sheet_by_name('model1&RSI').cell_value(nrowx-1,12)
+sheet.cell(row=p+1, column=15).value=datax.sheet_by_name('model1&RSI').cell_value(nrowx-1,13)
+RSIpre=datax.sheet_by_name('model1&RSI').cell_value(nrowx-1,13)
 if(float(RSIpre)<20):
     sign=2
 elif((float(RSIpre)>20)and(RSIpre<25)):
@@ -781,15 +786,15 @@ for i in range(3):
     sheet.cell(row=p+1, column=i+13).font=fontText1
     sheet.cell(row=p+1, column=i+13).number_format = '0.000000_);(0.000000)' 
 #########################################################################
-sheet = wb['模型四 (1)PE副本计算KDJ']
-aa=float(mydict1['模型四 (1)PE副本计算KDJ'])
-bb=float(mydict2['模型四 (1)PE副本计算KDJ'])
-cc=float(mydict3['模型四 (1)PE副本计算KDJ'])
-sheet.cell(row=p+1, column=13).value=datax.sheet_by_name('模型一计算KDJ').cell_value(nrowx-1,13)
-sheet.cell(row=p+1, column=14).value=datax.sheet_by_name('模型一计算KDJ').cell_value(nrowx-1,14)
-sheet.cell(row=p+1, column=15).value=datax.sheet_by_name('模型一计算KDJ').cell_value(nrowx-1,15)
-sheet.cell(row=p+1, column=16).value=datax.sheet_by_name('模型一计算KDJ').cell_value(nrowx-1,16)
-KDJ=datax.sheet_by_name('模型一计算KDJ').cell_value(nrowx-1,16)
+sheet = wb['model4(1)&KDJ']
+aa=float(mydict1['model4(1)&KDJ'])
+bb=float(mydict2['model4(1)&KDJ'])
+cc=float(mydict3['model4(1)&KDJ'])
+sheet.cell(row=p+1, column=13).value=datax.sheet_by_name('model1&KDJ').cell_value(nrowx-1,13)
+sheet.cell(row=p+1, column=14).value=datax.sheet_by_name('model1&KDJ').cell_value(nrowx-1,14)
+sheet.cell(row=p+1, column=15).value=datax.sheet_by_name('model1&KDJ').cell_value(nrowx-1,15)
+sheet.cell(row=p+1, column=16).value=datax.sheet_by_name('model1&KDJ').cell_value(nrowx-1,16)
+KDJ=datax.sheet_by_name('model1&KDJ').cell_value(nrowx-1,16)
 if((KDJ<0)or(KDJ>100)):
     sign=1.2
 else:
@@ -828,10 +833,10 @@ sheet.cell(row=p+1, column=16).number_format = '0.00_ '
 sheet.cell(row=p+1, column=17).font=fontText2
 sheet.cell(row=p+1, column=17).number_format = 'General'
 #########################################################################
-sheet = wb['模型四 (3)PE副本成交量']
-aa=float(mydict1['模型四 (3)PE副本成交量'])
-bb=float(mydict2['模型四 (3)PE副本成交量'])
-cc=float(mydict3['模型四 (3)PE副本成交量'])
+sheet = wb['model4(3)vol']
+aa=float(mydict1['model4(3)vol'])
+bb=float(mydict2['model4(3)vol'])
+cc=float(mydict3['model4(3)vol'])
 vol=sheet0.cell_value(xx-1,5)
 volmean=sheet0.cell_value(xx-1,8)
 print(type(volmean))
@@ -868,14 +873,14 @@ for i in range(8):
     sheet.cell(row=p+1, column=i+5).font=fontText1
     sheet.cell(row=p+1, column=i+5).number_format = '0.00_);-0.00'
 #########################################################################
-sheet = wb['模型四 (3)PE副本成交量计算RSI']
-aa=float(mydict1['模型四 (3)PE副本成交量计算RSI'])
-bb=float(mydict2['模型四 (3)PE副本成交量计算RSI'])
-cc=float(mydict3['模型四 (3)PE副本成交量计算RSI'])
-sheet.cell(row=p+1, column=15).value=datax.sheet_by_name('模型一计算RSI').cell_value(nrowx-1,10)
-sheet.cell(row=p+1, column=16).value=datax.sheet_by_name('模型一计算RSI').cell_value(nrowx-1,12)
-sheet.cell(row=p+1, column=17).value=datax.sheet_by_name('模型一计算RSI').cell_value(nrowx-1,13)
-RSIpre=datax.sheet_by_name('模型一计算RSI').cell_value(nrowx-1,13)
+sheet = wb['model4(3)vol&RSI']
+aa=float(mydict1['model4(3)vol&RSI'])
+bb=float(mydict2['model4(3)vol&RSI'])
+cc=float(mydict3['model4(3)vol&RSI'])
+sheet.cell(row=p+1, column=15).value=datax.sheet_by_name('model1&RSI').cell_value(nrowx-1,10)
+sheet.cell(row=p+1, column=16).value=datax.sheet_by_name('model1&RSI').cell_value(nrowx-1,12)
+sheet.cell(row=p+1, column=17).value=datax.sheet_by_name('model1&RSI').cell_value(nrowx-1,13)
+RSIpre=datax.sheet_by_name('model1&RSI').cell_value(nrowx-1,13)
 if(float(RSIpre)<20):
     sign=2
 elif((float(RSIpre)>20)and(RSIpre<25)):

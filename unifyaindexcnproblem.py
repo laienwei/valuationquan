@@ -48,7 +48,7 @@ sheet1_data=data.sheet_by_name('模型二 (1)平均线')
 
 wb = openpyxl.load_workbook(filename4)
 sheet = wb['模型二 (1)平均线']
-p=sheet.max_row
+p=sheet1_data.nrows
 print(p)
 print(sheet1_data.cell_value(p-1,5))
 aa=sheet1_data.cell_value(p-1,5)
@@ -103,7 +103,7 @@ sheet.cell(row=p+1, column=10).number_format = '0.00_ '
 
 sheet1_data=data.sheet_by_name('模型二 (1)MA250')
 sheet = wb['模型二 (1)MA250']
-p=sheet.max_row
+p=sheet1_data.nrows
 print(p)
 print(sheet1_data.cell_value(p-1,5))
 aa=sheet1_data.cell_value(p-1,5)
@@ -165,7 +165,7 @@ sheet1_data=data.sheet_by_name('模型四 (1)平均线')
 
 wb = openpyxl.load_workbook(filename5)
 sheet = wb['模型四 (1)平均线']
-p=sheet.max_row
+p=sheet1_data.nrows
 print(p)
 print(sheet1_data.cell_value(p-1,5))
 aa=sheet1_data.cell_value(p-1,5)
@@ -220,7 +220,7 @@ sheet.cell(row=p+1, column=10).number_format = '0.00_ '
 
 sheet1_data=data.sheet_by_name('模型四 (1)MA250')
 sheet = wb['模型四 (1)MA250']
-p=sheet.max_row
+p=sheet1_data.nrows
 print(p)
 print(sheet1_data.cell_value(p-1,5))
 aa=sheet1_data.cell_value(p-1,5)
@@ -275,7 +275,7 @@ sheet.cell(row=p+1, column=10).number_format = '0.00_ '
 
 sheet1_data=data.sheet_by_name('模型四 (3)MA250')
 sheet = wb['模型四 (3)MA250']
-p=sheet.max_row
+p=sheet1_data.nrows
 print(p)
 print(sheet1_data.cell_value(p-1,5))
 aa=sheet1_data.cell_value(p-1,5)

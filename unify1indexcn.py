@@ -22,7 +22,7 @@ data=xlrd.open_workbook(filename3)#openpyxl模块读不出数据，只能读出�
 sheet1_data=data.sheet_by_name('模型一')
 wb = openpyxl.load_workbook(filename3)
 sheet = wb['模型一']
-p=sheet1_data.nrows
+p=sheet.max_row
 print(p)
 print(sheet1_data.cell_value(p-1,4))
 aa=sheet1_data.cell_value(p-1,4)
@@ -74,7 +74,7 @@ nrow=sheet2_data.nrows
 
 wb = openpyxl.load_workbook(filename4)
 sheet = wb['模型二 (1)PE副本']
-p=sheet1_data.nrows
+p=sheet.max_row
 print(p)
 print(sheet1_data.cell_value(p-1,6))
 aa=sheet1_data.cell_value(p-1,6)
@@ -146,7 +146,7 @@ nrow=sheet2_data.nrows
 
 wb = openpyxl.load_workbook(filename5)
 sheet = wb['模型四 (1)PE副本']
-p=sheet1_data.nrows
+p=sheet.max_row
 print(p)
 print(sheet1_data.cell_value(p-1,6))
 aa=sheet1_data.cell_value(p-1,6)

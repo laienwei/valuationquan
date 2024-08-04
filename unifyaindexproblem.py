@@ -42,7 +42,7 @@ sheet1_data=data.sheet_by_name('model2(1)mean')
 
 wb = openpyxl.load_workbook(filename4)
 sheet = wb['model2(1)mean']
-p=sheet.max_row
+p=sheet1_data.nrows
 print(p)
 print(sheet1_data.cell_value(p-1,5))
 aa=sheet1_data.cell_value(p-1,5)
@@ -97,7 +97,7 @@ sheet.cell(row=p+1, column=10).number_format = '0.00_ '
 
 sheet1_data=data.sheet_by_name('model2(1)MA250')
 sheet = wb['model2(1)MA250']
-p=sheet.max_row
+p=sheet1_data.nrows
 print(p)
 print(sheet1_data.cell_value(p-1,5))
 aa=sheet1_data.cell_value(p-1,5)
@@ -159,7 +159,7 @@ sheet1_data=data.sheet_by_name('model4(1)mean')
 
 wb = openpyxl.load_workbook(filename5)
 sheet = wb['model4(1)mean']
-p=sheet.max_row
+p=sheet1_data.nrows
 print(p)
 print(sheet1_data.cell_value(p-1,5))
 aa=sheet1_data.cell_value(p-1,5)
@@ -214,7 +214,7 @@ sheet.cell(row=p+1, column=10).number_format = '0.00_ '
 
 sheet1_data=data.sheet_by_name('model4(1)MA250')
 sheet = wb['model4(1)MA250']
-p=sheet.max_row
+p=sheet1_data.nrows
 print(p)
 print(sheet1_data.cell_value(p-1,5))
 aa=sheet1_data.cell_value(p-1,5)
@@ -269,7 +269,7 @@ sheet.cell(row=p+1, column=10).number_format = '0.00_ '
 
 sheet1_data=data.sheet_by_name('model4(3)MA250')
 sheet = wb['model4(3)MA250']
-p=sheet.max_row
+p=sheet1_data.nrows
 print(p)
 print(sheet1_data.cell_value(p-1,5))
 aa=sheet1_data.cell_value(p-1,5)

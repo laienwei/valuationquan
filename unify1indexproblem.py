@@ -15,14 +15,14 @@ wb0 = openpyxl.load_workbook(r'./lai/valuationquan/szseinnovation100index.xlsx')
 sheet0 = wb0['szse_innovation_100']
 xx=sheet0.max_row 
 index=sheet0.cell(row=xx,column=5).value/1000
-filedir3=['szseinnovation100indexmodel1cn.xlsx','szseinnovation100indexmodel2cn.xlsx','szseinnovation100indexmodel4cn.xlsx']
+filedir3=['szseinnovation100indexmodel1.xlsx','szseinnovation100indexmodel2.xlsx','szseinnovation100indexmodel4.xlsx']
 dirba1="./lai/valuationquan/szseinnovation100index"
 filename3=dirba1+"/"+filedir3[0]
 data=xlrd.open_workbook(filename3)#openpyxl模块读不出数据，只能读出单元格公式
-sheet1_data=data.sheet_by_name('模型一')
+sheet1_data=data.sheet_by_name('model1')
 wb = openpyxl.load_workbook(filename3)
-sheet = wb['模型一']
-p=sheet.max_row
+sheet = wb['model1']
+p=sheet1_data.nrows
 print(p)
 print(sheet1_data.cell_value(p-1,4))
 aa=sheet1_data.cell_value(p-1,4)
@@ -66,15 +66,15 @@ wb.save(filename3)
 # In[38]:
 filename4=dirba1+"/"+filedir3[1]
 data=xlrd.open_workbook(filename4)#openpyxl模块读不出数据，只能读出单元格公式
-sheet1_data=data.sheet_by_name('模型二 (1)PE副本')
+sheet1_data=data.sheet_by_name('model2(1)')
 filename3=dirba1+"/"+"szseinnovation100indexmodel1prac.xlsx"
 data1=xlrd.open_workbook(filename3)#openpyxl模块读不出数据，只能读出单元格公式
 sheet2_data=data1.sheet_by_name('myPEPB')
 nrow=sheet2_data.nrows
 
 wb = openpyxl.load_workbook(filename4)
-sheet = wb['模型二 (1)PE副本']
-p=sheet.max_row
+sheet = wb['model2(1)']
+p=sheet1_data.nrows
 print(p)
 print(sheet1_data.cell_value(p-1,6))
 aa=sheet1_data.cell_value(p-1,6)
@@ -138,15 +138,15 @@ wb.save(filename4)
 
 filename5=dirba1+"/"+filedir3[2]
 data=xlrd.open_workbook(filename5)#openpyxl模块读不出数据，只能读出单元格公式
-sheet1_data=data.sheet_by_name('模型四 (1)PE副本')
+sheet1_data=data.sheet_by_name('model4(1)')
 #filename3=dirba1+"/"+"szseinnovation100indexmodel1prac.xlsx"
 data1=xlrd.open_workbook(filename3)#openpyxl模块读不出数据，只能读出单元格公式
 sheet2_data=data1.sheet_by_name('myPEPB')
 nrow=sheet2_data.nrows
 
 wb = openpyxl.load_workbook(filename5)
-sheet = wb['模型四 (1)PE副本']
-p=sheet.max_row
+sheet = wb['model4(1)']
+p=sheet1_data.nrows
 print(p)
 print(sheet1_data.cell_value(p-1,6))
 aa=sheet1_data.cell_value(p-1,6)
