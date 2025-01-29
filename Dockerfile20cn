@@ -5,5 +5,5 @@ COPY lai/valuationquan/szseinnovation100index/szseinnovation100indexmodel4cn.xls
 COPY lai/valuationquan/szseinnovation100index/szseinnovation100indexmodel2cn.xlsx /lai/valuationquan/szseinnovation100index/
 COPY lai/valuationquan/szseinnovation100index/szseinnovation100indexmodel1cn.xlsx /lai/valuationquan/szseinnovation100index/
 COPY lai/valuationquan/szseinnovation100index/szseinnovation100indexmodel1prac.xlsx /lai/valuationquan/szseinnovation100index/
-RUN pip3 install xlrd==1.2.0
+RUN pip3 install xlrd==1.2.0 -i https://mirrors.cloud.tencent.com/pypi/simple 
 RUN python3 unify1indexcn.py
