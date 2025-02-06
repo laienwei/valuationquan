@@ -9,7 +9,7 @@ laistr1=".csv"
 laistr11="Jing.csv"
 laistr12="Dong.csv"
 laistr13="PB.csv"
-year="2024"
+year="2025"
 for root,dirs,files in os.walk(file_dir):
     for q in range(len(dirs)):
         print(dirs[q])

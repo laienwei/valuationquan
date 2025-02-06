@@ -1,6 +1,6 @@
 class publai1:
     def __init__(self):
-        date0='2025-1-27'
+        date0='2025-1-27' #新年里首月的月底镜像生成前必须保证cloudnoVBAopenpyxl.py中的参数year得到修改，切记切记！！
         num=96
         filename='./data/datefortest'+str(num)+' - 副本.csv'
         filename1='../data/datefortest'+str(num)+' - 副本.csv'
