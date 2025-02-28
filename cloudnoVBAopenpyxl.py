@@ -2,6 +2,7 @@
 # coding: utf-8
 
 import os
+import publai1
 import openpyxl as ox
 file_dir=r'./date'
 laistr='result'
@@ -9,7 +10,8 @@ laistr1=".csv"
 laistr11="Jing.csv"
 laistr12="Dong.csv"
 laistr13="PB.csv"
-year="2025"
+pub=publai1.publai1()
+year=pub.year0
 for root,dirs,files in os.walk(file_dir):
     for q in range(len(dirs)):
         print(dirs[q])
