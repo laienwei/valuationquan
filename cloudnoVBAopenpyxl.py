@@ -82,7 +82,7 @@ for root,dirs,files in os.walk(file_dir):
         lairow=sh.max_row+1
         sh.cell(row=lairow,column=1,value=date1)   
 #         wb.save(r' ./crawler/newworkbook.xlsm')
-        while t<57:
+        while t<58:
              sh.cell(row=lairow,column=t*5+2,value=float(n[t*5]))
              sh.cell(row=lairow,column=t*5+3,value=float(n[t*5+1]))
              sh.cell(row=lairow,column=t*5+4,value=float(n[t*5+2]))
