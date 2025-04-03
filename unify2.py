@@ -366,14 +366,14 @@ if(SAR<1):
         amount=(sheet2_data.cell_value(nrow-1,3)-sheet2_data.cell_value(nrow-1,2)) * 3950
         biaozhi=1
     else:
-        amount=(sheet2_data.cell_value(nrow-1,3)-sheet2_data.cell_value(nrow-1,2)) * -3950
+        amount=(sheet2_data.cell_value(nrow-1,3)-sheet2_data.cell_value(nrow-1,2)) * 3950
         biaozhi=0
 else:
     if (sheet2_data.cell_value(nrow-1,2)<=sheet2_data.cell_value(nrow-1,3)):
         amount=2*(sheet2_data.cell_value(nrow-1,3)-sheet2_data.cell_value(nrow-1,2)) * 3950
         biaozhi=1
     else:
-        amount=2*(sheet2_data.cell_value(nrow-1,3)-sheet2_data.cell_value(nrow-1,2)) * -3950
+        amount=2*(sheet2_data.cell_value(nrow-1,3)-sheet2_data.cell_value(nrow-1,2)) * 3950
         biaozhi=0
 sheet.cell(row=p+1, column=1).value=datelai
 sheet.cell(row=p+1, column=1).alignment=AlignmentText1
@@ -470,7 +470,7 @@ if (sheet2_data.cell_value(nrow-1,2)<=sheet2_data.cell_value(nrow-1,3)):
     amount=(sheet2_data.cell_value(nrow-1,3)-sheet2_data.cell_value(nrow-1,2)) * 3950
     biaozhi=1
 else:
-    amount=(sheet2_data.cell_value(nrow-1,3)-sheet2_data.cell_value(nrow-1,2)) * -3950
+    amount=(sheet2_data.cell_value(nrow-1,3)-sheet2_data.cell_value(nrow-1,2)) * 3950
     biaozhi=0
 sheet.cell(row=p+1, column=5).value=amount
 sheet.cell(row=p+1, column=6).value=amount/price
@@ -513,7 +513,7 @@ if (sheet2_data.cell_value(nrow-1,2)<=sheet2_data.cell_value(nrow-1,3)):
     amount=(sheet2_data.cell_value(nrow-1,3)-sheet2_data.cell_value(nrow-1,2)) * 3950 * sign
     biaozhi=1
 else:
-    amount=(sheet2_data.cell_value(nrow-1,3)-sheet2_data.cell_value(nrow-1,2)) * -3950 * sign
+    amount=(sheet2_data.cell_value(nrow-1,3)-sheet2_data.cell_value(nrow-1,2)) * 3950 * sign
     biaozhi=0
 sheet.cell(row=p+1, column=5).value=amount
 sheet.cell(row=p+1, column=6).value=amount/price
@@ -676,7 +676,7 @@ if (sheet2_data.cell_value(nrow-1,2)<=sheet2_data.cell_value(nrow-1,3)):
     amount=(sheet2_data.cell_value(nrow-1,3)-sheet2_data.cell_value(nrow-1,2)) * 3950 * sign
     biaozhi=1
 else:
-    amount=(sheet2_data.cell_value(nrow-1,3)-sheet2_data.cell_value(nrow-1,2)) * -3950 * sign
+    amount=(sheet2_data.cell_value(nrow-1,3)-sheet2_data.cell_value(nrow-1,2)) * 3950 * sign
     biaozhi=0
 sheet.cell(row=p+1, column=5).value=amount
 sheet.cell(row=p+1, column=6).value=amount/price
@@ -761,7 +761,7 @@ if (sheet2_data.cell_value(nrow-1,2)<=sheet2_data.cell_value(nrow-1,3)):
     amount=(sheet2_data.cell_value(nrow-1,3)-sheet2_data.cell_value(nrow-1,2)) * 3950
     biaozhi=1
 else:
-    amount=(sheet2_data.cell_value(nrow-1,3)-sheet2_data.cell_value(nrow-1,2)) * -3950
+    amount=(sheet2_data.cell_value(nrow-1,3)-sheet2_data.cell_value(nrow-1,2)) * 3950
     biaozhi=0
 sheet.cell(row=p+1, column=5).value=amount
 sheet.cell(row=p+1, column=6).value=amount/price
@@ -842,7 +842,7 @@ if (sheet2_data.cell_value(nrow-1,2)<=sheet2_data.cell_value(nrow-1,3)):
     amount=(sheet2_data.cell_value(nrow-1,3)-sheet2_data.cell_value(nrow-1,2)) * 3950 * sign
     biaozhi=1
 else:
-    amount=(sheet2_data.cell_value(nrow-1,3)-sheet2_data.cell_value(nrow-1,2)) * -3950 * sign
+    amount=(sheet2_data.cell_value(nrow-1,3)-sheet2_data.cell_value(nrow-1,2)) * 3950 * sign
     biaozhi=0
 sheet.cell(row=p+1, column=5).value=amount
 sheet.cell(row=p+1, column=6).value=amount/price
@@ -997,7 +997,7 @@ if (sheet2_data.cell_value(nrow-1,2)<=sheet2_data.cell_value(nrow-1,3)):
     amount=(sheet2_data.cell_value(nrow-1,3)-sheet2_data.cell_value(nrow-1,2)) * 3950 * sign
     biaozhi=1
 else:
-    amount=(sheet2_data.cell_value(nrow-1,3)-sheet2_data.cell_value(nrow-1,2)) * -3950 * sign
+    amount=(sheet2_data.cell_value(nrow-1,3)-sheet2_data.cell_value(nrow-1,2)) * 3950 * sign
     biaozhi=0
 sheet.cell(row=p+1, column=5).value=amount
 sheet.cell(row=p+1, column=6).value=amount/price
