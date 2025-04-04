@@ -424,7 +424,7 @@ if (sheet2_data.cell_value(nrow-1,2)<=sheet2_data.cell_value(nrow-1,3)):
     amount=(sheet2_data.cell_value(nrow-1,3)-sheet2_data.cell_value(nrow-1,2))** 3 * 3950 * sign
     biaozhi=1
 else:
-    amount=(sheet2_data.cell_value(nrow-1,3)-sheet2_data.cell_value(nrow-1,2))** 3 * -3950 * sign
+    amount=(sheet2_data.cell_value(nrow-1,3)-sheet2_data.cell_value(nrow-1,2))** 3 * 3950 * sign
     biaozhi=0
 sheet.cell(row=p+1, column=5).value=amount
 sheet.cell(row=p+1, column=6).value=amount/price
@@ -477,7 +477,7 @@ if (sheet2_data.cell_value(nrow-1,2)<=sheet2_data.cell_value(nrow-1,3)):
     amount=(sheet2_data.cell_value(nrow-1,3)-sheet2_data.cell_value(nrow-1,2))** 3 * 3950 * sign * vol / volmean
     biaozhi=1
 else:
-    amount=(sheet2_data.cell_value(nrow-1,3)-sheet2_data.cell_value(nrow-1,2))** 3 * -3950 * sign * vol / volmean
+    amount=(sheet2_data.cell_value(nrow-1,3)-sheet2_data.cell_value(nrow-1,2))** 3 * 3950 * sign * vol / volmean
     biaozhi=0
 sheet.cell(row=p+1, column=7).value=amount
 sheet.cell(row=p+1, column=8).value=amount/price
@@ -656,7 +656,7 @@ if (sheet2_data.cell_value(nrow-1,2)<=sheet2_data.cell_value(nrow-1,3)):
     amount=(sheet2_data.cell_value(nrow-1,3)-sheet2_data.cell_value(nrow-1,2))** 3 * 3950
     biaozhi=1
 else:
-    amount=(sheet2_data.cell_value(nrow-1,3)-sheet2_data.cell_value(nrow-1,2))** 3 * -3950
+    amount=(sheet2_data.cell_value(nrow-1,3)-sheet2_data.cell_value(nrow-1,2))** 3 * 3950
     biaozhi=0
 sheet.cell(row=p+1, column=5).value=amount
 sheet.cell(row=p+1, column=6).value=amount/price
@@ -756,7 +756,7 @@ if (sheet2_data.cell_value(nrow-1,2)<=sheet2_data.cell_value(nrow-1,3)):
     amount=(sheet2_data.cell_value(nrow-1,3)-sheet2_data.cell_value(nrow-1,2))** 3 * 3950 * sign
     biaozhi=1
 else:
-    amount=(sheet2_data.cell_value(nrow-1,3)-sheet2_data.cell_value(nrow-1,2))** 3 * -3950 * sign
+    amount=(sheet2_data.cell_value(nrow-1,3)-sheet2_data.cell_value(nrow-1,2))** 3 * 3950 * sign
     biaozhi=0
 sheet.cell(row=p+1, column=5).value=amount
 sheet.cell(row=p+1, column=6).value=amount/price
@@ -846,7 +846,7 @@ if (sheet2_data.cell_value(nrow-1,2)<=sheet2_data.cell_value(nrow-1,3)):
     amount=(sheet2_data.cell_value(nrow-1,3)-sheet2_data.cell_value(nrow-1,2))** 3 * 3950 * vol / volmean
     biaozhi=1
 else:
-    amount=(sheet2_data.cell_value(nrow-1,3)-sheet2_data.cell_value(nrow-1,2))** 3 * -3950 * vol / volmean
+    amount=(sheet2_data.cell_value(nrow-1,3)-sheet2_data.cell_value(nrow-1,2))** 3 * 3950 * vol / volmean
     biaozhi=0
 sheet.cell(row=p+1, column=7).value=amount
 sheet.cell(row=p+1, column=8).value=amount/price
@@ -903,7 +903,7 @@ if (sheet2_data.cell_value(nrow-1,2)<=sheet2_data.cell_value(nrow-1,3)):
     amount=(sheet2_data.cell_value(nrow-1,3)-sheet2_data.cell_value(nrow-1,2))** 3 * sign * 550 * vol / volmean
     biaozhi=1
 else:
-    amount=(sheet2_data.cell_value(nrow-1,3)-sheet2_data.cell_value(nrow-1,2))** 3 * sign * -550 * vol / volmean
+    amount=(sheet2_data.cell_value(nrow-1,3)-sheet2_data.cell_value(nrow-1,2))** 3 * sign * 550 * vol / volmean
     biaozhi=0
 sheet.cell(row=p+1, column=7).value=amount
 sheet.cell(row=p+1, column=8).value=amount/price
