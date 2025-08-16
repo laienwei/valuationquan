@@ -1,0 +1,7 @@
+# .cnb.yml
+main: # 触发分支
+  push: # 触发事件，对应一个构建，可以包含多条 Pipeline。即可以是数组，也可以是对象。
+    - stages: # 流水线1
+        - echo "do some job1"
+    - stages: # 流水线1
+        - echo "do some job2"

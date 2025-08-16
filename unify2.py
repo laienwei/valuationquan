@@ -7,7 +7,7 @@ import xlrd
 import sys
 from openpyxl.styles import Font,Alignment
 datelaitemp=sys.argv[1]
-datelai=datelaitemp[2:]
+datelai=datelaitemp[2:]  #去掉最前面的字符ar，留下ar以后的
 fontText1 = Font(name='Tahoma', size=10, color='ff0000')
 AlignmentText1 = Alignment(horizontal='center')
 wb0 = openpyxl.load_workbook(r'./lai/valuationquan/szseinnovation100index.xlsx')
