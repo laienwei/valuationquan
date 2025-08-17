@@ -3,9 +3,11 @@ variables:
   artifact-name:insertvalue
 master: # 触发分支
   push: # 触发事件，对应一个构建，可以包含多条 Pipeline。即可以是数组，也可以是对象。
-    - stages: # 流水线1
+    - services:
+        - docker
+      stages: # 流水线1
         - echo "开始自动化构建"
-    - stages: # 流水线1
+      stages: # 流水线2
         - name: build-with-param
           script:
              - docker build -f Dockerfile00 -t ${CNB_DOCKER_REGISTRY}/valuationquan/${artifact-name}:latest .
