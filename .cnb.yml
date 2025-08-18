@@ -1,6 +1,6 @@
 # .cnb.yml
 variables:
-  artifact-name:insertvalue
+  artifact_name:insertvalue
 master: # 触发分支
   push: # 触发事件，对应一个构建，可以包含多条 Pipeline。即可以是数组，也可以是对象。
     - services:
@@ -8,7 +8,7 @@ master: # 触发分支
       stages: # 流水线1
         - name: build-with-param
           script:
-             - docker build -f Dockerfile00 -t ${CNB_DOCKER_REGISTRY}/${CNB_REPO_SLUG_LOWERCASE}/${artifact-name}:latest .
+             - docker build -f Dockerfile00 -t ${CNB_DOCKER_REGISTRY}/${CNB_REPO_SLUG_LOWERCASE}/${artifact_name}:latest .
         - name: push-with-param
           script:
-             - docker push ${CNB_DOCKER_REGISTRY}/${CNB_REPO_SLUG_LOWERCASE}/${artifact-name}:latest
+             - docker push ${CNB_DOCKER_REGISTRY}/${CNB_REPO_SLUG_LOWERCASE}/${artifact_name}:latest
