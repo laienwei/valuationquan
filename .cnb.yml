@@ -1,6 +1,6 @@
 master:
   push:
-    stages:
+    - stages:
       - name: 切片示例
         script: |
           # 截取前5个字符（起始位置0，长度5）
