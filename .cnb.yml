@@ -1,10 +1,10 @@
-master:
+	master:
   push:
     stages:
       - name: 切片示例
         script: |
-        # 截取前5个字符（起始位置0，长度5）
+          # 截取前5个字符（起始位置0，长度5）
           echo "前5位：${CNB_REPO_SLUG_LOWERCASE:0:5}"  # 输出：前5位：my-repo
 
-        # 截取从第7个字符到末尾（起始位置7）
+          # 截取从第7个字符到末尾（起始位置7）
           echo "第7位到末尾：${CNB_REPO_SLUG_LOWERCASE:7}"  # 输出：第7位到末尾：slug
