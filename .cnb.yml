@@ -6,6 +6,7 @@ master: # 触发分支
     - services:
         - docker
       stages: # 流水线1
+        - echo "即将推送的镜像路径：${CNB_DOCKER_REGISTRY}/${CNB_REPO_SLUG_LOWERCASE}${artifact_name}:latest"
         - name: build-with-param
           script:
              - docker build -f Dockerfile00 -t ${CNB_DOCKER_REGISTRY}/${CNB_REPO_SLUG_LOWERCASE}${artifact_name}:latest .
