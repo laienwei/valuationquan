@@ -12,7 +12,7 @@ master: # 触发分支
         - echo "我定义的变量之取值：${artifact_name}"
         - name: build-with-param
           script:
-             - docker build -f Dockerfile00 -t ${CNB_DOCKER_REGISTRY}/${CNB_REPO_SLUG_LOWERCASE:0:21}${artifact_name}:latest .
+             - docker build -f Dockerfile00 -t ${CNB_DOCKER_REGISTRY}/${CNB_REPO_SLUG_LOWERCASE:0:21}/${artifact_name}:latest .
         - name: push-with-param
           script:
-             - docker push ${CNB_DOCKER_REGISTRY}/${CNB_REPO_SLUG_LOWERCASE:0:21}${artifact_name}:latest
+             - docker push ${CNB_DOCKER_REGISTRY}/${CNB_REPO_SLUG_LOWERCASE:0:21}/${artifact_name}:latest
