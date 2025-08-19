@@ -8,7 +8,7 @@ master: # 触发分支
       stages: # 流水线1
         - echo "即将推送的镜像路径：${CNB_DOCKER_REGISTRY}/${CNB_REPO_SLUG_LOWERCASE}${artifact_name}:latest"
         - echo "第一个变量的取值： ${CNB_DOCKER_REGISTRY}"
-        - echo "第二个变量的取值：${CNB_REPO_SLUG_LOWERCASE}"
+        - echo "第二个变量的取值前20位：${CNB_REPO_SLUG_LOWERCASE:0:20}"
         - echo "我定义的变量之取值：${artifact_name}"
         - name: build-with-param
           script:
