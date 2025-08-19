@@ -1,4 +1,4 @@
-	master:
+master:
   push:
     stages:
       - name: 切片示例
