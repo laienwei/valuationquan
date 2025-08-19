@@ -1,10 +1,18 @@
-master:
-  push:
-    - stages:
-      - name: 切片示例
-        script: |
-          # 截取前5个字符（起始位置0，长度5）
-          echo "前5位：${CNB_REPO_SLUG_LOWERCASE:0:20}"  # 输出：前5位：my-repo
-
-          # 截取从第7个字符到末尾（起始位置7）
-          echo "第7位到末尾：${CNB_REPO_SLUG_LOWERCASE:21}"  # 输出：第7位到末尾：slug
+# .cnb.yml
+variables:
+  artifact_name:insertvalue
+master: # 触发分支
+  push: # 触发事件，对应一个构建，可以包含多条 Pipeline。即可以是数组，也可以是对象。
+    - services:
+        - docker
+      stages: # 流水线1
+        - echo "即将推送的镜像路径：${CNB_DOCKER_REGISTRY}/${CNB_REPO_SLUG_LOWERCASE}${artifact_name}:latest"
+        - echo "第一个变量的取值： ${CNB_DOCKER_REGISTRY}"
+        - echo "第二个变量的取值前20位：${CNB_REPO_SLUG_LOWERCASE:0:20}"
+        - echo "我定义的变量之取值：${artifact_name}"
+        - name: build-with-param
+          script:
+             - docker build -f Dockerfile00 -t ${CNB_DOCKER_REGISTRY}/${CNB_REPO_SLUG_LOWERCASE:0:21}${artifact_name}:latest .
+        - name: push-with-param
+          script:
+             - docker push ${CNB_DOCKER_REGISTRY}/${CNB_REPO_SLUG_LOWERCASE:0:21}${artifact_name}:latest
