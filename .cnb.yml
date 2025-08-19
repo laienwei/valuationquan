@@ -11,4 +11,4 @@ master: # 触发分支
              - docker build -f Dockerfile00 -t ${CNB_DOCKER_REGISTRY}/${CNB_REPO_SLUG_LOWERCASE}${artifact_name}:latest .
         - name: push-with-param
           script:
-             - docker push ${CNB_DOCKER_REGISTRY}/${CNB_REPO_SLUG_LOWERCASE}/${artifact_name}:latest
+             - docker push ${CNB_DOCKER_REGISTRY}/${CNB_REPO_SLUG_LOWERCASE}${artifact_name}:latest
