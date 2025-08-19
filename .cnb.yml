@@ -1,9 +1,9 @@
 master:
   push:
-    env:
+    - env:
       # 直接声明静态字符串变量（值用双引号包裹）
       MY_STATIC_VAR: "这是固定的字符串值"
-    stages:
+    - stages:
       - name: 定义静态字符串变量
         script: |
           echo "静态字符串变量值：${MY_STATIC_VAR}"
