@@ -13,4 +13,4 @@ master: # 触发分支
         - echo "我定义的变量之取值：${artifact_name}"
         - name: build-with-param
           script: |
-             - echo "静态字符串变量值：${artifact_name}"
+             echo "静态字符串变量值：${artifact_name}"
