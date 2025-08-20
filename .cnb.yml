@@ -15,3 +15,6 @@ master: # 触发分支
           script: |
              echo "静态字符串变量值：${artifact_name}"
              docker build -f Dockerfile00 -t ${CNB_DOCKER_REGISTRY}/${CNB_REPO_SLUG_LOWERCASE:0:21}/${artifact_name}:latest .
+        - name: push-with-param
+          script:
+             - docker push ${CNB_DOCKER_REGISTRY}/${CNB_REPO_SLUG_LOWERCASE:0:21}/${artifact_name}:latest
