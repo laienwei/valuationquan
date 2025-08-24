@@ -21,6 +21,8 @@ master: # 触发分支
     - env:
         # 直接声明静态字符串变量（值用双引号包裹）
         artifact_name: valueinfourfiles
+      services:
+        - docker
       stages: # 流水线1
         - name: build-with-param2
           script: |
@@ -35,6 +37,8 @@ master: # 触发分支
         artifact_name2: szseinnovation100indexcn
         artifact_name3: aiindex
         artifact_name4: aiindexcn
+      services:
+        - docker
       stages: # 流水线1
         - name: build-with-param1
           script: |
