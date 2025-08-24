@@ -1,4 +1,4 @@
-FROM valuation-docker.pkg.coding.net/valuationquan/valuationquan/insertvalue:latest 
+FROM docker.cnb.cool/ccomely/valuationquan/valuationquan/insertvalue:latest 
 COPY publai1.py /publai1.py
 RUN python3 cloudnoVBAopenpyxl.py
 
