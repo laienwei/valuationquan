@@ -1,4 +1,4 @@
-FROM valuation-docker.pkg.coding.net/valuationquan/valuationquan/szseinnovation100index:latest
+FROM docker.cnb.cool/ccomely/valuationquan/valuationquan/szseinnovation100index:latest
 COPY unify1ETF.py /unify1ETF.py
 COPY lai/valuationquan/HwabaoWPszseinnovation100ETF.xlsx /lai/valuationquan/
 COPY lai/valuationquan/szseinnovation100ETF/szseinnovation100ETFmodel1.xlsx /lai/valuationquan/szseinnovation100ETF/
