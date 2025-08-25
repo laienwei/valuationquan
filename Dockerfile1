@@ -1,4 +1,4 @@
-FROM valuation-docker.pkg.coding.net/valuationquan/valuationquan/valueinfourfiles:latest 
+FROM docker.cnb.cool/ccomely/valuationquan/valuationquan/valueinfourfiles:latest 
 COPY data /data
 COPY lai/valuationquan/szseinnovation100index/szseinnovation100indexmodel1.xlsx /lai/valuationquan/szseinnovation100index/
 COPY lai/valuationquan/CNIESG300index/CNIESG300indexmodel1.xlsx /lai/valuationquan/CNIESG300index/
