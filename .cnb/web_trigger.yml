@@ -1,0 +1,20 @@
+# .cnb/web_trigger.yml
+branch:
+  # 如下按钮在分支名以 release 开头的分支详情页面显示
+  - reg: "^master$"
+    buttons:
+      - name: 按钮名1
+        # 如存在，则将作为流水线 title，否则流水线使用默认 title
+        description: 按钮描述
+        event: web_trigger_one # 触发的 CI 事件名
+        # 权限控制，不配置则有仓库写权限的用户可触发构建
+        # 如果配置，则需要有仓库写权限，并且满足 roles 或 users 其中之一才有权限触发构建
+        permissions:
+          # roles 和 users 配置其中之一或都配置均可，二者满足其一即可
+          # 角色非向上包含关系。例如如下配置，表示仅 master 或 developer 角色才有权限，owner 即使仓库权限更高，但此处无权限
+          roles:
+            - master
+            - developer
+          users:
+            - name1
+            - name2

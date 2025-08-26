@@ -1,6 +1,6 @@
 # .cnb.yml
 master: # 触发分支
-  push: # 触发事件，对应一个构建，可以包含多条 Pipeline。即可以是数组，也可以是对象。
+  web_trigger_one: # 触发事件，对应一个构建，可以包含多条 Pipeline。即可以是数组，也可以是对象。
     - env:
         # 直接声明静态字符串变量（值用双引号包裹）
         artifact_name: valueinmodel1s
