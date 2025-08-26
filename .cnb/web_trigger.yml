@@ -13,4 +13,4 @@ branch:
           # roles 和 users 配置其中之一或都配置均可，二者满足其一即可
           # 角色非向上包含关系。例如如下配置，表示仅 master 或 developer 角色才有权限，owner 即使仓库权限更高，但此处无权限
           users:
-            - ccomely
+            - start
