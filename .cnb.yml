@@ -1,5 +1,17 @@
 ar*:
   tag_push:
+    - env:
+        # 直接声明静态字符串变量（值用双引号包裹）
+        artifact_name: szseinnovation100etf12
+      services:
+        - docker
     - stages:
         - name: echo tag name
           script: echo  $CNB_BRANCH
+        - name: build-with-param1
+          script: |
+             echo "静态字符串变量值：${artifact_name}"
+             docker build -f Dockerfile30 --build-arg ar=${CNB_BRANCH} -t ${CNB_DOCKER_REGISTRY}/${CNB_REPO_SLUG_LOWERCASE}/${artifact_name}:latest .
+        - name: push-with-param1
+          script:
+             - docker push ${CNB_DOCKER_REGISTRY}/${CNB_REPO_SLUG_LOWERCASE}/${artifact_name}:latest
