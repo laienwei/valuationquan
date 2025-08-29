@@ -5,7 +5,7 @@ ar*:
         artifact_name: szseinnovation100etf12
       services:
         - docker
-    - stages:
+      stages:
         - name: echo tag name
           script: echo  $CNB_BRANCH
         - name: build-with-param1
