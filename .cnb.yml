@@ -1,5 +1,5 @@
 practiceforusers*:
-  tag_push::
+  tag_push:
     - env:
         artifact_name: szseinnovation100etfprac
       services:
