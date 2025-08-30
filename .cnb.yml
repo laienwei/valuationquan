@@ -1,7 +1,7 @@
-master:
-  web_trigger_one:
+practiceforusers*:
+  tag_push::
     - env:
-        artifact_name: insertvalue
+        artifact_name: szseinnovation100etfprac
       services:
         - docker
       stages:
@@ -12,7 +12,7 @@ master:
         - name: build-with-param1
           script: |
             echo "静态字符串变量值：${artifact_name}"
-            docker build -f Dockerfile00 -t ${CNB_DOCKER_REGISTRY}/${CNB_REPO_SLUG_LOWERCASE}0/${artifact_name}:latest          .
+            docker build -f Dockerfile2simpleusers -t ${CNB_DOCKER_REGISTRY}/${CNB_REPO_SLUG_LOWERCASE}0/${artifact_name}:$CNB_BRANCH       .
         - name: push-with-param1
           script:
-            docker push ${CNB_DOCKER_REGISTRY}/${CNB_REPO_SLUG_LOWERCASE}0/${artifact_name}:latest
+            docker push ${CNB_DOCKER_REGISTRY}/${CNB_REPO_SLUG_LOWERCASE}0/${artifact_name}:$CNB_BRANCH
