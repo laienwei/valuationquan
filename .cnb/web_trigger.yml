@@ -3,7 +3,7 @@ branch:
   # 如下按钮在分支名以 release 开头的分支详情页面显示
   - reg: "^master$"
     buttons:
-      - name: 按钮名1
+      - name: 构建月底镜像
         # 如存在，则将作为流水线 title，否则流水线使用默认 title
         description: 按钮描述
         event: web_trigger_one # 触发的 CI 事件名
