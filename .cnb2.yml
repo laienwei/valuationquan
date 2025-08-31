@@ -1,40 +1,9 @@
 # .cnb.yml
-practiceforusers*:
-  tag_push:
-    - env:
-        artifact_name: szseinnovation100etfprac
-      services:
-        - docker
-      stages:
-        - name: build-with-param1
-          script: |
-            echo "静态字符串变量值：${artifact_name}"
-            docker build -f Dockerfile2simpleusers -t ${CNB_DOCKER_REGISTRY}/${CNB_REPO_SLUG_LOWERCASE}0/${artifact_name}:$CNB_BRANCH       .
-        - name: push-with-param1
-          script:
-            docker push ${CNB_DOCKER_REGISTRY}/${CNB_REPO_SLUG_LOWERCASE}0/${artifact_name}:$CNB_BRANCH
-ar*:
-  tag_push:
-    - env:
-        # 直接声明静态字符串变量（值用双引号包裹）
-        artifact_name: szseinnovation100etf12
-      services:
-        - docker
-      stages:
-        - name: echo tag name
-          script: echo  $CNB_BRANCH
-        - name: build-with-param1
-          script: |
-             echo "静态字符串变量值：${artifact_name}"
-             docker build -f Dockerfile30 --build-arg ar=${CNB_BRANCH} -t ${CNB_DOCKER_REGISTRY}/${CNB_REPO_SLUG_LOWERCASE}/${artifact_name}:latest .
-        - name: push-with-param1
-          script:
-             - docker push ${CNB_DOCKER_REGISTRY}/${CNB_REPO_SLUG_LOWERCASE}/${artifact_name}:latest
 master: # 触发分支
-  web_trigger_one: # 触发事件，对应一个构建，可以包含多条 Pipeline。即可以是数组，也可以是对象。
+  push: # 触发事件，对应一个构建，可以包含多条 Pipeline。即可以是数组，也可以是对象。
     - env:
         # 直接声明静态字符串变量（值用双引号包裹）
-        artifact_name: insertvalue
+        artifact_name: valueinmodel1s
       services:
         - docker
       stages: # 流水线1
@@ -45,63 +14,7 @@ master: # 触发分支
         - name: build-with-param1
           script: |
              echo "静态字符串变量值：${artifact_name}"
-             docker build -f Dockerfile00 -t ${CNB_DOCKER_REGISTRY}/${CNB_REPO_SLUG_LOWERCASE}/${artifact_name}:latest .
+             docker build -f Dockerfile1 -t ${CNB_DOCKER_REGISTRY}/${CNB_REPO_SLUG_LOWERCASE}/${artifact_name}:latest .
         - name: push-with-param1
           script:
              - docker push ${CNB_DOCKER_REGISTRY}/${CNB_REPO_SLUG_LOWERCASE}/${artifact_name}:latest
-    - env:
-        # 直接声明静态字符串变量（值用双引号包裹）
-        artifact_name: valueinfourfiles
-      services:
-        - docker
-      stages: # 流水线1
-        - name: build-with-param2
-          script: |
-             echo "静态字符串变量值：${artifact_name}"
-             docker build -f Dockerfile01 -t ${CNB_DOCKER_REGISTRY}/${CNB_REPO_SLUG_LOWERCASE}/${artifact_name}:latest .
-        - name: push-with-param2
-          script:
-             - docker push ${CNB_DOCKER_REGISTRY}/${CNB_REPO_SLUG_LOWERCASE}/${artifact_name}:latest
-  web_trigger_two: # 触发事件，对应一个构建，可以包含多条 Pipeline。即可以是数组，也可以是对象。
-    - env:
-        # 直接声明静态字符串变量（值用双引号包裹）
-        artifact_name1: szseinnovation100index
-        artifact_name2: szseinnovation100indexcn
-        artifact_name3: aiindex
-        artifact_name4: aiindexcn
-      services:
-        - docker
-      stages: # 流水线1
-        - name: build-with-param3
-          script: |
-             docker build -f Dockerfile20 -t ${CNB_DOCKER_REGISTRY}/${CNB_REPO_SLUG_LOWERCASE}/${artifact_name1}:latest .
-             docker build -f Dockerfile20cn -t ${CNB_DOCKER_REGISTRY}/${CNB_REPO_SLUG_LOWERCASE}/${artifact_name2}:latest .
-             docker build -f Dockerfilea20 -t ${CNB_DOCKER_REGISTRY}/${CNB_REPO_SLUG_LOWERCASE}/${artifact_name3}:latest .
-             docker build -f Dockerfilea20cn -t ${CNB_DOCKER_REGISTRY}/${CNB_REPO_SLUG_LOWERCASE}/${artifact_name4}:latest .
-        - name: push-with-param3
-          script: |
-               docker push ${CNB_DOCKER_REGISTRY}/${CNB_REPO_SLUG_LOWERCASE}/${artifact_name1}:latest
-               docker push ${CNB_DOCKER_REGISTRY}/${CNB_REPO_SLUG_LOWERCASE}/${artifact_name2}:latest
-               docker push ${CNB_DOCKER_REGISTRY}/${CNB_REPO_SLUG_LOWERCASE}/${artifact_name3}:latest
-               docker push ${CNB_DOCKER_REGISTRY}/${CNB_REPO_SLUG_LOWERCASE}/${artifact_name4}:latest
-    - env:
-        # 直接声明静态字符串变量（值用双引号包裹）
-        artifact_name1: szseinnovation100etf
-        artifact_name2: szseinnovation100etfcn
-        artifact_name3: ailof
-        artifact_name4: ailofcn
-      services:
-        - docker
-      stages: # 流水线1
-        - name: build-with-param4
-          script: |
-             docker build -f Dockerfile21 -t ${CNB_DOCKER_REGISTRY}/${CNB_REPO_SLUG_LOWERCASE}/${artifact_name1}:latest .
-             docker build -f Dockerfile21cn -t ${CNB_DOCKER_REGISTRY}/${CNB_REPO_SLUG_LOWERCASE}/${artifact_name2}:latest .
-             docker build -f Dockerfilea21 -t ${CNB_DOCKER_REGISTRY}/${CNB_REPO_SLUG_LOWERCASE}/${artifact_name3}:latest .
-             docker build -f Dockerfilea21cn -t ${CNB_DOCKER_REGISTRY}/${CNB_REPO_SLUG_LOWERCASE}/${artifact_name4}:latest .
-        - name: push-with-param4
-          script: |
-               docker push ${CNB_DOCKER_REGISTRY}/${CNB_REPO_SLUG_LOWERCASE}/${artifact_name1}:latest
-               docker push ${CNB_DOCKER_REGISTRY}/${CNB_REPO_SLUG_LOWERCASE}/${artifact_name2}:latest
-               docker push ${CNB_DOCKER_REGISTRY}/${CNB_REPO_SLUG_LOWERCASE}/${artifact_name3}:latest
-               docker push ${CNB_DOCKER_REGISTRY}/${CNB_REPO_SLUG_LOWERCASE}/${artifact_name4}:latest
