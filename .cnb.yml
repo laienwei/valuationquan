@@ -62,6 +62,7 @@ master: # 触发分支
         - name: push-with-param2
           script:
              - docker push ${CNB_DOCKER_REGISTRY}/${CNB_REPO_SLUG_LOWERCASE}/${artifact_name}:latest
+master:
     web_trigger_two: # 触发事件，对应一个构建，可以包含多条 Pipeline。即可以是数组，也可以是对象。
     - env:
         # 直接声明静态字符串变量（值用双引号包裹）
