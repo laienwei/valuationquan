@@ -4,4 +4,5 @@ master:
         - name: git release
           type: git:release
           options:
-            title: release发布 
+            title: release发布
+            tag: laienwei 
