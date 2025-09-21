@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 # coding: utf-8
-
+#(用于构建计划Dockerfile1运行到一半进行gitpush并转换yaml文件)
 import os
 import openpyxl
 import publai1
