@@ -26,7 +26,7 @@ sum0=cell.value
 for i in range(p-3):
     print(sum0)
     sum0=sum0+sheet.cell(row=i+4, column=3).value
-print("over now")
+print("The data summation process in the model1 files has ended.")
 print(sum0)
 for i in range(num):
     print(xx+i+1)
