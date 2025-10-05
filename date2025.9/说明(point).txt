@@ -1,0 +1,2 @@
+2025年10月3日，刚刚意识到国证早已不再发布指数399404(大盘低波)，检查数据，该指数发布的最后一天乃是2025年7月3日，故生成新的自7月4日起的newworkbook.xlsx文件。
+On October 3, 2025, I just realized that the CNI index 399404 (stock market low wave) has stopped being released. Upon checking the data, the last day the index was released was July 3, 2025. Therefore, I generated a new newworkbook.xlsx file starting from July 4.
