@@ -1,0 +1,9 @@
+$:
+  vscode:
+    --runner:
+      cpus:64
+    services:
+      -vscode
+      -docker
+    docker:
+      image:docker.cnb.cool/examples/language/python-3:latest
