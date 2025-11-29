@@ -5,6 +5,9 @@ import os
 import openpyxl
 import publai1
 pub=publai1.publai1()
+fanhui=input("记得先打个release吧，已记得了输入'y'或者'yes'：")
+if fanhui!='yes' and fanhui!='y':
+    raise ValueError("该干的事儿还没干完呢！")
 with open(pub.filename,"r") as fp:
     lines=fp.readlines()
 num=len(lines)
@@ -42,7 +45,7 @@ wb.close()
 os.system("cp " + ".cnb.yml " + ".cnb3.yml")
 os.system("mv " + ".cnb2.yml " + ".cnb.yml")
 os.system("mv " + ".cnb3.yml " + ".cnb2.yml")
-input()
+input("")
 os.system("mv ../" + filename[0][-33:] +" " + filename[0][0:43])
 os.system("mv ../" + filename[1][-35:] +" " + filename[1][0:43])
 

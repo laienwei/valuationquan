@@ -30,14 +30,6 @@ ar*:
         - name: push-with-param1
           script:
              - docker push ${CNB_DOCKER_REGISTRY}/${CNB_REPO_SLUG_LOWERCASE}/${artifact_name}:latest
-newrelease*:
-  tag_push:
-    - stages:
-        - name: 打 release
-          type: git:release  # 使用 Git Release 类型任务
-          options:
-            title: "发布 release：{{.Tag}}"  # 动态显示当前 tag 名称（如 v1.0.0）
-            tag: "{{.Tag}}"  # 自动传递当前推送的 tag 名称（关键！）
 master: # 触发分支
   web_trigger_one: # 触发事件，对应一个构建，可以包含多条 Pipeline。即可以是数组，也可以是对象。
     - env:
