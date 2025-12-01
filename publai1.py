@@ -1,8 +1,8 @@
 class publai1:
     def __init__(self):
-        date0='2025-10-31' 
+        date0='2025-11-28' 
         yearlai='2025' #for cloudnoVBAopenpyxl.py
-        num=105 #for sixCloud.py
+        num=106 #for sixCloud.py
         filename='./data/datefortest'+str(num)+' - 副本.csv'
         filename1='../data/datefortest'+str(num)+' - 副本.csv'
         self.filename=filename
