@@ -1,0 +1,2 @@
+令人痛心、无比遗憾和不禁扼腕的是，2026年4月23日的估值数据因遗忘，的确没有爬取，时隔2年多再次出现此类严重失误，不可接受！在两个模型一文件myPEPB工作表内4月23日的估值数据，是事后根据指数波动比例推算出来的假数据。
+It is heartbreaking, deeply regrettable that the valuation data for April 23, 2026, was indeed not retrieved due to oversight. The recurrence of such a serious mistake after more than two years is unacceptable! The valuation data for April 23 in the "myPEPB" worksheet of the two model1 files is fake data calculated based on the index fluctuation ratio afterwards.
