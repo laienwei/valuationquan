@@ -1,0 +1,2 @@
+很显然，最初爬取的2026年7月30日的估值数据与7月29日一模一样，爬取的时间是正常的，出来的数据不正常，只能说是国证指数公司的问题。好在现在有akshare库帮我兜底，所以最后的所有数据是从akshare上获取并反向做成0730文件夹下四文件的形式。
+Obviously, the valuation data retrieved on July 30, 2026, was exactly the same as that on July 29. The retrieval time was normal, but the data was abnormal. It can only be attributed to issues with the Guozheng Index Company. Fortunately, I have the akshare module to fall back on, so all the final data was obtained from akshare and reversely organized into the format of four files under the 0730 folder.
