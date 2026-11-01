@@ -1,8 +1,8 @@
 class publai1:
     def __init__(self):
-        date0='2026-9-30' 
+        date0='2026-10-30' 
         yearlai='2026' #for cloudnoVBAopenpyxl.py
-        num,num1,num2=116,24,137 #for sixCloud.py
+        num,num1,num2=117,24,137 #for sixCloud.py
         self.column399088=num1
         self.column399378=num2
         wbsheetname='start_from_2025.12.5' #sheetname of newworkbook
